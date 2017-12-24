@@ -10,7 +10,7 @@ This means that there's one central server (we'll call this instance _sync serve
 
 ### Preparation
 
-Here we assume you already have Trilium running on your computer and you want to setup sync server so you can edit same [[document|Document] online.
+Here we assume you already have Trilium running on your computer and you want to setup sync server so you can edit same [[document|Document]] online.
 
 Of course you need to install Trilium on the sync server. It's recommended to have exact same version of Trilium installed everywhere. Trilium will reject synchronization if there's a mismatch in Trilium database version between client and sync server.
 
@@ -20,7 +20,7 @@ Before you start the process of setting everything up, it's recommended to stop 
 
 1. Run Trilium in your new environment - this will generate default directory ```trilium-data``` in your home directory, default config etc.
 2. Stop Trilium in the new environment
-3. Copy your existing trilium [[document|Document] file (by default located in your home directory under ```trilium-data/document.db```) into your target environment into ```trilium-data``` directory
+3. Copy your existing trilium [[document|Document]] file (by default located in your home directory under ```trilium-data/document.db```) into your target environment into ```trilium-data``` directory
 4. Edit client's ```trilium-data/config.ini``` and set ```syncServerHost``` to the host and port where the sync server is running
 5. Start the sync server
 6. Start the client
@@ -29,7 +29,7 @@ You should be able to see in the client logs that sync connection has been estab
 
 ### Additional sync client(s) setup
 
-Setting up extra sync clients is very similar to setting up a server - make sure everything is stopped, copy the [[document|Document], set up client's ```syncServerHost``` in ```config.ini``` to point to the sync server and then start everything up.
+Setting up extra sync clients is very similar to setting up a server - make sure everything is stopped, copy the [[document|Document]], set up client's ```syncServerHost``` in ```config.ini``` to point to the sync server and then start everything up.
 
 ## Conflict resolution
 

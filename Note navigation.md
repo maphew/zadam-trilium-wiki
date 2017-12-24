@@ -1,6 +1,4 @@
-# Note navigation
-
-Trilium has good support for fast navigation between notes.
+One of the Trilium's goals is to provide fast and comfortable navigation between notes.
 
 ## Backwards and forward
 

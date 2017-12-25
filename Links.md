@@ -11,7 +11,7 @@ You can follow external link by either double clicking (will open new tab/window
 
 Links to internal notes are created a bit differently. To create link to note at current cursor position, press ```CTRL-L```.
 
-In the dialog you can see radio button to choose from different types of linking. First one is classic link to note, the other two are related to [[cloning|Cloning]] and will be covered separately.
+In the dialog you can see radio button to choose from different types of linking. First one is classic link to note, the other two are related to [[cloning|Cloning notes]] and will be covered separately.
 
 [[gifs/create-link-to-note.gif]]
 

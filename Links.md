@@ -18,3 +18,7 @@ In the dialog you can see radio button to choose from different types of linking
 You can follow the note link by double clicking it.
 
 Alternatively if you only wish to quickly preview the content, you can hover over the link and will see read only preview.
+
+## Opening links
+
+Since Trilium doesn't have separate view and edit modes (it's always edit mode), clicking on link doesn't open it. To open the link (both internal and external), just double click on it. External links will be opened in new tab.

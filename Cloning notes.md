@@ -49,6 +49,12 @@ You can also notice how after creating the clone, all clones are highlighted. Th
 
 When you click on the clone, you can also see in the bottom of the left pane list of all locations of the clone which allows you to switch easily between them.
 
+## Prefix
+
+Since notes can be categorized into multiple places, it's important to choose name which fits into both (all) locations. 
+In some cases this isn't possible so Trilium provides "tree prefix" which is shown before the note name in the tree and as such provides kind of context. 
+Prefix is location specific so it's displayed only in the tree pane.
+
 ## Deleting notes/clones
 
 With clones it might not be immediately obvious how deleting works.

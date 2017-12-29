@@ -2,8 +2,8 @@ This is supposed to be a complete list of keyboard shortcuts. Note that some of 
 
 ## Note navigation
 
-* ```CTRL+UP```, ```CTRL+DOWN``` - go up/down in the list of notes
-* ```CTRL+LEFT```, ```CTRL+RIGHT``` - collapse/expand node
+* ```UP```, ```DOWN``` - go up/down in the list of notes, ```CTRL-SHIFT-UP``` and ```CTRL-SHIFT-DOWN``` work also from editor
+* ```LEFT```, ```RIGHT``` - collapse/expand node, ```CTRL-SHIFT-LEFT``` and ```CTRL-SHIFT-RIGHT``` work also from editor
 * ```ALT+LEFT```, ```ALT+RIGHT``` - go back / forwards in the history
 * ```CTRL+J``` - show "Jump to" dialog
 * ```CTRL+E``` - show "Recent notes" dialog
@@ -31,6 +31,7 @@ See demo of some of these features in [[note navigation|Note navigation]].
 
 ## Editing notes
 
+* ```CTRL+ENTER``` in tree pane switches from tree pane into editor. ```CTRL+.``` switches back from editor to tree pane.
 * ```CTRL+K``` - create / edit external link
 * ```CTRL+L``` - create internal (note) link
 * ```ALT+T``` - inserts current date and time at caret position

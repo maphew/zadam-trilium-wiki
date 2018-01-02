@@ -21,17 +21,20 @@ See demo of some of these features in [[note navigation|Note navigation]].
 
 ## Moving / cloning notes
 
-* ```SHIFT+UP```, ```SHIFT+DOWN``` - move note up/down in the note list
-* ```SHIFT+LEFT``` - move note up in the note tree
-* ```SHIFT+RIGHT``` - move note down in the note tree 
-* ```CTRL+C``` - copies current note into clipboard (used for [[cloning|Cloning notes]])
-* ```CTRL+X``` - cuts current note into clipboard (used for moving notes)
-* ```CTRL+V``` - pastes note as sub-note into current note (which is either move or clone depending on whether it was copied or cut into clipboard)
+* ```CTRL+UP```, ```CTRL+DOWN``` - move note up/down in the note list
+* ```CTRL+LEFT``` - move note up in the note tree
+* ```CTRL+RIGHT``` - move note down in the note tree
+* ```SHIFT+UP```, ```SHIFT+DOWN``` - multi-select note above/below
+* ```CTRL+A``` - select all notes in the current level
+* ```CTRL+click``` - multi select note which you clicked on 
+* ```CTRL+C``` - copies current note (or current selection) into clipboard (used for [[cloning|Cloning notes]])
+* ```CTRL+X``` - cuts current (or current selection) note into clipboard (used for moving notes)
+* ```CTRL+V``` - pastes note(s) as sub-note into current note (which is either move or clone depending on whether it was copied or cut into clipboard)
 * ```DEL``` / ```CTRL+DEL``` - delete note / sub-tree. Just ```DELETE``` works in tree pane, ```CTRL-DEL``` works globally.
 
 ## Editing notes
 
-* ```CTRL+ENTER``` in tree pane switches from tree pane into editor. ```CTRL+.``` switches back from editor to tree pane.
+* ```ENTER``` / ```CTRL+ENTER``` in tree pane switches from tree pane into editor. ```CTRL+.``` switches back from editor to tree pane.
 * ```CTRL+K``` - create / edit external link
 * ```CTRL+L``` - create internal (note) link
 * ```ALT+T``` - inserts current date and time at caret position

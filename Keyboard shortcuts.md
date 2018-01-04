@@ -8,6 +8,7 @@ This is supposed to be a complete list of keyboard shortcuts. Note that some of 
 * ```CTRL+J``` - show "Jump to" dialog
 * ```CTRL+E``` - show "Recent notes" dialog
 * ```CTRL+.``` - scroll to current note (useful when you scroll away from your note or your focus is currently in the editor)
+* ```BACKSPACE``` - jumps to parent note
 * ```ALT+C``` - collapse whole note tree
 * ```ALT+-``` (alt with minus sign) - collapse sub-tree (if some subtree takes too much space on tree pane you can collapse it)
 
@@ -34,7 +35,7 @@ See demo of some of these features in [[note navigation|Note navigation]].
 
 ## Editing notes
 
-* ```ENTER``` / ```CTRL+ENTER``` in tree pane switches from tree pane into editor. ```CTRL+.``` switches back from editor to tree pane.
+* ```ENTER``` in tree pane switches from tree pane into editor. ```CTRL+.``` switches back from editor to tree pane.
 * ```CTRL+K``` - create / edit external link
 * ```CTRL+L``` - create internal (note) link
 * ```ALT+T``` - inserts current date and time at caret position

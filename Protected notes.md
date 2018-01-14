@@ -42,6 +42,6 @@ Not encrypted:
     * here we use scrypt for [key stretching](https://en.wikipedia.org/wiki/Key_stretching)
 4. Hash produced in the last step is used to decrypt actual _data encryption key_
     * data encryption key is encrypted with [AES-128](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) with random [IV](https://en.wikipedia.org/wiki/Initialization_vector)
-    * data encryption key is random key generated at the time of [[document|Document]] initialization and is constant over the lifetime of the document. If we change password, only we re-encrypt only this key.
+    * data encryption key is random key generated at the time of [[document|Document]] initialization and is constant over the lifetime of the document. If we change password, we re-encrypt only this key.
 5. We use data encryption key to decrypt actual data - note title and content.
     * encryption used is again AES-128 with [CBC chaining](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation). IV is primary key (noteId for notes and noteHistoryId for history items)

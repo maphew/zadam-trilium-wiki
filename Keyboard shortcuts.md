@@ -3,7 +3,7 @@ This is supposed to be a complete list of keyboard shortcuts. Note that some of 
 ## Note navigation
 
 * ```UP```, ```DOWN``` - go up/down in the list of notes, ```CTRL-SHIFT-UP``` and ```CTRL-SHIFT-DOWN``` work also from editor
-* ```LEFT```, ```RIGHT``` - collapse/expand node, ```CTRL-SHIFT-LEFT``` and ```CTRL-SHIFT-RIGHT``` work also from editor
+* ```LEFT```, ```RIGHT``` - collapse/expand node
 * ```ALT+LEFT```, ```ALT+RIGHT``` - go back / forwards in the history
 * ```CTRL+J``` - show "Jump to" dialog
 * ```CTRL+E``` - show "Recent notes" dialog

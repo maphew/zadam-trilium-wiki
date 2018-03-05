@@ -37,3 +37,9 @@ Following attributes are used for advanced configuration:
 * ```run_on_startup``` - JavaScript notes with this attribute will be executed after Trilium startup
 * ```hide_in_autocomplete``` - notes with this attribute won't be visible in autocomplete-based search (jump to, add link). Applies also to all its sub-notes.
 * ```exclude_from_export``` - notes (with their sub-tree) won't be included in any note export
+* ```run``` - defines on which events script should run. Possible values are:
+  * ```frontend_startup``` - when Trilium frontend starts up (or is refreshed).
+  * ```backend_startup``` - when Trilium backend starts up
+  * ```hourly``` - run once an hour
+  * ```daily``` - run once a day
+* ```disable_inclusion``` - scripts with this attribute won't be included into parent script execution.

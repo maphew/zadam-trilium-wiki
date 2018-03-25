@@ -56,4 +56,4 @@ These are hooked in Electron to be similar to native browser keyboard shortcuts.
 * ```ALT+H``` - show note history
 * ```CTRL+S``` - toggle search form in tree pane
 * ```ALT+R``` - show recent changes dialog
-* ```ALT+A``` - show note labels dialog
+* ```ALT+L``` - show note labels dialog

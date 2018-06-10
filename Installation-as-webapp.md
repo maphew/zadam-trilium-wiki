@@ -2,6 +2,12 @@ This pages describes installing Trilium as a web application as opposed to insta
 
 Trilium as web application is typically used as a [[sync|Synchronization]] server, but can be also used as online version of Trilium.
 
+## Use docker if possible
+
+The easiest way to run Trilium as a webapp is to run a docker container. See [[Docker]] for details.
+
+If for some reason this is not possible or desirable, continue reading below.
+
 ## Requirements
 
 Trilium is a [node.js](http://nodejs.org/) application. Supported version is 8.2.1 and up, but it might work with earlier versions, it's just not tested. It will definitely not run on node version lower than 7.6 though (first version with async/await enabled).

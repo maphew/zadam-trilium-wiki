@@ -53,7 +53,5 @@ These are hooked in Electron to be similar to native browser keyboard shortcuts.
 * ```CTRL+U``` - show note source (read only)
 * ```ALT+O``` - show SQL console (use only if you know what you're doing)
 * ```ALT+M``` - distraction-free mode - display only note editor, everything else is hidden
-* ```ALT+H``` - show note history
 * ```CTRL+S``` - toggle search form in tree pane
-* ```ALT+R``` - show recent changes dialog
 * ```ALT+L``` - show note labels dialog

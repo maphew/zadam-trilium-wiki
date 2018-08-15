@@ -1,12 +1,4 @@
-This pages describes installing Trilium as a web application as opposed to installing desktop (electron) build.
-
-Trilium as web application is typically used as a [[sync|Synchronization]] server, but can be also used as online version of Trilium.
-
-## Use docker if possible
-
-The easiest way to run Trilium as a webapp is to run a docker container. See [[Docker]] for details.
-
-If for some reason this is not possible or desirable, continue reading below.
+This pages describes manually installing Trilium on your server.
 
 ## Requirements
 
@@ -20,6 +12,7 @@ node --version
 If your linux distribution has only outdated version of node.js, you can take a look at the [[installation instructions|https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions]] on node.js website which covers most popular distributions.
 
 ### Image requirements
+If you want to use Trilium server installation only as a [[sync server|Synchronization]], you can skip this section.
 
 To compile libraries required for image support you need to have "autoconf" installed. In ubuntu you can do this with
 
@@ -56,3 +49,7 @@ nohup node src/www &
 ~~~~
 
 Application by default starts up on port 8080, so you can open your browser and navigate to http://localhost:8080 to access Trilium (replace "localhost" with your hostname).
+
+## TLS
+
+Don't forget to [[configure TLS|TLS configuration]], which is required for secure usage!

@@ -10,17 +10,19 @@ Of course this is basic and expected functionality, but it's worth mentioning th
 
 [[gifs/back-and-forwards.gif]]
 
-## Recent notes
-
-Recent notes allows you to view list of recently viewed / edited notes and quickly jump to it.
-
-To access this functionality, you can click on ```Recent notes``` button on the top or press ```CTRL-E```. You can choose desired note and hit ```ENTER``` or click on ```Jump to``` button.
-
-[[gifs/recent-notes.gif]]
-
 ## Jump to note
 
 This is useful to quickly find and view arbitrary note - click on ```Jump to``` button on the top or press ```CTRL-J```.
-Then type part of the note name and autocomplete will help you pick the desired note. Then just press ```ENTER``` or click on ```Jump to``` button and you're there.
+Then type part of the note name and autocomplete will help you pick the desired note.
 
 [[gifs/jump-to.gif]]
+
+### Recent notes
+
+Jump to note also has the ability to show the list of recently viewed / edited notes and quickly jump to it.
+
+To access this functionality, click on ```Jump to``` button on the top. By default (when nothing is entered into autocomplete), this dialog will show the list of recent notes.
+
+Alternatively you can click on the "time" icon on the right.
+
+[[gifs/recent-notes.gif]]

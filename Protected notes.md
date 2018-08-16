@@ -12,7 +12,7 @@ For such sensitive data Trilium can protect these notes which essentially means:
 
 ## How to use protected notes
 
-Notes are by default unprotected. If you want your note to be protected, click on lock icon next to the note title as seen here:
+Notes are by default unprotected. If you want your note to be protected, click on shield icon next to the note title as seen here:
 
 [[gifs/protecting-note.gif]]
 

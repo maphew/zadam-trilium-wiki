@@ -1,0 +1,3 @@
+A common pattern in note taking is that a lot of notes will be centered around certain date - e.g. you have some tasks which needs to be done on certain date, you have meeting minutes from certain date, you have your thoughts etc. and it all revolves around a date on which they occurred. For this reason it makes sense to create certain "day workspace" which will centralize all those notes relevant for certain date.
+
+For this, Trilium provides a concept of "day note". Trilium semi-automatically generates a single note for each day. Under this note you can save ([[clone|Cloning notes]]) all those relevant notes.

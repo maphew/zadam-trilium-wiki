@@ -22,7 +22,7 @@ Let's take a look at our demo script (shipped with default Trilium [[document]])
 
 [[images/button-script.png]]
 
-First take a look at the red point above - this what we want to achieve - new button in UI which will create new note representing a task/todo item.
+First take a look at the red circle all the way on the top - this what we want to achieve - new button in UI which will create new note representing a task/todo item.
 
 Red point below the first one marks the note type we have create for this script - it's "JavaScript frontend". It's frontend because adding button to UI is clearly frontend responsibility.
 
@@ -36,3 +36,31 @@ In the note content you can see the code which calls one of the API methods, thi
 ## Action handler
 
 Saving the note to the database is backend's responsibility so we immediately pass control to the backend and ask it to create a note. Once this is done, we show the newly created note so that the user can set the task title and maybe some attributes.
+
+## Script execution
+
+So we have a script which will add the button to the toolbar. But how can we execute it? One possibility is to click on "play" icon (marked by red circle). The problem with this is that this UI change is time bound by Trilium runtime so when we restart Trilium, button won't be there.
+
+We need to execute it every time Trilium starts up, but we probably don't want to have to manually click on play button on every start up.
+
+The solution is marked by red circle at the bottom - this note has [[label|Attributes]] @run=frontendStartup - this is one of the "system" labels which Trilium understands. As you might guess, this will cause all such labeled script notes to be executed once Trilium frontend starts up.
+
+### Events
+
+In general we may say that script notes are triggered by events. "run" represents global events:
+
+* ```run```
+  * ```frontendStartup``` - executes on frontend upon startup
+  * ```backendStartup``` - executes on backend upon startup
+  * ```hourly``` - executes once an hour on backend 
+  * ```daily``` - executes once a day on backend
+
+Other events are bound to some entity, these are defined as [[relations|Attributes]] - meaning that script is triggered only if note has this script attached to it through relations (or it can inherit it).
+
+* ```runOnNoteView``` - executes when note is displayed on frontend
+* ```runOnNoteCreation``` - executes when note is created on backend
+* ```runOnNoteTitleChange``` - executes when note title is changed (includes note creation as well)
+* ```runOnNoteChange```  - executes when note is changed (includes note creation as well)
+* ```runOnChildNoteCreation```  - executes when new note is created under *this* note
+* ```runOnAttributeCreation``` - executes when new attribute is created under *this* note
+* ```runOnAttributeChange``` - executes when attribute is changed under *this* note

@@ -2,19 +2,15 @@ Trilium supports synchronization with star-shaped topology:
 
 [[images/star-topology.png]]
 
-This means that there's one central server (we'll call this instance _sync server_) and several _client_ instances which all point to this sync server and synchronize against it.
+This means that there's one central server (we'll call this instance _sync server_) and several _client_ (sometimes called _desktop_) instances which all point to this sync server and synchronize against it.
 
 **Beware that synchronization is considered experimental and you should expect occasional issues which might require manual intervention.**
 
 ## How to setup synchronization
 
-### Preparation
+### Setup synchronization from desktop instance to sync server
 
-Here we assume you already have Trilium running on your computer and you want to setup sync server so you can edit same [[document|Document]] online.
-
-Of course you need to install Trilium on the sync server. It's recommended to have exact same version of Trilium installed everywhere. Trilium will reject synchronization if there's a mismatch in Trilium database version between client and sync server.
-
-Before you start the process of setting everything up, it's recommended to stop Trilium on the existing instance.
+This approach is used when you already have a desktop instance of Trilium and you want to [[setup sync server on your web host|Server installation]]. 
 
 ### Sync server setup
 

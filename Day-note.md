@@ -3,7 +3,7 @@ A common pattern in note taking is that a lot of notes will be centered around c
 For this, Trilium provides a concept of "day note". Trilium semi-automatically generates a single note for each day. Under this note you can save ([[clone|Cloning notes]]) all those relevant notes.
 
 ## Demo
-[[images/day-note.gif]]
+[[gifs/day-note.gif]]
 
 In the demo you can see clicking on "Today" button (actually a [[script|Scripts]]) which will show today's "day note". Day note itself is empty except for showing list of edited notes that day (this functionality is also provided by script), but contains today's important and relevant notes.
 

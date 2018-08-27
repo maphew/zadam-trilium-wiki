@@ -1,4 +1,4 @@
-Document is [SQLite](https://www.sqlite.org) database which contains all notes, metadata, even some of the configuration.
+Document is [SQLite](https://www.sqlite.org) database which contains all notes, tree structure, metadata, even some of the configuration.
 
 It's stored in single file, by default in ```trilium-data/document.db```
 

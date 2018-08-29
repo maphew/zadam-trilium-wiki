@@ -64,3 +64,10 @@ Other events are bound to some entity, these are defined as [[relations|Attribut
 * ```runOnChildNoteCreation```  - executes when new note is created under *this* note
 * ```runOnAttributeCreation``` - executes when new attribute is created under *this* note
 * ```runOnAttributeChange``` - executes when attribute is changed under *this* note
+
+## Script API
+
+To do anything useful, Trilium publishes "Script API". Actually there are two such APIs:
+
+* [Frontend API](./backend_api/index.html)
+* [Backend API](./backend_api/index.html)

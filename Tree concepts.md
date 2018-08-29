@@ -6,6 +6,9 @@ Note is a central entity in Trilium. Main attributes of note are title and conte
 
 Importantly, note itself doesn't carry information on its placement in note tree.
 
+Tree structure of notes can resemble file system - but compared to that notes in Trilium can act as both file and directory - meaning that note can both have its own content and have children. "Leaf note" is a note which doesn't have any children. 
+
+### Root note
 There's one special note called "root note" which is root of the note tree. All other notes are placed below it in the structure.
 
 ## Branch

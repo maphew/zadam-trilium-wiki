@@ -46,7 +46,7 @@ More importantly relations are used for some more advanced things - like attachi
 * ```runOnNoteView``` - attached script will be run whenever the note has been loaded
 * ```runOnNoteTitleChange``` - attached script will be run whenever the note title has been changed
 * ```runOnAttributeChange``` - attached script will be run whenever the note's attribute has been changed
-* ```inheritAttributes``` - attached note's attributes will be inherited even without parent-child relationship
+* ```template``` - attached note's attributes will be inherited even without parent-child relationship
 
 ## Multiplicity
 

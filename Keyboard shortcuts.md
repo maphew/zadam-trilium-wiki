@@ -6,7 +6,6 @@ This is supposed to be a complete list of keyboard shortcuts. Note that some of 
 * ```LEFT```, ```RIGHT``` - collapse/expand node
 * ```ALT+LEFT```, ```ALT+RIGHT``` - go back / forwards in the history
 * ```CTRL+J``` - show "Jump to" dialog
-* ```CTRL+E``` - show "Recent notes" dialog
 * ```CTRL+.``` - scroll to current note (useful when you scroll away from your note or your focus is currently in the editor)
 * ```BACKSPACE``` - jumps to parent note
 * ```ALT+C``` - collapse whole note tree
@@ -54,4 +53,4 @@ These are hooked in Electron to be similar to native browser keyboard shortcuts.
 * ```ALT+O``` - show SQL console (use only if you know what you're doing)
 * ```ALT+M``` - distraction-free mode - display only note editor, everything else is hidden
 * ```CTRL+S``` - toggle search form in tree pane
-* ```ALT+L``` - show note labels dialog
+* ```ALT+A``` - show note attributes dialog

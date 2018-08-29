@@ -23,16 +23,17 @@ Labels can be used when [[searching|Search]].
 
 Following labels are used for advanced configuration:
 
-* ```disableVersioning``` - disables auto-versioning. Useful for e.g. large, but unimportant notes - e.g. large JS libraries used for scripting
-* ```calendarRoot``` - marks note which should be used as root for [[day notes|Day note]]. Only one should be marked as such.
-* ```archived``` - notes with this label won't be visible in autocomplete-based search (jump to, add link). Applies also to all its sub-notes.
-* ```excludeFromExport``` - notes (with their sub-tree) won't be included in any note export
-* ```run``` - defines on which events script should run. Possible values are:
- * ```frontendStartup``` - when Trilium frontend starts up (or is refreshed).
- * ```backendStartup``` - when Trilium backend starts up
- * ```hourly``` - run once an hour
- * ```daily``` - run once a day
-* ```disableInclusion``` - scripts with this label won't be included into parent script execution.
+* `disableVersioning` - disables auto-versioning. Useful for e.g. large, but unimportant notes - e.g. large JS libraries used for scripting
+* `calendarRoot` - marks note which should be used as root for [[day notes|Day note]]. Only one should be marked as such.
+* `archived` - notes with this label won't be visible in autocomplete-based search (jump to, add link). Applies also to all its sub-notes.
+* `excludeFromExport` - notes (with their sub-tree) won't be included in any note export
+* `run` - defines on which events script should run. Possible values are:
+ * `frontendStartup` - when Trilium frontend starts up (or is refreshed).
+ * `backendStartup` - when Trilium backend starts up
+ * `hourly` - run once an hour
+ * `daily` - run once a day
+* `disableInclusion` - scripts with this label won't be included into parent script execution.
+* `sorted` - keeps  child notes sorted by title alphabetically
 
 ## Relations
 Relation is a kind of link between two notes.
@@ -43,10 +44,10 @@ More importantly relations are used for some more advanced things - like attachi
 
 ### Standard relations
 
-* ```runOnNoteView``` - attached script will be run whenever the note has been loaded
-* ```runOnNoteTitleChange``` - attached script will be run whenever the note title has been changed
-* ```runOnAttributeChange``` - attached script will be run whenever the note's attribute has been changed
-* ```template``` - attached note's attributes will be inherited even without parent-child relationship
+* `runOnNoteView` - attached script will be run whenever the note has been loaded
+* `runOnNoteTitleChange` - attached script will be run whenever the note title has been changed
+* `runOnAttributeChange` - attached script will be run whenever the note's attribute has been changed
+* `template` - attached note's attributes will be inherited even without parent-child relationship
 
 ## Multiplicity
 
@@ -54,7 +55,7 @@ Attributes allow multiplicity - there can be multiple attributes with the same n
 
 ## Attribute inheritance
 
-Every attribute has a flag called ```isInheritable```. If this is true, then this attribute (key-value) is also applied to all its children notes, children's children notes etc.
+Every attribute has a flag called `isInheritable`. If this is true, then this attribute (key-value) is also applied to all its children notes, children's children notes etc.
 
 Different kind of inheritance is achieved using "child:" attribute name prefix. If we create a child note in a note with "child:exampleAttribute" attribute, then child note will have "exampleAttribute" created. This can be even chained, e.g. "child:child:exampleAttribute", in this case "exampleAttribute" will be created in the child of the child.
 

@@ -1,3 +1,5 @@
+
+
 ## Filter query syntax
 
 Following examples demonstrates syntax:

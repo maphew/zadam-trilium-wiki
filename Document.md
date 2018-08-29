@@ -1,6 +1,6 @@
 Document is [SQLite](https://www.sqlite.org) database which contains all notes, tree structure, metadata, even some of the configuration.
 
-It's stored in single file, by default in ```trilium-data/document.db```
+It's stored in single file, by default in `trilium-data/document.db`
 
 If you want to backup your Trilium data, just backup this single file - it contains everything you need.
 

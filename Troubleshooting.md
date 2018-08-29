@@ -4,7 +4,7 @@ Trilium is currently alpha quality software so it's quite expected there will be
 
 You guessed it - it's restart.
 
-If there's a UI problem, it usually means that the Trilium frontend got into inconsistent state and is acting up. Easiest way to fix it is to reload the application - just press ```CTRL-R``` and frontend will be reloaded.
+If there's a UI problem, it usually means that the Trilium frontend got into inconsistent state and is acting up. Easiest way to fix it is to reload the application - just press `CTRL-R` and frontend will be reloaded.
 
 If this still doesn't help or you suspect it's actually backend issue, you can restart the whole application - in case of desktop (Electron) build, you just close the window and re-open it again.
 
@@ -24,13 +24,13 @@ Trilium uses GitHub issues - so please send your reports here: https://github.co
 
 ### Browser console
 
-If Trilium UI is acting up, open developer console by pressing ```CTRL-SHIFT-I```, there might be some relevant errors or warnings.
+If Trilium UI is acting up, open developer console by pressing `CTRL-SHIFT-I`, there might be some relevant errors or warnings.
 
 All JavaScript errors should be also logged to backend logs, but it's possible something was missed.
 
 ### Backend logs
 
-Trilium logs important events and errors into ```trilium-data/logs``` directory. These logs are very helpful in debugging problems so please attach the latest ones with your bug report. You don't have to worry, they don't contain any sensitive information about your notes.
+Trilium logs important events and errors into `trilium-data/logs` directory. These logs are very helpful in debugging problems so please attach the latest ones with your bug report. You don't have to worry, they don't contain any sensitive information about your notes.
 
 ### Anonymized database
 
@@ -38,4 +38,4 @@ In some cases it's necessary to see the database structure to be able to debug t
 
 For this Trilium supports anonymization of the database - you can trigger this in Settings -> Advanced tab.
 
-This will create a copy of your document and remove all sensitive data (currently note titles and note contents) while leaving all structure and metadata (e.g. date of last change). After this is done, database is [VACUUMed](https://sqlite.org/lang_vacuum.html) to make sure there's no stale sensitive data in the document file. Resulting file is stored in ```trilium-data/anonymized``` directory. You can safely attach it with your bug report.
+This will create a copy of your document and remove all sensitive data (currently note titles and note contents) while leaving all structure and metadata (e.g. date of last change). After this is done, database is [VACUUMed](https://sqlite.org/lang_vacuum.html) to make sure there's no stale sensitive data in the document file. Resulting file is stored in `trilium-data/anonymized` directory. You can safely attach it with your bug report.

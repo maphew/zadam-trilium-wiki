@@ -67,7 +67,4 @@ Other events are bound to some entity, these are defined as [[relations|Attribut
 
 ## Script API
 
-To do anything useful, Trilium publishes "Script API". Actually there are two such APIs:
-
-* [Frontend API](https://zadam.github.io/trilium/frontend_api/)
-* [Backend API](https://zadam.github.io/trilium/backend_api/)
+See [[Script API]].

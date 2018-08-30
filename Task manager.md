@@ -1,7 +1,7 @@
 Task Manager is a [[promoted attributes]] and [[scripts]] showcase present in the [[demo document|Document#demo-document]].
 
 ## Demo
-[[images/weight-tracker.png]]
+[[images/task-manager.png]]
 
 Task Manager manages outstanding (TODO) tasks and finished tasks (non-empty doneDate attribute). Outstanding tasks are further categorized by location and arbitrary tags - whenever you change tag attribute in the task note, this task is then automatically moved to appropriate location.
 

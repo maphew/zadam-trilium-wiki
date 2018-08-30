@@ -9,7 +9,7 @@ Sometimes it can be difficult to remember all the extended family, relations and
 
 ## Implementation
 
-Members note has `child:template` [[attribute|attributes]] defined which means that any note created as a child to Members will have `template` attribute pointing to the `Person template` note (see [[template]]).
+Members note has `child:template` [[attribute|attributes]] (see [[attribute inheritance]]) defined which means that any note created as a child to Members will have `template` attribute pointing to the `Person template` note (see [[template]]).
 
 This `Person template` defines multiple [[promoted attributes]], some of which (isPartnerOf, isChildOf) allow multiplicity - there can be multiple such relations.
 

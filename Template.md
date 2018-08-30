@@ -6,6 +6,6 @@ To make these attributes really obvious, we make them "promoted" so they are vis
 
 Then whenever we create a new note for book we'll just link the template to the book note via [[relation|Attributes]] "template". Book note will then automatically inherit all the promoted attributes and display them.
 
-To make this even more automated, we can create "child:template" attribute on common parent note of our books and whenever we create new note inside this parent, the book note will get the template relation automatically.
+To make this even more automated, we can create "child:template" (see [[attribute inheritance]]) attribute on common parent note of our books and whenever we create new note inside this parent, the book note will get the template relation automatically.
 
 You can check out the concept in the [[demo document|Document#demo-document]] in e.g. [[Family tree]], [[Task manager]] or [[Day notes]]. 

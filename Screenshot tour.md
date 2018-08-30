@@ -4,7 +4,7 @@ Sometimes the fastest way to assess the software is just through screenshots so 
 
 [[images/dark-theme.png]]
 
-See [[Theming]].
+See [[Themes]].
 
 [[images/code-note.png]]
 

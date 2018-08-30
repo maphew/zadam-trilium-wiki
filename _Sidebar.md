@@ -1,5 +1,5 @@
 * [[Screenshot tour]]
-* Basic concepts & functionality
+* Basic concepts
   * [[Document]]
   * [[Tree concepts]]
   * [[Links]]

@@ -5,3 +5,7 @@ There are three options how to do this, each one with some advantage:
 * Recommended: [[Packaged server binary]]
 * [[Docker|Docker server installation]]
 * [[Manual installation|Manual server installation]]
+
+## Configuration
+
+For server installations, you might want to configure e.g. port or [[TLS|TLS configuration]]. This is done in the Trilium config file, by default it's in ~/trilium-data/config.ini (where ~ is your home directory).

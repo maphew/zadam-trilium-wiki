@@ -11,6 +11,7 @@
   * [[Protected notes]]
   * [[Search]]
   * [[Keyboard shortcuts]]
+  * [[Themes]]
 * Installation & setup
   * [[Server installation]]
     * [[Packaged server binary]]

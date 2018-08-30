@@ -1,6 +1,6 @@
 Weight Tracker is a [[Script API]] showcase present in the [[demo document|Document#demo-document]].
 
-[[Day notes]] shows (among others) how we have "weight" [[promoted attribute|promoted attributes]] in the day note [[template]]. This then aggregates the data and shows a nice graph of weight change in time.
+[[Day notes]] shows (among others) how we have "weight" [[promoted attribute|promoted attributes]] in the day note [[template]]. This then aggregates the data and shows a nice chart of weight change in time.
 
 ## Demo
 [[images/weight-tracker.png]]
@@ -9,7 +9,7 @@ Weight Tracker is a [[Script API]] showcase present in the [[demo document|Docum
 
 Note "Weight Tracker" in the screenshot above is of type "Render HTML note". Such note doesn't have any useful content itself, the only purpose of it is to provide a place where some [[script|scripts]] can render some output. This script is defined in [[relation|attributes]] `renderNote` - coincidentally it's the Weight Tracker's child `Implementation`.
 
-This Implementation code note then contains some HTML and JavaScript which loads all the notes with "weight" attribute and displays them in a graph. To actually render graph we're using third party library [chart.js](https://www.chartjs.org/) which is imported as an attachment (it's not built-in into Trilium).
+This Implementation code note then contains some HTML and JavaScript which loads all the notes with "weight" attribute and displays them in a chart. To actually render chart we're using third party library [chart.js](https://www.chartjs.org/) which is imported as an attachment (it's not built-in into Trilium).
 
 ### JS code
 To get an idea of the script, here's the "JS code" note content:

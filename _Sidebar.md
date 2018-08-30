@@ -14,7 +14,7 @@
   * [[Themes]]
 * Installation & setup
   * [[Server installation]]
-    * [[Packaged server binary]]
+    * [[Packaged server installation]]
     * [[Docker server installation]]
     * [[Manual server installation]]
   * [[TLS configuration]]

@@ -9,7 +9,7 @@ This pattern works well also because of [[cloning|Cloning notes]] functionality 
 
 You can see structure of day notes appearing under "Journal" note - there's a note for the whole year 2017, under it you have "12 - December" which then contains "18 - Monday". This is our "day note" which contains some text in its content and also has some child notes (some of them are from [[Task manager]]).
 
-You can also notice how this day note has [[promoted attribute|Promoted attributes]] "weight" where you can track your daily weight. This data is then used in [[Weight tracker]];
+You can also notice how this day note has [[promoted attribute|Promoted attributes]] "weight" where you can track your daily weight. This data is then used in [[Weight tracker]].
 
 ## Implementation
 

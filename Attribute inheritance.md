@@ -1,4 +1,6 @@
-Every [[attribute|attributes]] has a flag called `isInheritable`. If this is true, then this attribute (key-value) is also applied to all its children notes, children's children notes etc.
+Every [[attribute|attributes]] has a flag called `isInheritable`. If this is true, then this attribute (key-value) is also applied to all its children notes, children's children notes etc. 
+
+Example how this might be useful is `archived` label which hides its note from Jump to / Add link dialogs. Often times you want to archive some specific subtree, you can do this by making the `archived` label inheritable.
 
 ## Copying inheritance
 

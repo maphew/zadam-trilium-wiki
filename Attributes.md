@@ -15,9 +15,9 @@ Labels are used for several things:
 
 * user can use them as labels with optional value - e.g. when catalogizing books, you might add labels like @year=1999, @genre=sci-fi, @author=Neal Stephenson
 * attributes can be used to configure some advanced features / settings - see below
-* plugins / scripts can use these to mark notes with some special values / metadata (e.g. note with imported reddit comment will have label with comment ID)
+* plugins / scripts can use these to mark notes with some special values / metadata (e.g. [[Weight Tracker]] will have "weight" attribute on [[day notes]] based on whose it can create chart).
 
-Labels can be used when [[searching|Search]].
+Labels can be used for [[searching|Search]].
 
 ### Standard labels
 

@@ -20,3 +20,10 @@ Following examples demonstrates syntax:
 * ```@abc<=5``` - numerical comparison (also >, >=, <).
 * ```some search string @abc @def``` - combination of fulltext and label search - both of them need to match (OR not supported)
 * ```@abc @def some search string``` - same combination
+
+
+## Saved search
+
+Trilium provides a way to save common search as a note in the note tree. Search results will then appear as subnotes of this "saved search" note. You can see how this works in action:
+
+[[gifs/saved-search.gif]]

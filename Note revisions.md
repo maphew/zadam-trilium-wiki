@@ -7,3 +7,5 @@ To turn off note versioning for particular note (or subtree), add `disableVersio
 Note revisions can be accessed through note detail menu.
 
 [[images/note-revisions.png]]
+
+Above you can see list of 3 note revisions for given note.

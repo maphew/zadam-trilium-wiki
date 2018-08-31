@@ -27,3 +27,7 @@ See [[Family tree]].
 [[images/task-manager.png]]
 
 See [[Task manager]].
+
+[[images/note-revisions.png]]
+
+See [[Note revisions]].

@@ -8,15 +8,13 @@ For such sensitive data Trilium can protect these notes which essentially means:
     * To first access protected notes you need to enter your password which will decrypt the note and allow you to read / write them. But after certain time period (by default 10 minutes) this decrypted note is unloaded from memory and to read it again you need to enter your password again.
     * This protects against a possible scenario where you leave your computer unlocked for a long time and somebody can access your Trilium application.
     
-**Be aware that currently protected notes is considered to be experimental. It's possible encryption method will change in the future (migration path will be provided).**
-
 ## How to use protected notes
 
 Notes are by default unprotected. If you want your note to be protected, click on shield icon next to the note title as seen here:
 
 [[gifs/protecting-note.gif]]
 
-You can also notice how protected notes are greyed in both note tree and note editor so you have good overview of what's protected and what isn't.
+You can also notice how protected notes are greyed in the note tree and given subtle shield background in the note editor so you have good overview of what's protected and what isn't.
 
 ## What is encrypted
 
@@ -25,12 +23,14 @@ In principle Trilium encrypts data, but doesn't encrypt metadata. This specifica
 Encrypted:
 * note title
 * note content
-* images (in the future)
+* images
+* file attachments
 
 Not encrypted:
 * structure of the notes - i.e. you can still see that there are protected notes.
    * there's no attempt to hide the fact there are encrypted notes
 * various metadata - e.g. date of last modification
+* [[attributes]]
 
 ## Encryption details
 

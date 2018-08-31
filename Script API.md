@@ -2,3 +2,7 @@ For [[Scripts]] to do anything useful, Trilium publishes "Script API". Actually 
 
 * [Frontend API](https://zadam.github.io/trilium/frontend_api/FrontendScriptApi.html)
 * [Backend API](https://zadam.github.io/trilium/backend_api/BackendScriptApi.html)
+
+## Backwards compatibility
+
+Note that Script API is now highly experimental and subject to change in the future.

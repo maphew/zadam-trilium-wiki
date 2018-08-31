@@ -5,3 +5,5 @@ Time interval of taking note snapshot is configurable in the Options dialog. Thi
 To turn off note versioning for particular note (or subtree), add `disableVersioning` [[label|Attributes]] to the note.
 
 Note revisions can be accessed through note detail menu.
+
+[[images/note-revisions.png]]

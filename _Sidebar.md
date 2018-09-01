@@ -10,6 +10,7 @@
   * [[Cloning notes]]
   * [[Protected notes]]
   * [[Search]]
+  * [[Backup]]
   * [[Keyboard shortcuts]]
   * [[Themes]]
 * Installation & setup

@@ -1,4 +1,4 @@
-Trilium is currently alpha quality software so it's quite expected there will be some bugs.
+Trilium is currently beta quality software so it's quite expected there will be some bugs.
 
 ## General quickfix
 

@@ -12,11 +12,10 @@ Now, how do we make attribute to appear on the UI?
 
 Attribute is always name-value pair where both name and value are strings.
 
-Attribute definition specifies how should this value be interpreted - is it just string, or is it a date? Should we allow multiple values or note?
+*Attribute definition* specifies how should this value be interpreted - is it just string, or is it a date? Should we allow multiple values or note? And importantly, should we *promote* the attribute or not?
 
 [[images/attribute-definitions.png]]
 
 In the above picture you can see two labels - tag and todoDate with some values. But below them you can notice again tag and todoDate attributes, but now of type "Label definition". These "definition" attributes define how the "value" attributes should behave.
 
-So there's one attribute for value and one for attribute. But notice how definition attribute is Inheritable, meaning that it's also applied to all descendant note. So in a way, this definition is used for the whole subtree while "value" attributes are applied only for this note.
-
+So there's one attribute for value and one for attribute. But notice how definition attribute is [[Inheritable|Attribute inheritance]], meaning that it's also applied to all descendant note. So in a way, this definition is used for the whole subtree while "value" attributes are applied only for this note.

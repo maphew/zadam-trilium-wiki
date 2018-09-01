@@ -13,3 +13,5 @@ This is also useful in the context of [[scripting|scripts]] where you may want t
 To do this, just create a code note with CSS type, put your custom CSS code into the note's content and create "appCss" [[label|Attributes]]. When Trilium frontend starts, all notes with "appCss" label are appended in the style element of the Trilium HTML page.
 
 Once you made your changes, you can reload the Trilium frontend by pressing CTRL-R after which the changes will take effect.
+
+[[images/app-css.png]]

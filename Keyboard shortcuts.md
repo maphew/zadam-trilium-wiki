@@ -5,7 +5,7 @@ This is supposed to be a complete list of keyboard shortcuts. Note that some of 
 * `UP`, `DOWN` - go up/down in the list of notes, `CTRL-SHIFT-UP` and `CTRL-SHIFT-DOWN` work also from editor
 * `LEFT`, `RIGHT` - collapse/expand node
 * `ALT+LEFT`, `ALT+RIGHT` - go back / forwards in the history
-* `CTRL+J` - show "Jump to" dialog
+* `CTRL+J` - show [["Jump to" dialog|Note navigation#jump-to-note]]
 * `CTRL+.` - scroll to current note (useful when you scroll away from your note or your focus is currently in the editor)
 * `BACKSPACE` - jumps to parent note
 * `ALT+C` - collapse whole note tree
@@ -17,7 +17,7 @@ See demo of some of these features in [[note navigation|Note navigation]].
 
 * `CTRL+O` - creates new note after the current note
 * `CTRL+P` - creates new sub-note into current note
-* `F2` - edit prefix of current note clone
+* `F2` - edit [[prefix|Tree concepts#prefix]] of current note clone
 
 ## Moving / cloning notes
 
@@ -35,9 +35,10 @@ See demo of some of these features in [[note navigation|Note navigation]].
 ## Editing notes
 
 * `ENTER` in tree pane switches from tree pane into editor. `CTRL+.` switches back from editor to tree pane.
-* `CTRL+K` - create / edit external link
-* `CTRL+L` - create internal (note) link
+* `CTRL+K` - create / edit [[external link|Links]]
+* `CTRL+L` - create [[internal (note) link|Links]]
 * `ALT+T` - inserts current date and time at caret position
+* `CTRL+.` - jump away from the editor to tree pane and scroll to current note
 
 ## Runtime shortcuts
 
@@ -49,8 +50,7 @@ These are hooked in Electron to be similar to native browser keyboard shortcuts.
 
 ## Other
 
-* `CTRL+U` - show note source (read only)
 * `ALT+O` - show SQL console (use only if you know what you're doing)
 * `ALT+M` - distraction-free mode - display only note editor, everything else is hidden
-* `CTRL+S` - toggle search form in tree pane
-* `ALT+A` - show note attributes dialog
+* `CTRL+S` - toggle [[search]] form in tree pane
+* `ALT+A` - show note [[attributes]] dialog

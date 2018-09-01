@@ -15,4 +15,4 @@ This `Person template` defines multiple [[promoted attributes]], some of which (
 
 Using these promoted attributes, user can define the whole family tree.
 
-JS code note then uses [[Script API]] to pick up all the notes from Members note (pointing to it via `familyContainer` relation), constructs the graph in memory and renders it via 3rd party [Dagre](https://github.com/dagrejs/dagre) library which is uploaded (together with its [D3](https://d3js.org/) dependency) as an attachment.
+JS code note then uses [[Script API]] to pick up all the notes from Members note (pointing to it via `familyContainer` relation), constructs the graph in memory and renders it via 3rd party [Dagre](https://github.com/dagrejs/dagre) JavaScript library which is uploaded (together with its [D3](https://d3js.org/) dependency) as an attachment.

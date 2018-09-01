@@ -17,5 +17,5 @@ For server installations, you might want to configure e.g. port or [[TLS|TLS con
 If this is not desired, you may change it via `TRILIUM_DATA_DIR` environment variable to some other location, e.g.:
 
 ```bash
-export TRILIUM_DATA_DIR=/home/adam/trilium-server-data
+export TRILIUM_DATA_DIR=/home/myuser/data/my-trilium-data
 ```

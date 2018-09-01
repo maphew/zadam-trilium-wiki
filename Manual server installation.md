@@ -2,7 +2,7 @@ This pages describes manually installing Trilium on your server.
 
 ## Requirements
 
-Trilium is a [node.js](http://nodejs.org/) application. Supported version is 8.2.1 and up, but it might work with earlier versions, it's just not tested. It will definitely not run on node version lower than 7.6 though (first version with async/await enabled).
+Trilium is a [node.js](http://nodejs.org/) application. Supported (tested) version of node.js is latest 8.X.X. Unfortunately node.js 10 currently doesn't work because of problems with scrypt dependency.
 
 You can check your node version with this command (node.js needs to be installed):
 ~~~~

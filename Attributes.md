@@ -24,7 +24,7 @@ Labels can be used for [[searching|Search]].
 Following labels are used for advanced configuration:
 
 * `disableVersioning` - disables auto-versioning. Useful for e.g. large, but unimportant notes - e.g. large JS libraries used for scripting
-* `calendarRoot` - marks note which should be used as root for [[day notes|Day note]]. Only one should be marked as such.
+* `calendarRoot` - marks note which should be used as root for [[day notes]]. Only one should be marked as such.
 * `archived` - notes with this label won't be visible in autocomplete-based search (jump to, add link). Applies also to all its sub-notes.
 * `excludeFromExport` - notes (with their sub-tree) won't be included in any note export
 * `run` - defines on which events script should run. Possible values are:

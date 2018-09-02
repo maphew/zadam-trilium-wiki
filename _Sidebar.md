@@ -2,6 +2,7 @@
 * Basic concepts
   * [[Document]]
   * [[Tree concepts]]
+  * [[Text editor]]
   * [[Links]]
   * [[Note navigation]]
   * [[Tree manipulation]]

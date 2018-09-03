@@ -14,6 +14,7 @@
   * [[Backup]]
   * [[Keyboard shortcuts]]
   * [[Themes]]
+  * [[Markdown]] support
 * Installation & setup
   * [[Server installation]]
     * [[Packaged server installation]]

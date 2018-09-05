@@ -4,3 +4,5 @@ Trilium provides some advanced functionality in the form of [[Scripts]] and [[pr
 * [[Weight Tracker]]
 * [[Family Tree]]
 * [[Task Manager]]
+
+Important thing to keep in mind is that above showcases and demoed functionality are not built-in into Trilium - these are just examples of Trilium's extensibility.

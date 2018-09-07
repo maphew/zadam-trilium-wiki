@@ -11,6 +11,10 @@ node --version
 
 If your linux distribution has only outdated version of node.js, you can take a look at the [[installation instructions|https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions]] on node.js website which covers most popular distributions.
 
+### Scrypt requirements
+
+openssl-dev is dependency which needs to be installed on the host system (in ubuntu package name is "libssl-dev").
+
 ### Image requirements
 If you want to use Trilium server installation only as a [[sync server|Synchronization]], you can skip this section.
 

@@ -34,7 +34,7 @@ See demo of some of these features in [[note navigation|Note navigation]].
 
 ## Editing notes
 
-* `ENTER` in tree pane switches from tree pane into editor. `CTRL+.` switches back from editor to tree pane.
+* `ENTER` in tree pane switches from tree pane into note title. Enter from note title switches focus to text editor. `CTRL+.` switches back from editor to tree pane.
 * `CTRL+K` - create / edit [[external link|Links]]
 * `CTRL+L` - create [[internal (note) link|Links]]
 * `ALT+T` - inserts current date and time at caret position

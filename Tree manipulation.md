@@ -8,7 +8,7 @@ You can manipulate the tree simply by dragging and dropping notes as you can see
 
 ## Keyboard manipulation
 
-Trilium provides fast keyboard based manipulation with following shortcuts:
+Trilium provides fast keyboard based manipulation with following [[shortcuts|keyboard shortcuts]]:
 
 * `SHIFT-UP` and `SHIFT-DOWN` - move note up or down in the order
 * `SHIFT-LEFT` - move note upwards in the hierarchy by changing a note's parent to note's parent's parent.
@@ -19,4 +19,4 @@ Trilium provides fast keyboard based manipulation with following shortcuts:
 
 ## Context menu
 
-You can also move notes with familiar cut & paste from context menu or associated keyboard shortcuts `CTRL-X` (cut) and `CTRL-V` (paste).
+You can also move notes with familiar cut & paste from context menu or associated keyboard [[shortcuts|keyboard shortcuts]] `CTRL-X` (cut) and `CTRL-V` (paste).

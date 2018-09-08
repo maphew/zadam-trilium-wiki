@@ -22,4 +22,6 @@ Trilium provides a way to automate this:
 
 You can notice how heading "Formatting" is automatically detected and new subnote is named "Formatting".
 
-This functionality is bound to `CTRL-P` keyboard shortcut. If there's no selection and you press this shortcut, Trilium will create empty subnote. This also works with `CTRL-O` shortcut - the only difference is that new note is created next to the current instead of inside the current.
+[[Keyboard shortcut|Keyboard shortcuts]] `CTRL-P` normally creates empty subnote in the current note - when there is a selected text in the editor, it behaves the same as the button demoed above - new subnote is created and content (and potentially title) is filled with the selected text.
+
+This also works with `CTRL-O` shortcut - the only difference is that new note is created next to the current instead of inside the current.

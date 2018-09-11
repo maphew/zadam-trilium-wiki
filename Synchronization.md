@@ -16,7 +16,7 @@ So let's assume your server instance is already setup. Then open your desktop in
 
 [[images/sync-config.png]]
 
-Sync server is totally empty at this point and we need to establish initial sync with it - to do this, click on "Sync local document to the server instance" button. After this document will start to sync which might take some time, but you can close the Options dialog and keep using Trilium.
+Now click on "Test sync" button which will tell you if the handshake with sync server succeeded. If yes, sync with sync server started and might take some time to finish, but you can close the Options dialog and keep using Trilium.
 
 You can also check the server instance periodically to see if the sync finished. Once it's finished you should see login screen.
  

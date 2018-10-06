@@ -30,7 +30,7 @@ See demo of some of these features in [[note navigation|Note navigation]].
 * `CTRL+C` - copies current note (or current selection) into clipboard (used for [[cloning|Cloning notes]])
 * `CTRL+X` - cuts current (or current selection) note into clipboard (used for moving notes)
 * `CTRL+V` - pastes note(s) as sub-note into current note (which is either move or clone depending on whether it was copied or cut into clipboard)
-* `DEL` / `CTRL+DEL` - delete note / sub-tree. Just `DELETE` works in tree pane, `CTRL-DEL` works globally.
+* `DEL` - delete note / sub-tree
 
 ## Editing notes
 

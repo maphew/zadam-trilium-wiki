@@ -8,7 +8,7 @@ See [[Themes]].
 
 [[images/code-note.png]]
 
-This shows code note editor.
+This shows [[code note|code notes]] editor.
 
 [[images/day-notes.png]]
 

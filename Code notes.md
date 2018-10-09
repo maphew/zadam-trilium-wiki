@@ -11,7 +11,7 @@ This can be useful for few things:
 
 ## Extra languages
 
-Trilium supports syntax highlighting for many languages, but by default displays only some of them (to reduce number of items). If you want to add some unlisted supported language, you can use [[Script API]]:
+Trilium supports syntax highlighting for many languages, but by default displays only some of them (to reduce number of items). If you want to add some unlisted supported language, you can add them by creating new frontend JavaScript code note and using [[Script API]]:
 
 ```javascript
 const codeMimeTypes = api.getDefaultCodeMimeTypes();

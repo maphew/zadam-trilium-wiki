@@ -44,7 +44,7 @@ api.addButtonToToolbar({
 
 In the demo screenshot above you may notice that TODO tasks are in red color and DONE tasks are green.
 
-This is done by having this CSS code note which defines extra CSS classes:
+This is done by having this CSS [[code note|code notes]] which defines extra CSS classes:
 
 ```CSS
 span.fancytree-node.todo .fancytree-title {
@@ -56,6 +56,6 @@ span.fancytree-node.done .fancytree-title {
 }
 ```
 
-This code note has `appCss` [[label|attributes]] which is recognized by Trilium on startup and loaded as CSS into the application.
+This [[code note|code notes]] has `appCss` [[label|attributes]] which is recognized by Trilium on startup and loaded as CSS into the application.
 
 Second part of this functionality is based in event handler described above which assigns `cssClass` label to the task to either "done" or "todo" based on the task status.

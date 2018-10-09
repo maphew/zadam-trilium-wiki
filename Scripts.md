@@ -1,11 +1,4 @@
-Trilium supports creating "code" notes, i.e. notes which contain some sort of formal code - be it programming language (C++, JavaScript), structured data (JSON, XML) or other types of codes (CSS etc.).
-
-This can be useful for few things:
-
-* computer programmers can store code snippets as notes
-* JavaScript code notes can be executed inside Trilium for some extra functionality
-  * we call such JavaScript code notes "scripts"
-* JSON, XML etc. can be used as storage for structured data (typically used in conjunction with scripting)
+Trilium supports creating [[code notes]], i.e. notes which allow you to store some programming code and highlight it. Special case is JavaScript code notes which can also be executed inside Trilium which can in conjunction with [[Script API]] provide extra functionality.
 
 ## Scripting
 

@@ -1,4 +1,4 @@
-Trilium can be run as docker image. This is useful for server deployments. 
+Trilium can be run as docker image. This is recommended way to deploy Trilium on servers.
 
 Docker images are published on docker hub: https://hub.docker.com/r/zadam/trilium/
 

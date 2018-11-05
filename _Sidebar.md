@@ -14,7 +14,7 @@
   * [[Backup]]
   * [[Keyboard shortcuts]]
   * [[Themes]]
-  * [[Markdown]] support
+  * [[Evernote|Evernote import]], [[Markdown]] support
 * Installation & setup
   * [[Server installation]]
     * [[Packaged server installation]]

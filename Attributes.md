@@ -34,6 +34,8 @@ Following labels are used for advanced configuration:
  * `daily` - run once a day
 * `disableInclusion` - scripts with this label won't be included into parent script execution.
 * `sorted` - keeps  child notes sorted by title alphabetically
+* `hidePromotedAttributes`
+* `hideChildrenOverview`
 
 ## Relations
 Relation is a kind of link between two notes.

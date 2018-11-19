@@ -22,11 +22,6 @@ See [[Day notes]].
 
 See [[Weight tracker]].
 
-[[images/family-tree.png]]
-
-[[images/family-tree-queen.png]]
-
-See [[Family tree]].
 
 [[images/task-manager.png]]
 

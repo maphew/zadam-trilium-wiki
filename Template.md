@@ -8,4 +8,4 @@ Then whenever we create a new note for book we'll just link the template to the 
 
 To make this even more automated, we can create "child:template" (see [[attribute inheritance]]) attribute on common parent note of our books and whenever we create new note inside this parent, the book note will get the template relation automatically.
 
-You can check out the concept in the [[demo document|Document#demo-document]] in e.g. [[Family tree]], [[Task manager]] or [[Day notes]]. 
+You can check out the concept in the [[demo document|Document#demo-document]] in e.g. [[Relation map]], [[Task manager]] or [[Day notes]]. 

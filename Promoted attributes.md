@@ -20,12 +20,12 @@ In the above picture you can see two labels - tag and todoDate with some values.
 
 So there's one attribute for value and one for attribute. But notice how definition attribute is [[Inheritable|Attribute inheritance]], meaning that it's also applied to all descendant note. So in a way, this definition is used for the whole subtree while "value" attributes are applied only for this note.
 
-### Mirror relation
+### Inverse relation
 
 Some relations always occur in pairs - my favorite example is on the family. If you have a note representing husband and note representing wife, then there might be a relation between those two of `isPartnerOf`. This is bidirectional relationship - meaning that if a relation is pointing from husband to wife then there should be always another relation pointing from wife to husband.
 
 Another example is with parent - child relationship. Again these always occur in pairs, but in this case it's not exact same relation - the one going from parent to child might be called `isParentOf` and the other one going from child to parent might be called `isChildOf`.
 
-Relation definition allows you to specify such "mirror relation" - for the relation you just define you specify which is the mirror relation. Note that in the second example we should have two relation definitions - one for `isParentOf` which defines `isChildOf` as mirror relation and then second relation definition for `isChildOf` which defines `isParentOf` as mirror relation.
+Relation definition allows you to specify such "inverse relation" - for the relation you just define you specify which is the inverse relation. Note that in the second example we should have two relation definitions - one for `isParentOf` which defines `isChildOf` as inverse relation and then second relation definition for `isChildOf` which defines `isParentOf` as inverse relation.
 
-What this does internally is that whenever we save a relation which has defined mirror relation, we check that this mirror relation exists on the relation target note. Similarly when we delete relation, we also delete mirror relation on the target note.
+What this does internally is that whenever we save a relation which has defined inverse relation, we check that this inverse relation exists on the relation target note. Similarly when we delete relation, we also delete inverse relation on the target note.

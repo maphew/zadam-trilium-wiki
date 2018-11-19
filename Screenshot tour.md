@@ -10,6 +10,10 @@ See [[Themes]].
 
 This shows [[code note|code notes]] editor.
 
+[[images/relation-map.png]]
+
+See [[relation map]].
+
 [[images/day-notes.png]]
 
 See [[Day notes]].

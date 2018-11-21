@@ -10,6 +10,10 @@ See [[Themes]].
 
 This shows [[code note|code notes]] editor.
 
+[[images/promoted-attributes-queen.png]]
+
+See [[promoted attributes]]
+
 [[images/relation-map.png]]
 
 See [[relation map]].
@@ -21,7 +25,6 @@ See [[Day notes]].
 [[images/weight-tracker.png]]
 
 See [[Weight tracker]].
-
 
 [[images/task-manager.png]]
 

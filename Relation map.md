@@ -1,12 +1,28 @@
 Relation map is a type of [[note|Tree concepts#note]] which visualizes notes and their [[relations|Attributes]]. See an example:
 
-[[images/relation-map.png]]
+## Development process demo
 
-## Usage
+This is a basic example how you can create simple diagram using relation maps:
 
-First take a look at the demo:
+[[images/relation-map-dev-process.png]]
 
-[[gifs/relation-map-demo.gif]]
+And this is how you can create it:
+
+[[gifs/relation-map-dev-process-demo.gif]]
+
+We start completely from scratch by first creating new note called "Development process" and changing its type to "Relation map". After that we create new notes one by one and place them by clicking into the map. We also drag [[relations|Attributes]] between notes and name them. That's all!
+
+Items on the map - "Specification", "Development", "Testing" and "Demo" are actually notes which have been created under "Development process" note - you can click on them and write some content. Connections between notes are called "[[relations|Attributes]]".
+
+## Family demo
+
+This is more complicated demo using some advanced concepts. Resulting diagram is here:
+
+[[images/relation-map-family.png]]
+
+This is how you get to it:
+
+[[gifs/relation-map-family-demo.gif]]
 
 There are several steps here:
 

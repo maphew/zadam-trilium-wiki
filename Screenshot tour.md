@@ -14,7 +14,7 @@ This shows [[code note|code notes]] editor.
 
 See [[promoted attributes]]
 
-[[images/relation-map.png]]
+[[images/relation-map-family.png]]
 
 See [[relation map]].
 

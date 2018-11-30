@@ -10,6 +10,8 @@ Complete documentation for this feature is available in [CKEditor documentation]
 
 ## Cut selection to sub-note
 
+**This feature is disabled since 0.24.6 because of issues with editor component**
+
 One of the common situations in Trilium is when you're editing a document and it gets somewhat large so you start splitting it up into subnotes - the process is essentially like this:
 
 * select the desired piece of text and cut it into clipboard

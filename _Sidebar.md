@@ -11,6 +11,7 @@
   * [[Cloning notes]]
   * [[Protected notes]]
   * [[Search]]
+  * [[Hoisting]]
   * [[Backup]]
   * [[Keyboard shortcuts]]
   * [[Themes]]

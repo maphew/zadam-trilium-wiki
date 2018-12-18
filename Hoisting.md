@@ -3,3 +3,5 @@ Hoisting is a standard outliner feature which allows you to focus on (or "zoom i
 [[gifs/hoisting.gif]]
 
 In addition to showing only this subtree, this also narrows both full text search and [["jump to note"|Note navigation#Jump-to-note]] to just notes present in hoisted subtree.
+
+Trilium supports this feature since version 0.26.

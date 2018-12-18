@@ -38,6 +38,13 @@ Click on "Finish setup" button and if everything went fine, you'll see this scre
 
 Once the sync is finished, you'll be automatically redirected to the Trilium application.
 
+## Proxy setup
+
+Two different setups are supported:
+
+* you can explicitly set proxy server to be used in Options / Sync. Only unauthenticated proxy servers are currently supported.
+* if no proxy server is explicitly configured, then Trilium will use system proxy settings 
+
 ## Conflict resolution
 
 You can sometimes encounter a situation where you edit same note in multiple instances before the note changes are synchronized.

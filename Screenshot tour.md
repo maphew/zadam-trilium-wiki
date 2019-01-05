@@ -33,3 +33,11 @@ See [[Task manager]].
 [[images/note-revisions.png]]
 
 See [[Note revisions]].
+
+[[images/mobile-smartphone.png]]
+
+See [[Mobile frontend]].
+
+[[images/mobile-tablet.png]]
+
+See [[Mobile frontend]].

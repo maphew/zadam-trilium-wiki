@@ -6,11 +6,11 @@ Mobile frontend is limited in features compared to full desktop frontend. See be
 
 ### Mobile phone
 
-[[images/mobile-smartphone.png]]
+[[images/mobile-smartphone.png|width=956]]
 
 ### Tablet
 
-[[images/mobile-tablet.png]]
+[[images/mobile-tablet.png|width=420]]
 
 ## Limitations
 

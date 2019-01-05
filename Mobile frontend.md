@@ -2,15 +2,17 @@ Trilium ([[server edition|Server installation]]) has a mobile web frontend which
 
 Mobile frontend is limited in features compared to full desktop frontend. See below for more details on this.
 
+Note that this is not an Android/iOS app, this is just mobile friendly web page served on the [[server edition|Server installation]].
+
 ## Screenshots
 
 ### Mobile phone
 
-[[images/mobile-smartphone.png|width=956]]
+[[images/mobile-smartphone.png]]
 
 ### Tablet
 
-[[images/mobile-tablet.png|width=420]]
+[[images/mobile-tablet.png]]
 
 ## Limitations
 

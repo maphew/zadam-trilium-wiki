@@ -21,6 +21,7 @@
     * [[Packaged server installation]]
     * [[Docker server installation]]
     * [[Manual server installation]]
+    * [[Mobile frontend]]
   * [[TLS configuration]]
   * [[Synchronization]]
 * Advanced usage

@@ -13,7 +13,7 @@ Replace [VERSION] for actual latest version. It's not recommended to use "latest
 ## Run image
 
 ~~~~
-sudo docker run -t -i -p 8080:8080 -v ~/trilium-data:/home/[myuser]/trilium-data zadam/trilium:latest
+sudo docker run -t -i -p 8080:8080 -v ~/trilium-data:/root/trilium-data zadam/trilium:latest
 ~~~~
 
 Command above is mounting volume to the host system so that trilium's data (most importantly [[document]]) is persisted and not cleared after container stops.

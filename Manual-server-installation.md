@@ -16,7 +16,7 @@ If your linux distribution has only outdated version of node.js, you can take a 
 There are some dependencies required mainly to compile image support. You can see command for Debian and its derivatives (like Ubuntu) below:
 
 ~~~~
-sudo apt install libpng16-16 libpng-dev pkg-config autoconf libtool build-tools
+sudo apt install libpng16-16 libpng-dev pkg-config autoconf libtool build-tools nasm
 ~~~~
 
 ## Installation 

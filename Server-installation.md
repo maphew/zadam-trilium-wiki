@@ -21,3 +21,7 @@ If this is not desired, you may change it via `TRILIUM_DATA_DIR` environment var
 ```bash
 export TRILIUM_DATA_DIR=/home/myuser/data/my-trilium-data
 ```
+
+## Reverse proxy setup
+
+# nginx

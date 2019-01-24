@@ -15,3 +15,10 @@ To do this, just create a [[code note|code notes]] with CSS type, put your custo
 Once you made your changes, you can reload the Trilium frontend by pressing CTRL-R after which the changes will take effect.
 
 [[images/app-css.png]]
+
+## User provided themes
+
+Following are themes developed by Trilium users:
+
+* https://github.com/Abourass/TriliumThemes
+* https://github.com/ZMonk91/Material-Dark-Trilium

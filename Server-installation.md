@@ -27,7 +27,7 @@ export TRILIUM_DATA_DIR=/home/myuser/data/my-trilium-data
 ### nginx
 
 ```
-location /trilium/{
+location /trilium/ {
     proxy_pass http://127.0.0.1:8080/;
     proxy_http_version 1.1;
     proxy_set_header Upgrade $http_upgrade;

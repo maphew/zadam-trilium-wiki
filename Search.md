@@ -25,6 +25,8 @@ Following examples demonstrates syntax:
 
 Trilium provides a way to save common search as a note in the note tree. Search results will then appear as subnotes of this "saved search" note. You can see how this works in action:
 
+[[gifs/saved-search.gif]]
+
 ## Auto trigger search from URL
 
 Opening Trilium like in the example below will open search pane and automatically trigger search for "abc":
@@ -32,5 +34,3 @@ Opening Trilium like in the example below will open search pane and automaticall
 ```
 http://localhost:8080/#search=abc
 ```
-
-[[gifs/saved-search.gif]]

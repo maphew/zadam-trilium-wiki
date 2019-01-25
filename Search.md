@@ -27,7 +27,7 @@ Trilium provides a way to save common search as a note in the note tree. Search 
 
 ## Auto trigger search from URL
 
-Opening Trilium like in the example below will open search pane and automatically trigger search for "abc".
+Opening Trilium like in the example below will open search pane and automatically trigger search for "abc":
 
 ```
 http://localhost:8080/#search=abc

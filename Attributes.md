@@ -36,6 +36,7 @@ Following labels are used for advanced configuration:
 * `sorted` - keeps  child notes sorted by title alphabetically
 * `hidePromotedAttributes`
 * `hideChildrenOverview`
+* `readOnly` - editor is in read only mode. Works only for text notes. See some use cases [here](https://github.com/zadam/trilium/issues/371).
 
 ## Relations
 Relation is a kind of link between two notes.

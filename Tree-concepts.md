@@ -11,7 +11,7 @@ Tree structure of notes can resemble file system - but compared to that notes in
 ### Note types
 
 * text note - this is default note type which allows you to put rich text, images etc.
-* [[code note]] - some kind of formal code, typically programming language (e.g. JavaScript) or data structure (e.g. XML)
+* [[Code notes|code note]] - some kind of formal code, typically programming language (e.g. JavaScript) or data structure (e.g. XML)
 * [[images|image note]] - represents single image
 * file note - represents uploaded file (e.g. docx MS Word document).
 * render HTML note - this works as an output screen of attached [[scripts]]

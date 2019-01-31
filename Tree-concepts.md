@@ -12,7 +12,7 @@ Tree structure of notes can resemble file system - but compared to that notes in
 
 * text note - this is default note type which allows you to put rich text, images etc.
 * [[code note|Code notes]] - some kind of formal code, typically programming language (e.g. JavaScript) or data structure (e.g. XML)
-* [[images]] - represents single image
+* [image note](https://github.com/zadam/trilium/wiki/Images) - represents single image
 * file note - represents uploaded file (e.g. docx MS Word document).
 * render HTML note - this works as an output screen of attached [[scripts]]
 * saved search note - contains saved search query and dynamically displays result of the search as its sub-notes

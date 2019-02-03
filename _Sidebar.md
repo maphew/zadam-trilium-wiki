@@ -33,6 +33,7 @@
   * [[Code notes]]
     * [[Scripts]]
     * [[Script API]]
+    * [[Custom request handler]]
     * [[Events]]
   * [[Advanced showcases]]
     * [[Day notes]]

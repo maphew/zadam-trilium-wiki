@@ -65,7 +65,9 @@ If you make a change to your theme, you should reload the frontend by pressing `
 
 CSS themes can be exported in .tar archive and shared to other users. Importing CSS themes from untrusted sources is not advised since the archive can also contain executable [[scripts]] which could be potentially harmful.
 
-You can find an example user theme *Steel Blue* in the [[demo document|Document#demo-document]].
+You can find an example user theme *Steel Blue* in the [[demo document|Document#demo-document]]:
+
+[[images/steel-blue.png]]
 
 ## Custom CSS
 

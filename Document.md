@@ -25,3 +25,4 @@ When you run Trilium for the first time, it will generate a demo document for yo
 * [[Day notes]]
 * [[Weight tracker]]
 * [[Task manager]]
+* [[Custom CSS theme|Themes#custom-css-theme]] *Steel Blue*

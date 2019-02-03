@@ -36,3 +36,10 @@ location /trilium/ {
     proxy_cache_bypass $http_upgrade;
 }
 ```
+
+It's also advised to add following to `server {}` block to not limit size of payloads:
+
+```
+# set to 0 for unlimited. Default is 1M.
+client_max_body_size 0;
+```

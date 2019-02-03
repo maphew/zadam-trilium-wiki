@@ -57,9 +57,9 @@ body.theme-my-theme #note-detail-text {
 
 We define a custom font (provided by [[custom request handler]]) and then just define a bunch of CSS variables. These variables are then used in Trilium's CSS stylesheets. You can also use standard CSS selectors for further customization (open dev tools using `CTRL-SHIFT-I` to help with that), but keep in mind that HTML structure can change in future releases which might break your selectors. For that reason it is better to restrict yourself to use CSS variables as much as possible.
 
-All selectors should be prefixed with `body.theme-my-theme` so that the stylesheet is applied only when your theme is selected. This class name is automatically created from note's name - e.g. "My theme" will transform into `theme-my-theme` (`theme-` is a common prefix). If you want to manually specify the class name you can create `appThemeClass` label and put the desired class name into value (`theme-` prefix is added here as well).
+All selectors should be prefixed with `body.theme-my-theme` so that the stylesheet is applied only when your theme is selected. This class name is automatically created from note's name - e.g. "My theme" will transform into `theme-my-theme` (`theme-` is a common prefix). If you want to manually specify the class name you set it as a value for `appTheme` (`theme-` prefix is prepended to final class as well).
 
-To activate your custom theme, go to Options -> Appearance. In the selectbox you should see all notes (themes) labeled with `appTheme`.
+To activate your custom theme, go to Options -> Appearance. In the select box you should see all notes (themes) labeled with `appTheme`.
 
 If you make a change to your theme, you should reload the frontend by pressing `CTRL-R` so the changes will take effect.
 

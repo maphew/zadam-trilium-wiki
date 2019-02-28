@@ -16,7 +16,7 @@ port=8080
 https=true
 # path to certificate (run "bash bin/generate-cert.sh" to generate self-signed certificate). Relevant only if https=true
 certPath=/[username]/.acme.sh/[hostname]/fullchain.cer
-keyPath=/[username]/.acme.sh/[hostname]/0o.cz.key
+keyPath=/[username]/.acme.sh/[hostname]/example.com.key
 ``` 
 
 Above is only example of how this is setup on my environment when I generated the certificate using Let's encrypt acme utility. Your paths may be completely different.

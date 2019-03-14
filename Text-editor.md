@@ -8,6 +8,8 @@ CKEditor supports markdown-like editing experience. It recognizes syntax and aut
 
 Complete documentation for this feature is available in [CKEditor documentation](https://ckeditor.com/docs/ckeditor5/latest/features/autoformat.html).
 
+If the autoformat is not desirable for what you just wrote, you can press `CTRL-Z` which will un-autoformat the text to its original form.
+
 ## Cut selection to sub-note
 
 **This feature is disabled since 0.24.6 because of issues with editor component**

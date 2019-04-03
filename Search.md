@@ -63,15 +63,33 @@ What if you want to find notes created in 2015? You can use "starts with" operat
 
 ### Smart filters
 
-Trilium supports few special values
+Trilium supports few special values which will might help you with some search queries:
 
-* `@dateCreated>=MONTH-1</code> - notes created in the last month</li>
+* `NOW` means this instant to second precision, e.g. `2019-04-01 10:12:54`
+  * `NOW-3600` means 1 hour ago
+* `TODAY` means today with the day precision, e.g. `2019-04-01`
+  * `TODAY-1` means yesterday, `TODAY+1` means tomorrow
+* `MONTH` means this month, e.g. `2019-04`
+  * `MONTH-1` means last month - i.e. `2019-03`
+* `YEAR` means current year, e.g. `2019`
+  * `YEAR-1` means last year - 2018
+
+Using this you can create queries like:
+
+* `@dateModified>=NOW-3600` - show me notes changed in the last hour
+* `@dateCreated=*TODAY-1` - show me notes created during whole yesterday
 
 ## Saved search
 
 Trilium provides a way to save common search as a note in the note tree. Search results will then appear as subnotes of this "saved search" note. You can see how this works in action:
 
 [[gifs/saved-search.gif]]
+
+### Saved search with script relation
+
+If saved search string starts with `=`, then the following string is taken as a relation name and the target script is executed to get the list of note results.
+
+So let's say the search string is `=handler`, then Trilium tries to find this saved note's relation with name "handler". Relation is expected to point to [[script|scripts]] which is then executed - script is expected to return a list of notes which should be presented as search results. This option exists for use cases where normal attribute/fulltext search doesn't cover all needs.
 
 ## Auto trigger search from URL
 

@@ -1,4 +1,4 @@
-** Text below describes features as of Trilium 0.31 **
+**Text below describes features as of Trilium 0.31**
 
 Trilium supports searching in notes. There are several ways to search notes:
 
@@ -35,10 +35,35 @@ Here you query by standard [[attributes]]:
   * `@rock and @pop` is an alternative syntax for the same thing
 * `@rock or @pop` - only one of the labels must be present
   * `and` has a precedence over `or` in case both operators are used in a search string
-* `@frontMan=*John` - matches notes where `frontMan` label starts with "John". There's also `!=*` for "doesn't start with", `*=` for "ends with" and `!*=` for "does not end with"
+* `@frontMan=*John` - matches notes where `frontMan` label starts with "John". There's also `!=*` for "doesn't start with", `*=` for "ends with" and `!*=` for "does not end with", `*=*` for "contains" and `!*=*` for "does not contain"
 
+### Virtual attributes
 
+It's also possible to query by so called "virtual attributes":
 
+* dateCreated - local date of note's creation date in YYYY-MM-DD HH:mm:ss.sss+OOPP where OOPP are hours and minutes of offset compared to UTC (e.g. "+0100" for Central European Time)
+* dateModified - local date of last note's modification in YYYY-MM-DD HH:mm:ss.sss+OOPP
+* utcDateCreated - UTC date of note's creation date in YYYY-MM-DD HH:mm:ss.sssZ
+* utcDateModified - UTC date of last note's modification date in YYYY-MM-DD HH:mm:ss.sssZ
+* noteId
+* isProtected - 1 if the note is protected, 0 otherwise
+* title - useful if you want to search title separately
+* content
+* type - `text`, `code`, `image`, `file`, `search` or `relation-map`
+* mime - e.g. `text/html` for text note
+* text - fulltext attribute of both title and content together
+
+### Date comparisons
+
+Attribute values are untyped strings which means that although you can save into it any kind of value like number or date, Trilium doesn't really know what kind of value it is and can't really treat it properly.
+
+Fortunately if we stick to storing dates in YYYY-MM-DD format, we can still do quite a lot since such dates can be correctly compared as strings - e.g. `@dateCreated>=2015-01-01` will return notes which were created since 2015 even though Trilium is doing just string comparison.
+
+What if you want to find notes created in 2015? You can use "starts with" operator (`=*`) like this: `@dateCreated=*2019` - this will match notes with label starting with string "2019" which all notes created in that year will satisfy.
+
+### Smart filters
+
+Trilium supports few special values
 
 * `@dateCreated>=MONTH-1</code> - notes created in the last month</li>
 

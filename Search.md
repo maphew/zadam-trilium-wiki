@@ -41,17 +41,17 @@ Here you query by standard [[attributes]]:
 
 It's also possible to query by so called "virtual attributes":
 
-* dateCreated - local date of note's creation date in YYYY-MM-DD HH:mm:ss.sss+OOPP where OOPP are hours and minutes of offset compared to UTC (e.g. "+0100" for Central European Time)
-* dateModified - local date of last note's modification in YYYY-MM-DD HH:mm:ss.sss+OOPP
-* utcDateCreated - UTC date of note's creation date in YYYY-MM-DD HH:mm:ss.sssZ
-* utcDateModified - UTC date of last note's modification date in YYYY-MM-DD HH:mm:ss.sssZ
-* noteId
-* isProtected - 1 if the note is protected, 0 otherwise
-* title - useful if you want to search title separately
-* content
-* type - `text`, `code`, `image`, `file`, `search` or `relation-map`
-* mime - e.g. `text/html` for text note
-* text - fulltext attribute of both title and content together
+* `dateCreated` - local date of note's creation date in YYYY-MM-DD HH:mm:ss.sss+OOPP where OOPP are hours and minutes of offset compared to UTC (e.g. "+0100" for Central European Time)
+* `dateModified` - local date of last note's modification in YYYY-MM-DD HH:mm:ss.sss+OOPP
+* `utcDateCreated` - UTC date of note's creation date in YYYY-MM-DD HH:mm:ss.sssZ
+* `utcDateModified` - UTC date of last note's modification date in YYYY-MM-DD HH:mm:ss.sssZ
+* `noteId`
+* `isProtected` - 1 if the note is protected, 0 otherwise
+* `title` - useful if you want to search title separately
+* `content`
+* `type` - `text`, `code`, `image`, `file`, `search` or `relation-map`
+* `mime` - e.g. `text/html` for text note
+* `text` - fulltext attribute of both title and content together
 
 ### Date comparisons
 

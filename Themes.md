@@ -79,6 +79,12 @@ Once you made your changes, you can reload the Trilium frontend by pressing CTRL
 
 [[images/app-css.png]]
 
+## Styling the tree
+
+If you want to give some specific notes special styling in the tree, you can give them `cssClass` [[label|attributes]] which is then put into the node representing given note in the tree.
+
+You can also create specific styling for given note types (and mime types). For example, file note containing PNG image will have these classes in the tree: `type-image mime-image-png`.
+
 ## User provided themes
 
 Following are themes developed by Trilium users:

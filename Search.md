@@ -13,11 +13,11 @@ You can activate search by clicking on magnifier icon on the left or pressing `C
 
 ## Fulltext
 
-Fulltext search is triggered whenever search string doesn't start with `@` (used in attribute search) or `=` (saved search with script). You can enter any text, but only alpha numeric words are being searched.
+Fulltext search is triggered whenever search string doesn't start with `@` (used in attribute search) or `=` (saved search with script). 
 
 Fulltext searches on both title and content of undeleted, unprotected text and code notes which are not archived.
 
-Fulltext is implemented using Sqlite's [FTS5](https://www.sqlite.org/fts5.html). This provides some advanced functionality, e.g. "NEAR(heavy metal)" will match notes only if a word "heavy" is close to "metal". But since this syntax is quite specific and easy to get it wrong, it is accessible only via `@text` virtual attribute. Such query would then look like this: `@text="NEAR(heavy metal)"`
+Input string is tokenized by whitespace separators and each individual token (word) must be present in the title or content. If you don't want this automatic tokenization, you can surround your search with double quotes, e.g. `"hello world"` will search for exact match.
 
 ## Attribute query syntax
 

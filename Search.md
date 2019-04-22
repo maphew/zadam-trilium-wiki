@@ -53,6 +53,12 @@ It's also possible to query by so called "virtual attributes":
 * `mime` - e.g. `text/html` for text note
 * `text` - fulltext attribute of both title and content together
 
+### Order and limit
+
+It's possible to order the results by one or more attribute, e.g. `@orderBy=year,-genre` will order notes by `year` label in ascending order and then by `genre` label in descending order (because of `-` sign).
+
+You can also limit the number of results using e.g. `@limit=1` will return only the first result. If there's no `limit`, then all notes are returned.
+
 ### Date comparisons
 
 Attribute values are untyped strings which means that although you can save into it any kind of value like number or date, Trilium doesn't really know what kind of value it is and can't really treat it properly.

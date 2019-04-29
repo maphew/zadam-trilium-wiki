@@ -52,5 +52,6 @@ These are hooked in Electron to be similar to native browser keyboard shortcuts.
 
 * `ALT+O` - show SQL console (use only if you know what you're doing)
 * `ALT+M` - distraction-free mode - display only note editor, everything else is hidden
+* `F11` - toggle full screen
 * `CTRL+S` - toggle [[search]] form in tree pane
 * `ALT+A` - show note [[attributes]] dialog

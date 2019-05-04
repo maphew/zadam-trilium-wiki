@@ -43,3 +43,7 @@ It's also advised to add following to `server {}` block to not limit size of pay
 # set to 0 for unlimited. Default is 1M.
 client_max_body_size 0;
 ```
+
+### Apache
+
+See [[Apache proxy setup]].

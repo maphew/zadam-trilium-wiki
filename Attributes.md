@@ -28,10 +28,10 @@ Following labels are used for advanced configuration:
 * `archived` - notes with this label won't be visible in autocomplete-based search (jump to, add link). Applies also to all its sub-notes.
 * `excludeFromExport` - notes (with their sub-tree) won't be included in any note export
 * `run` - defines on which events script should run. Possible values are:
- * `frontendStartup` - when Trilium frontend starts up (or is refreshed).
- * `backendStartup` - when Trilium backend starts up
- * `hourly` - run once an hour
- * `daily` - run once a day
+   * `frontendStartup` - when Trilium frontend starts up (or is refreshed).
+   * `backendStartup` - when Trilium backend starts up
+   * `hourly` - run once an hour
+   * `daily` - run once a day
 * `disableInclusion` - scripts with this label won't be included into parent script execution.
 * `sorted` - keeps  child notes sorted by title alphabetically
 * `hidePromotedAttributes`

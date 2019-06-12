@@ -26,3 +26,7 @@ Cloning can be done in Add Link dialog as well, but it is described on [[separat
 ## Opening links
 
 Since Trilium doesn't have separate view and edit modes (it's always edit mode), clicking on link doesn't open it. To open the link (both internal and external), just double click on it. External links will be opened in new tab.
+
+## Link map
+
+Trilium provides a visualisation of incoming and outgoing links for a particular note. See [[link map]] for details.

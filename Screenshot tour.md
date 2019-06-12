@@ -18,6 +18,10 @@ See [[promoted attributes]]
 
 See [[relation map]].
 
+[[images/link-map.png]]
+
+See [[link map]].
+
 [[images/day-notes.png]]
 
 See [[Day notes]].

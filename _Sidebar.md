@@ -30,6 +30,7 @@
     * [[Promoted attributes]]
     * [[Template]]
   * [[Relation map]]
+  * [[Link map]]
   * [[Code notes]]
     * [[Scripts]]
     * [[Script API]]

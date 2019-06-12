@@ -7,7 +7,7 @@ First thing to do is to get a TLS certificate. You have two options:
 
 ## Modifying config.ini
 
-Now that you have your certificate, we need to modify ~/trilium-data/config.ini so that Trilium will use it:
+Now that you have your certificate, we need to modify `config.ini` in the [[data directory]] so that Trilium will use it:
 
 ```
 [Network]

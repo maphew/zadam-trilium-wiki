@@ -10,11 +10,11 @@ Server installation has both desktop and [[mobile frontend]].
 
 ## Configuration
 
-For server installations, you might want to configure e.g. port or [[TLS|TLS configuration]]. This is done in the Trilium config file, by default it's in ~/trilium-data/config.ini (where ~ is your home directory).
+For server installations, you might want to configure e.g. port or [[TLS|TLS configuration]]. This is done in the Trilium config file, by default it's in `config.ini` in the [[data directory]]
 
 ### Config location
 
-`config.ini`, [[document]] and some other important Trilium data files are by default persisted in `trilium-data` directory placed in your home directory.
+`config.ini`, [[document]] and some other important Trilium data files are by default persisted in the [[data directory]].
 
 If this is not desired, you may change it via `TRILIUM_DATA_DIR` environment variable to some other location, e.g.:
 

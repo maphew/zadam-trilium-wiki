@@ -30,7 +30,7 @@ All JavaScript errors should be also logged to backend logs, but it's possible s
 
 ### Backend logs
 
-Trilium logs important events and errors into `trilium-data/logs` directory. These logs are very helpful in debugging problems so please attach the latest ones with your bug report. You don't have to worry, they don't contain any sensitive information about your notes.
+Trilium logs important events and errors into `logs` directory (inside [[data directory]]). These logs are very helpful in debugging problems so please attach the latest ones with your bug report. You don't have to worry, they don't contain any sensitive information about your notes.
 
 ### Anonymized database
 
@@ -38,7 +38,7 @@ In some cases it's necessary to see the database structure to be able to debug t
 
 For this Trilium supports anonymization of the database - you can trigger this in Settings -> Advanced tab.
 
-This will create a copy of your document and remove all sensitive data (currently note titles, contents, revisions, history and some of the options) while leaving all structure and metadata (e.g. date of last change). After this is done, database is [VACUUMed](https://sqlite.org/lang_vacuum.html) to make sure there's no stale sensitive data in the document file. Resulting file is stored in `trilium-data/anonymized` directory. You can safely attach it with your bug report.
+This will create a copy of your document and remove all sensitive data (currently note titles, contents, revisions, history and some of the options) while leaving all structure and metadata (e.g. date of last change). After this is done, database is [VACUUMed](https://sqlite.org/lang_vacuum.html) to make sure there's no stale sensitive data in the document file. Resulting file is stored in `anonymized` directory (placed in the [[data directory]]). You can safely attach it with your bug report.
 
 Note that [[attributes]] are not cleared because they can contain important metadata for debugging.
 

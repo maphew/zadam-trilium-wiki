@@ -13,6 +13,17 @@ This is supposed to be a complete list of keyboard shortcuts. Note that some of 
 
 See demo of some of these features in [[note navigation|Note navigation]].
 
+## Tabs
+
+* `CTRL+click` - (or middle mouse click) on note link opens note in a new tab
+
+Only in desktop (electron build):
+
+* `CTRL+T` - opens empty tab
+* `CTRL+W` - closes active tab
+* `CTRL+Tab` - activates next tab
+* `CTRL+Shift+Tab` - activates previous tab
+
 ## Creating notes
 
 * `CTRL+O` - creates new note after the current note
@@ -26,7 +37,7 @@ See demo of some of these features in [[note navigation|Note navigation]].
 * `CTRL+RIGHT` - move note down in the note tree
 * `SHIFT+UP`, `SHIFT+DOWN` - multi-select note above/below
 * `CTRL+A` - select all notes in the current level
-* `CTRL+click` - multi select note which you clicked on 
+* `SHIFT+click` - multi select note which you clicked on 
 * `CTRL+C` - copies current note (or current selection) into clipboard (used for [[cloning|Cloning notes]])
 * `CTRL+X` - cuts current (or current selection) note into clipboard (used for moving notes)
 * `CTRL+V` - pastes note(s) as sub-note into current note (which is either move or clone depending on whether it was copied or cut into clipboard)

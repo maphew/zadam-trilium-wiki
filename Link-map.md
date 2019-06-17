@@ -1,6 +1,6 @@
 Link map is a visualization of links and relations incoming to and outgoing from a particular note.
 
-This provides an insight into a structure ("web") of notes.
+This provides an insight into a structure ("web") of notes. You can open link map by clicking on "Note actions -> Link map".
 
 [[images/link-map.png]]
 

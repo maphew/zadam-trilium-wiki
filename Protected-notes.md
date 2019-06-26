@@ -7,6 +7,7 @@ For such sensitive data Trilium can protect these notes which essentially means:
 * time-limited access to protected notes
     * To first access protected notes you need to enter your password which will decrypt the note and allow you to read / write them. But after certain time period (by default 10 minutes) this decrypted note is unloaded from memory and to read it again you need to enter your password again.
     * This protects against a possible scenario where you leave your computer unlocked for a long time and somebody can access your Trilium application.
+* protected notes protect only confidentiality and partially integrity of the notes. User outside of the protected sessions can still e.g. delete the protected notes or move them to a new location.
     
 ## How to use protected notes
 

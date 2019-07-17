@@ -10,9 +10,9 @@ You can manipulate the tree simply by dragging and dropping notes as you can see
 
 Trilium provides fast keyboard based manipulation with following [[shortcuts|keyboard shortcuts]]:
 
-* `SHIFT-UP` and `SHIFT-DOWN` - move note up or down in the order
-* `SHIFT-LEFT` - move note upwards in the hierarchy by changing a note's parent to note's parent's parent.
-* `SHIFT-RIGHT` - move note downwards in the hierarchy by setting parent to the note currently above (this is a bit hard to explain - it's best to see a demo or try it for yourself)
+* `CTRL-UP` and `CTRL-DOWN` - move note up or down in the order
+* `CTRL-LEFT` - move note upwards in the hierarchy by changing a note's parent to note's parent's parent.
+* `CTRL-RIGHT` - move note downwards in the hierarchy by setting parent to the note currently above (this is a bit hard to explain - it's best to see a demo or try it for yourself)
 * `LEFT` and `RIGHT` expands and collapses a sub-tree
 
 [[gifs/move-note-with-keyboard.gif]]

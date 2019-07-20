@@ -24,6 +24,7 @@
     * [[Mobile frontend]]
   * [[TLS configuration]]
   * [[Synchronization]]
+  * [[Web clipper]]
 * Advanced usage
   * [[Attributes]]
     * [[Attribute inheritance]]

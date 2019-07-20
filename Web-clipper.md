@@ -9,9 +9,8 @@ Extension works with Trilium Notes 0.34 and newer.
 
 Extension is available from:
 
-* [Mozilla addons site](https://addons.mozilla.org/en-US/developers/addon/54860da6dd0f4cddbde2) - recommended when using Firefox
+* [Project release page](https://github.com/zadam/trilium-web-clipper/releases) - for Firefox (.xpi) and for Chromium based browsers (but not Chrome itself)
 * [Chrome web store](http://blabla) - recommended for Chrome users
-* [Project release page](https://github.com/zadam/trilium-web-clipper/releases) - use when you use alternative chromium browser
 
 # Configuration
 

@@ -3,6 +3,8 @@ Trilium Web Clipper is a web browser extension which allows user to clip text, s
 
 Project is hosted [here](https://github.com/zadam/trilium-web-clipper). Firefox and Chrome are supported browsers, but the chrome build should work on other chromium based browsers as well.
 
+Extension works with Trilium Notes 0.34 and newer.
+
 # Get it
 
 Extension is available from:

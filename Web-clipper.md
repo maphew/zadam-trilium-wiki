@@ -5,6 +5,16 @@ Project is hosted [here](https://github.com/zadam/trilium-web-clipper). Firefox 
 
 Extension works with Trilium Notes 0.34 and newer.
 
+# Functionality
+
+* select text and clip it with context menu (right click)
+* click on an image or link and save it through context menu
+* save whole page from the popup or context menu
+* save screenshot (with crop tool) from either popup or context menu
+* create short text note from popup
+
+Trilium will save these clippings as a new note under current [[day note|day notes]]. If there's multiple clippings from the same page (and on the same day), then they will be added to the same note.
+
 # Get it
 
 Extension is available from:

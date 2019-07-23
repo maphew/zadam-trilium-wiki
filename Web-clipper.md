@@ -17,16 +17,10 @@ Trilium will save these clippings as a new note under current [[day note|day not
 
 # Get it
 
-Extension is available from the [Project release page](https://github.com/zadam/trilium-web-clipper/releases) - for Firefox (.xpi) and for Chromium based browsers (.zip).
+Extension is available from: 
 
-## Install on Chrome
-
-Chromium build will be available on Chrome Web Store, but in the mean time you can follow this guide to install it:
-
-* Download latest chrome build (.zip) of the web clipper from the [release page](https://github.com/zadam/trilium-web-clipper/releases) and unzip it
-* Open your Google Chrome web browser.
-* Go to chrome://extensions/ and check the box for Developer mode in the top right.
-* Click on “Load unpacked” button, and go to the location of this content of the unpacked extension from above. And click on the OK button to install that Chrome extension.
+* [Project release page](https://github.com/zadam/trilium-web-clipper/releases) - .xpi for Firefox and .zip for Chromium based browsers.
+* [Chrome Web Store](https://chrome.google.com/webstore/detail/dfhgmnfclbebfobmblelddiejjcijbjm/publish-accepted?authuser=0&hl=en)
 
 # Configuration
 

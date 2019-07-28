@@ -20,7 +20,7 @@ Trilium will save these clippings as a new note under current [[day note|day not
 Extension is available from: 
 
 * [Project release page](https://github.com/zadam/trilium-web-clipper/releases) - .xpi for Firefox and .zip for Chromium based browsers.
-* [Chrome Web Store](https://chrome.google.com/webstore/detail/dfhgmnfclbebfobmblelddiejjcijbjm/publish-accepted?authuser=0&hl=en)
+* [Chrome Web Store](https://chrome.google.com/webstore/detail/trilium-web-clipper/dfhgmnfclbebfobmblelddiejjcijbjm?hl=en&authuser=0)
 
 # Configuration
 

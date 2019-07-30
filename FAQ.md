@@ -28,3 +28,11 @@ More detailed answer:
 * Trilium allows storing note [[attributes]] which could be represented in extended user attributes but their support differs greatly among different filesystems / operating systems
 * Trilium makes links / relations between different notes which can be quickly retrieved / navigated (e.g. for [[link map]]). There's no such support in file systems which means these would have to be stored in some kind of side car files (mini-databases).
 * Filesystems are generally not transactional. While this is not completely required for a note taking application, having transactions make it way easier to keep notes and their metadata in predictable and consistent state.
+
+# Multi user support
+
+Common request is to allow multiple users collaborate, share notes etc. So far I'm resisting this because of these reasons:
+
+* it's a huge feature, or rather a Pandora's box of collaboration features like user management, permissions, conflict resolution, real-time editing of a note by multiple people etc. This would be a huge amount of work.
+* given its size it would probably pivot the attention away from my main focus which is a personal note taking
+* the assumption that only single person has access to the app simplifies many things, or just outright makes them possible. In multi-user app, our [[scripting|scripts]] support would be a XSS security hole, while with the single user assumption it's an endless customizability tool. 

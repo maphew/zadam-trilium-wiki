@@ -11,26 +11,15 @@ This can be useful for few things:
 
 ## Extra languages
 
-Trilium supports syntax highlighting for many languages, but by default displays only some of them (to reduce number of items). If you want to add some unlisted supported language, you can add them by creating new frontend JavaScript code note and using [[Script API]]:
+Trilium supports syntax highlighting for many languages, but by default displays only some of them (to reduce number of items). To add some extra languages create a JSON code note with label `codeMimeTypes`:
 
-```javascript
-const codeMimeTypes = api.getDefaultCodeMimeTypes();
-codeMimeTypes.push({
-    mime: "text/x-ocaml",
-    title: "OCaml"
-});
-
-codeMimeTypes.push({
-    mime: "text/x-rsrc",
-    title: "R"
-});
-
-// sort alphabetically
-codeMimeTypes.sort((a, b) => a.title > b.title ? 1 : -1);
-
-api.setCodeMimeTypes(codeMimeTypes);
+```json
+[
+  { "mime": "text/x-ocaml", "title": "OCaml" },
+  { "mime": "text/x-rsrc", "title": "R" }
+]
 ```
 
 To get correct mime type for your language see [list of language modes](https://codemirror.net/mode/) for CodeMirror (code editor component used in Trilium).
 
-Add [[label|attributes]] `run` with value `frontendStartup` so that desired languages are added to the list on every startup. For changes to take effect, click on "run" button or reload Trilium's frontend with `CTRL-R`.
+Note that this functionality is provided since Trilium v0.35. For changes to take effect, click on "run" button or reload Trilium's frontend with `CTRL-R`.

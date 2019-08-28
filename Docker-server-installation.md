@@ -8,7 +8,7 @@ Docker images are published on docker hub: https://hub.docker.com/r/zadam/triliu
 docker pull zadam/trilium:[VERSION]
 ~~~~
 
-Replace [VERSION] for actual latest version or use "series" tag - e.g. `0.31-latest`.
+Replace [VERSION] for actual latest version or use "series" tag - e.g. `0.34-latest`.
 
 **It's not recommended to use "latest" tag since it may upgrade your Trilium instance to new minor version which may potentially break your sync setup or cause other issues.**
 

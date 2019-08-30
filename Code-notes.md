@@ -11,15 +11,4 @@ This can be useful for few things:
 
 ## Extra languages
 
-Trilium supports syntax highlighting for many languages, but by default displays only some of them (to reduce number of items). To add some extra languages create a JSON code note with label `codeMimeTypes`:
-
-```json
-[
-  { "mime": "text/x-ocaml", "title": "OCaml" },
-  { "mime": "text/x-rsrc", "title": "R" }
-]
-```
-
-To get correct mime type for your language see [list of language modes](https://codemirror.net/mode/) for CodeMirror (code editor component used in Trilium).
-
-Note that this functionality is provided since Trilium v0.35. For changes to take effect, click on "run" button or reload Trilium's frontend with `CTRL-R`.
+Trilium supports syntax highlighting for many languages, but by default displays only some of them (to reduce number of items). You can add extra languages in Options -> Code notes (available since Trilium 0.35).

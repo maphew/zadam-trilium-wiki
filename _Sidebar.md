@@ -41,5 +41,6 @@
     * [[Day notes]]
     * [[Weight Tracker]]
     * [[Task Manager]]
+  * [[Archived notes]]
 * [[FAQ]]
 * [[Troubleshooting]]

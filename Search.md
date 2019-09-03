@@ -52,6 +52,7 @@ It's also possible to query by so called "virtual attributes":
 * `type` - `text`, `code`, `image`, `file`, `search` or `relation-map`
 * `mime` - e.g. `text/html` for text note
 * `text` - fulltext attribute of both title and content together
+* `isArchived` - filters only for archived notes, `@!archived` then filters only for non-archived notes. Note that this filter does not work in OR relation, it is always AND.
 
 ### Order and limit
 

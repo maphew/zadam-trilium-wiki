@@ -15,7 +15,7 @@ You can activate search by clicking on magnifier icon on the left or pressing `C
 
 Fulltext search is triggered whenever search string doesn't start with `@` (used in attribute search) or `=` (saved search with script). 
 
-Fulltext searches on both title and content of undeleted, unprotected text and code notes which are not archived.
+Fulltext searches on both title and content of undeleted, unprotected text and code notes which are not [[archived|archived notes]].
 
 Input string is tokenized by whitespace separators and each individual token (word) must be present in the title or content. If you don't want this automatic tokenization, you can surround your search with double quotes, e.g. `"hello world"` will search for exact match.
 
@@ -52,7 +52,7 @@ It's also possible to query by so called "virtual attributes":
 * `type` - `text`, `code`, `image`, `file`, `search` or `relation-map`
 * `mime` - e.g. `text/html` for text note
 * `text` - fulltext attribute of both title and content together
-* `isArchived` - filters only for archived notes, `@!archived` then filters only for non-archived notes. Note that this filter does not work in OR relation, it is always AND.
+* `isArchived` - filters only for [[archived notes]], `@!archived` then filters only for non-archived notes. Note that this filter does not work in OR relation, it is always AND.
 
 ### Order and limit
 

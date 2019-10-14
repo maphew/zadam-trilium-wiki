@@ -33,6 +33,7 @@
     * [[Template]]
   * [[Relation map]]
   * [[Link map]]
+  * [[Book note]]
   * [[Code notes]]
     * [[Scripts]]
     * [[Script API]]

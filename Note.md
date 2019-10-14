@@ -13,6 +13,7 @@ Tree structure of notes can resemble file system - but compared to that notes in
 * render HTML note - this works as an output screen of attached [[scripts]]
 * saved search note - contains saved search query and dynamically displays result of the search as its sub-notes
 * [[relation map]] note - visualizes notes and their relations
+* [[book note]] - displays its children notes, useful for reading many short notes
 
 Remember there's no "folder" note type. Any note can be folder or "leaf" note.
 

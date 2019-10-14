@@ -1,6 +1,7 @@
 * [[Screenshot tour]]
 * Basic concepts
   * [[Document]]
+  * [[Note]]
   * [[Tree concepts]]
   * [[Text editor]]
   * [[Links]]

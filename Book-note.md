@@ -8,6 +8,6 @@ This note type can be zoomed out like this:
 
 [[images/book-note-pictures.png]]
 
-To zoom-in and zoom-out you can use buttons or you can set [[label]] `bookZoomLevel` to value between 1 and 6 - which signifies number of columns (1 means each note takes full width of the right pane).
+To zoom-in and zoom-out you can use buttons or you can set [[attributes|label]] `bookZoomLevel` to value between 1 and 6 - which signifies number of columns (1 means each note takes full width of the right pane).
 
 Note that book note is available since Trilium 0.36

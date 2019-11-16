@@ -48,9 +48,11 @@ body.theme-my-theme {
     --active-item-background-color: #4877B1;
     --menu-text-color: #AFB8C6;
     --menu-background-color: #383C4A;
+    --tooltip-background-color: #383C4A;
+    --link-color: lightskyblue;
 }
 
-body.theme-my-theme #note-detail-text {
+body.theme-my-theme .note-detail-text {
     font-size: 120%;
 }
 ```
@@ -82,6 +84,10 @@ Once you made your changes, you can reload the Trilium frontend by pressing CTRL
 ## Styling the tree
 
 If you want to give some specific notes special styling in the tree, you can give them `cssClass` [[label|attributes]] which is then put into the node representing given note in the tree.
+
+There's also an `iconClass` using which you can define custom icons for notes in the tree - you can either use supplied ones from [boxicons](https://boxicons.com/) (e.g. `bx bx-home`) or you can define your own CSS classes.
+
+`iconClass` and `cssClass` are especially powerful when used with [[template]].
 
 You can also create specific styling for given note types (and mime types). For example, file note containing PNG image will have these classes in the tree: `type-image mime-image-png`.
 

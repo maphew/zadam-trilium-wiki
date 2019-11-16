@@ -37,8 +37,8 @@ Following labels are used for advanced configuration:
 * `hidePromotedAttributes`
 * `hideChildrenOverview`
 * `readOnly` - editor is in read only mode. Works only for text notes. See some use cases [here](https://github.com/zadam/trilium/issues/371).
-* `cssClass` - value of this label is then added as CSS class to the node representing given note in the tree. This can be useful for advanced [[theming|themes]].
-* `iconClass` - value of this label is added as a CSS class to the icon on the tree which can help visually distinguish the notes in the tree. Example might be `bx bx-home` - icons are taken from [boxicons](https://boxicons.com/).
+* `cssClass` - value of this label is then added as CSS class to the node representing given note in the tree. This can be useful for advanced [[theming|themes]]. Can be used in `template` notes.
+* `iconClass` - value of this label is added as a CSS class to the icon on the tree which can help visually distinguish the notes in the tree. Example might be `bx bx-home` - icons are taken from [boxicons](https://boxicons.com/). Can be used in `template` notes.
 
 ## Relations
 Relation is a kind of link between two notes.

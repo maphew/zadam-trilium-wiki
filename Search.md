@@ -1,5 +1,3 @@
-**Text below describes features as of Trilium 0.31**
-
 Trilium supports searching in notes. There are several ways to search notes:
 
 * full text search - search in text and [[code note|code notes]] content. Since this is implemented as a database search, this works only for not protected notes (doesn't matter if you're in protected session or not)
@@ -53,6 +51,7 @@ It's also possible to query by so called "virtual attributes":
 * `mime` - e.g. `text/html` for text note
 * `text` - fulltext attribute of both title and content together
 * `isArchived` - filters only for [[archived notes]], `@!archived` then filters only for non-archived notes. Note that this filter does not work in OR relation, it is always AND.
+* `in` - for example `@in=VuvLpfAPx2L9` will filter only notes which have note with noteId `VuvLpfAPx2L9` as one of the ancestors - i.e. note is in the subtree of `VuvLpfAPx2L9`. With negating operator - `@in!=VuvLpfAPx2L9` will filter notes which don't have note `VuvLpfAPx2L9` as their ancestor. Since Trilium 0.37
 
 ### Order and limit
 

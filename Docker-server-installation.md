@@ -1,8 +1,8 @@
 Trilium can be run as docker image. This is recommended way to deploy Trilium on servers.
 
-Official docker images are published on docker hub for AMD64: https://hub.docker.com/r/zadam/trilium/
+Official docker images are published on docker hub for **AMD64**: https://hub.docker.com/r/zadam/trilium/
 
-Unofficial docker images provided by Howard: https://hub.docker.com/r/hlince/trilium ([build scripts](https://gitea.e9g.rocks/howard/trilium-daily-build))
+Unofficial docker images for **ARMv7** and **ARMv8** provided by Howard: https://hub.docker.com/r/hlince/trilium ([build scripts](https://gitea.e9g.rocks/howard/trilium-daily-build))
 
 ## Pull image
 

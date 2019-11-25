@@ -2,7 +2,7 @@ This pages describes installing Trilium on your own server. You might want to do
 
 There are three options how to do this, each one with some advantage:
 
-* Recommended: [[Docker|Docker server installation]]
+* Recommended: [[Docker|Docker server installation]] - images for **AMD64** and **ARM**
 * [[Packaged server installation]]
 * [[Manual installation|Manual server installation]]
 

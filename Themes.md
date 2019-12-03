@@ -97,3 +97,4 @@ Following are themes developed by Trilium users:
 
 * https://github.com/Abourass/TriliumThemes
 * https://github.com/ZMonk91/Material-Dark-Trilium
+* https://github.com/jaroet/trilium-theme-lightslategray

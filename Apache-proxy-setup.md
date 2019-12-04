@@ -37,7 +37,8 @@ I've assumed you have created a DNS A record for `trilium.yourdomain.com` that y
 				RewriteCond %{HTTP:Connection} Upgrade [NC]
 				RewriteCond %{HTTP:Upgrade} websocket [NC]
 				RewriteRule /(.*) ws://localhost:8080/$1 [P,L]
-			    ProxyPass / http://localhost:8080/
+			    AllowEncodedSlashes NoDecode
+			    ProxyPass / http://localhost:8080/ nocanon
 			    ProxyPassReverse / http://localhost:8080/
 			    SSLCertificateFile /etc/letsencrypt/live/trilium.yourdomain.com/fullchain.pem
 			    SSLCertificateKeyFile /etc/letsencrypt/live/trilium.yourdomain.com/privkey.pem

@@ -12,7 +12,7 @@ If the autoformat is not desirable for what you just wrote, you can press `CTRL-
 
 ## Cut selection to sub-note
 
-**This feature is disabled since 0.24.6 because of issues with editor component**
+**This feature is available since 0.39.3**
 
 One of the common situations in Trilium is when you're editing a document and it gets somewhat large so you start splitting it up into subnotes - the process is essentially like this:
 
@@ -26,9 +26,7 @@ Trilium provides a way to automate this:
 
 You can notice how heading "Formatting" is automatically detected and new subnote is named "Formatting".
 
-[[Keyboard shortcut|Keyboard shortcuts]] `CTRL-P` normally creates empty subnote in the current note - when there is a selected text in the editor, it behaves the same as the button demoed above - new subnote is created and content (and potentially title) is filled with the selected text.
-
-This also works with `CTRL-O` shortcut - the only difference is that new note is created next to the current instead of inside the current.
+It is also possible to assign a keyboard shortcut for this action.
 
 # Read only mode
 

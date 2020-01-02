@@ -17,6 +17,4 @@ Trilium has some special support for day notes in the form of [backend Script AP
 
 Day (and year, month) notes are created with a label - e.g. `@dateNote=2018-08-16` this can then be used by other scripts to add new notes to day note etc.
 
-Journal has [[attributes]] `@sorted @child:sorted @child:sorted:sorted` (see [[attribute inheritance]]) which keeps notes sorted on all three levels of years, months and dates.
-
-Journal also has relation "child:child:child:template=Day template" which effectively adds [[template]] to day notes (grand-grand-grand children of Journal). The template is pretty simple - it just adds "weight" promoted attribute to keep track of our daily weight.
+Journal also has relation "child:child:child:template=Day template" (see [[attribute inheritance]]) which effectively adds [[template]] to day notes (grand-grand-grand children of Journal).

@@ -6,6 +6,12 @@ Data directory contains:
 * `log` - contains application log files
 
 ## Location
+Easy way how to find out which data directory Trilium uses is to look at the "About Trilium Notes" dialog (from "Menu" in upper left corner):
+
+[[images/about-trilium-data-dir.png]]
+
+Here's how the location is decided:
+
 Data directory is normally named `trilium-data` and it is stored in:
 
 * `/home/[user]/.local/share` for Linux

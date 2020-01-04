@@ -38,10 +38,12 @@ body.theme-my-theme {
     --button-border-color: #333;
     --button-text-color: #AFB8C6;
     --button-border-radius: 2px;
+    --primary-button-background-color: #6c757d;
+    --primary-button-text-color: white;
+    --primary-button-border-color: #6c757d;
     --muted-text-color: #86919F;
     --input-text-color: #AFB8C6;
     --input-background-color: #404552;
-    --modal-background-color: #404552;
     --hover-item-text-color: white;
     --hover-item-background-color: #4877B1;
     --active-item-text-color: white;
@@ -50,10 +52,17 @@ body.theme-my-theme {
     --menu-background-color: #383C4A;
     --tooltip-background-color: #383C4A;
     --link-color: lightskyblue;
+    --modal-background-color: #404552;
+    --modal-backdrop-color: black;
+    --scrollbar-border-color: rgba(175, 184, 198, 0.5);
 }
 
 body.theme-my-theme .note-detail-text {
     font-size: 120%;
+}
+
+body.theme-steel-blue .CodeMirror {
+    filter: invert(100%) hue-rotate(180deg);
 }
 ```
 

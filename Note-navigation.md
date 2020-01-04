@@ -4,7 +4,7 @@ One of the Trilium's goals is to provide fast and comfortable navigation between
 
 You can use alt-left and alt-right to move back and forward in history of viewed pages.
 
-This works identically to browser backwards / forwards, it's actually using bult-in browser support for this.
+This works identically to browser backwards / forwards, it's actually using built-in browser support for this.
 
 Of course this is basic and expected functionality, but it's worth mentioning that Trilium plays nicely here.
 

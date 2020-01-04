@@ -22,6 +22,8 @@ There's one special note called "root note" which is root of the note tree. All 
 
 ### Deleting / undeleting notes
 
+_Description below is valid only since Trilium 0.40_
+
 When you delete a note in Trilium, it is actually only marked for deletion (soft-delete) - the actual content, title, attributes etc. are not deleted, only hidden.
 
 Within (by default) 7 days, it is possible to undelete these soft-deleted notes - open Recent Changes dialog and you will see a list of all modified notes including the deleted ones. Notes available for undeletion have a link to do so. This is kind of "trash can" functionality known from e.g. Windows.

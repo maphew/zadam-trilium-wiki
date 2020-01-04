@@ -1,5 +1,7 @@
 This is supposed to be a complete list of keyboard shortcuts. Note that some of these may work only in certain contexts (e.g. in tree pane or note editor).
 
+Since Trilium 0.38, it is possible to configure keyboard shortcuts in Options -> Keyboard shortcuts.
+
 ## Note navigation
 
 * `UP`, `DOWN` - go up/down in the list of notes, `CTRL-SHIFT-UP` and `CTRL-SHIFT-DOWN` work also from editor

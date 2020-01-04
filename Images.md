@@ -15,6 +15,6 @@ You can also copy paste image from web - but beware that in such case only refer
 
 ## Compression
 
-Since Trilium isn't really meant to be primary storage for image data, it attempts to compress and resize (with pretty aggressive settings) uploaded images before storing them to the database. You may then notice some quality degradation.
+Since Trilium isn't really meant to be primary storage for image data, it attempts to compress and resize (with pretty aggressive settings) uploaded images before storing them to the database. You may then notice some quality degradation. Basic quality settings is available in Options -> Other.
 
 If you want to save images in their original resolution, it is recommended to save them as attachment to note (top-right "Note actions -> Upload file").

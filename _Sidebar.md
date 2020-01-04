@@ -23,6 +23,7 @@
     * [[Docker server installation]]
     * [[Manual server installation]]
     * [[Mobile frontend]]
+  * [[Upgrading Trilium]]
   * [[TLS configuration]]
   * [[Synchronization]]
   * [[Web clipper]]

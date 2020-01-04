@@ -12,3 +12,9 @@ This can be useful for few things:
 ## Extra languages
 
 Trilium supports syntax highlighting for many languages, but by default displays only some of them (to reduce number of items). You can add extra languages in Options -> Code notes (available since Trilium 0.35).
+
+## Code blocks
+
+Alternative to the code note is a "code block" - feature of a text note which can add short snippets of code to the text editor. The disadvantage is that code blocks don't support syntax highlighting.
+
+[[images/code-block.png]]

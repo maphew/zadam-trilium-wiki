@@ -35,10 +35,10 @@ Following labels are used for advanced configuration:
 * `disableInclusion` - scripts with this label won't be included into parent script execution.
 * `sorted` - keeps  child notes sorted by title alphabetically
 * `hidePromotedAttributes`
-* `hideChildrenOverview`
 * `readOnly` - editor is in read only mode. Works only for text notes. See some use cases [here](https://github.com/zadam/trilium/issues/371).
 * `cssClass` - value of this label is then added as CSS class to the node representing given note in the tree. This can be useful for advanced [[theming|themes]]. Can be used in `template` notes.
 * `iconClass` - value of this label is added as a CSS class to the icon on the tree which can help visually distinguish the notes in the tree. Example might be `bx bx-home` - icons are taken from [boxicons](https://boxicons.com/). Can be used in [[template]] notes.
+* `bookZoomLevel` - applies only to [[book note]] and sets the "zoom level" (how many notes fit on 1 row)
 
 ## Relations
 Relation is a kind of link between two notes.
@@ -49,10 +49,19 @@ More importantly relations are used for some more advanced things - like attachi
 
 ### Standard relations
 
-* `runOnNoteView` - attached script will be run whenever the note has been loaded
-* `runOnNoteTitleChange` - attached script will be run whenever the note title has been changed
-* `runOnAttributeChange` - attached script will be run whenever the note's attribute has been changed
+[[Events]]:
+* `runOnNoteView` - executes when note is displayed on frontend
+* `runOnNoteCreation` - executes when note is created on backend
+* `runOnNoteTitleChange` - executes when note title is changed (includes note creation as well)
+* `runOnNoteChange`  - executes when note is changed (includes note creation as well)
+* `runOnChildNoteCreation`  - executes when new note is created under *this* note
+* `runOnAttributeCreation` - executes when new attribute is created under *this* note
+* `runOnAttributeChange` - executes when attribute is changed under *this* note
+
+Other relations:
 * `template` - attached note's attributes will be inherited even without parent-child relationship. See [[template]] for details.
+* `renderNote` - notes of type "render HTML note" will be rendered using a code note (HTML or script) and it is necessary to point using this relation to which note should be rendered
+* `widget` - target of this relation will be executed and rendered as a widget in the sidebar
 
 ## Multiplicity
 

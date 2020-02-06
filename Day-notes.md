@@ -11,6 +11,17 @@ You can see structure of day notes appearing under "Journal" note - there's a no
 
 You can also notice how this day note has [[promoted attribute|Promoted attributes]] "weight" where you can track your daily weight. This data is then used in [[Weight tracker]].
 
+## Templates
+Trilium provides [[template]] functionality and it could be used together with day notes.
+
+You can define one of the following relations on the root of the journal (identified by `@calendarRoot` label):
+
+* yearTemplate
+* monthTemplate
+* dateTemplate
+
+All of these are relations. When Trilium creates a new note for year or month or date it will take a look to the root and attach a corresponding `@template` relation to the newly created role. Using this you can e.g. create your daily template with e.g. checkboxes for daily routine etc.
+
 ## Implementation
 
 Trilium has some special support for day notes in the form of [backend Script API](https://zadam.github.io/trilium/backend_api/BackendScriptApi.html) - see e.g. getDateNote() function.

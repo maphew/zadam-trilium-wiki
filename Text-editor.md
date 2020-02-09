@@ -28,12 +28,12 @@ You can notice how heading "Formatting" is automatically detected and new subnot
 
 It is also possible to assign a keyboard shortcut for this action.
 
-# Include note
+## Include note
 
 Text notes can "include" another note as a read only widget. This can be useful for e.g. including a dynamically generated chart (from scripts & "render HTML" note) or other more advanced use cases.
 
 This functionality is available in the block toolbar icon.
 
-# Read only mode
+## Read only mode
 
 To prevent accidental changes you can put text editor into read only mode by attaching `readOnly` [[label|Attributes]].

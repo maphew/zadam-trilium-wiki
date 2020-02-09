@@ -13,7 +13,12 @@ Extension works with Trilium Notes 0.34 and newer.
 * save screenshot (with crop tool) from either popup or context menu
 * create short text note from popup
 
-Trilium will save these clippings as a new note under current [[day note|day notes]]. If there's multiple clippings from the same page (and on the same day), then they will be added to the same note.
+Trilium will save these clippings as a new child note under a "clipper inbox" note. Clipper inbox is:
+
+* if there's a note with [[label|attributes]] `@clipperInbox`, then this note is used as parent for the clipped notes
+* otherwise [[day note|day notes]] is used as a parent 
+
+If there's multiple clippings from the same page (and on the same day), then they will be added to the same note.
 
 # Get it
 

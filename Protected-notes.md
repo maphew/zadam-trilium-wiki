@@ -46,3 +46,9 @@ Not encrypted:
     * data encryption key is random key generated at the time of [[document|Document]] initialization and is constant over the lifetime of the document. If we change password, we re-encrypt only this key.
 5. We use data encryption key to decrypt actual data - note title and content.
     * encryption used is again AES-128 with [CBC chaining](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation). Unique IV is generated with every encryption operation and stored together with the cipher text.
+
+## Search
+
+Since full text search is implemented as a database search, it cannot work over encrypted data in protected notes. Searching by [[attributes]] is not affected and will find protected notes since attributes are not encrypted.
+
+As a limited work around you can use Jump-To dialog (by default `CTRL-J`) which uses an in-memory search of titles only and will find protected notes if the protected session is active.

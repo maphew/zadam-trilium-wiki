@@ -4,7 +4,7 @@ I've assumed you have created a DNS A record for `trilium.yourdomain.com` that y
 		
 		docker pull zadam/trilium:[VERSION]
 		
-		docker create --name trilium -t -p 8080:8080 -v ~/trilium-data:/root/trilium-data zadam/trilium:[VERSION]
+		docker create --name trilium -t -p 127.0.0.1:8080:8080 -v ~/trilium-data:/root/trilium-data zadam/trilium:[VERSION]
 
 1. Configure Apache proxy and websocket proxy
 	1. Enable apache proxy modules

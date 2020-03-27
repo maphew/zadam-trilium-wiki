@@ -10,9 +10,11 @@ const {req, res} = api;
 const {secret, title, content} = req.body;
 
 if (req.method == 'POST' && secret === 'secret-password') {
-    const targetNoteId = await api.currentNote.getRelationValue('targetNote');
+    // notes must be saved somewhere - under a parent. This is specified by a relation to the "target note"
+    // alternetively you can just use constant noteId for simplicity (get that from "Note Info" dialog)
+    const targetParentNoteId = await api.currentNote.getRelationValue('targetNote');
     
-    await api.createNoteAndRefresh(targetNoteId, title, content);
+    await api.createTextNote(targetParentNoteId, title, content);
     res.send(201);
 }
 else {

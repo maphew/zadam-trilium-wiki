@@ -39,7 +39,7 @@ Common request is to allow multiple users collaborate, share notes etc. So far I
 
 # How to open multiple documents in one Trilium instance
 
-This is normally not supported - one Trilium process can open only a single instance of a [[document]]. However you can run two instances, each connected to a separate document. To achieve this, you need to set a location for the [[data directory]] in the `TRILIUM_DATA_DIR` environment variable and separate port on `TRILIUM_PORT` environment variable. How to do that depends on the platform, in Unix-based systems you can achieve that like this:
+This is normally not supported - one Trilium process can open only a single instance of a [[document]]. However you can run two Trilium processes (from one installation), each connected to a separate document. To achieve this, you need to set a location for the [[data directory]] in the `TRILIUM_DATA_DIR` environment variable and separate port on `TRILIUM_PORT` environment variable. How to do that depends on the platform, in Unix-based systems you can achieve that like this:
 
 ```shell
 TRILIUM_DATA_DIR=/home/me/path/to/data/dir TRILIUM_PORT=12345 trilium 

@@ -22,6 +22,10 @@ You can follow the note link by double clicking it.
 
 Alternatively if you only wish to quickly preview the content, you can hover over the link and will see read only preview.
 
+### In-place linking
+
+Trilium also provides "inline" linking - type `@` and you'll see an autocomplete, just type few characters from the desired note title, press enter and you have a link.
+
 ## Opening links
 
 Since Trilium doesn't have separate view and edit modes (it's always edit mode), clicking on link doesn't open it. To open the link (both internal and external), just double click on it. External links will be opened in new tab.

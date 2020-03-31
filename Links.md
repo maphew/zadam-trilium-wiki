@@ -11,17 +11,16 @@ You can follow external link by either double clicking (will open new tab/window
 
 Links to internal notes are created a bit differently. To create link to note at current cursor position, press `CTRL-L`.
 
-In the dialog you can see radio button to choose from different types of linking. First one is classic link to note, the other two are related to [[cloning|Cloning notes]] and will be covered separately.
+In the dialog you can see radio button to choose from different types of linking:
+
+* link title mirrors the note's current title - this is sometimes also called "reference link". Title of such links cannot be changed, instead it is always mirroring the title of linked note. This way the link title is never outdated
+* link title can be changed arbitrarily - this is the traditional hyperlink - you link to a particular note and can choose the link title
 
 [[gifs/create-link-to-note.gif]]
 
 You can follow the note link by double clicking it.
 
 Alternatively if you only wish to quickly preview the content, you can hover over the link and will see read only preview.
-
-## Cloning
-
-Cloning can be done in Add Link dialog as well, but it is described on [[separate page|Cloning notes]].
 
 ## Opening links
 

@@ -3,7 +3,7 @@
   * [[Document]]
   * [[Note]]
   * [[Tree concepts]]
-  * [[Text editor]]
+  * [[Text note]]
   * [[Links]]
   * [[Note navigation]]
   * [[Tree manipulation]]

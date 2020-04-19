@@ -27,7 +27,7 @@ You can export whole subtree to .tar archive which will have directory structure
 
 [[gifs/markdown-export-subtree.gif]]
 
-### Single note import
+### Single note export
 
 If you want to export just single note without its subtree, you can do it from Note actions menu:
 

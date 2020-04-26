@@ -29,3 +29,15 @@ If you want to use some other location for the data directory than the default o
 ```
 export TRILIUM_DATA_DIR=/home/myuser/data/my-trilium-data
 ```
+
+### Create a script to run with specific data directory
+
+And alternative to globally setting environment variable is to run only the Trilium Notes with this environment variable. This then allows for different setup styles like two [[document]] instances or "portable" installation.
+
+To do this in unix based systems simply run trilium like this:
+
+```
+TRILIUM_DATA_DIR=/home/myuser/data/my-trilium-data trilium
+```
+
+You can then save the above command as a shell script on your path for convenience.

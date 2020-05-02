@@ -1,32 +1,32 @@
-Trilium supports synchronization with star-shaped topology:
+Trilium is offline-first note taking application - when you use the desktop application, all the data is stored locally, but you also have an option to set up synchronization to the server instance. When you add another desktop client, you can get to star-shaped topology:
 
 [[images/star-topology.png]]
 
 This means that there's one central server (we'll call this instance _sync server_) and several _client_ (sometimes called _desktop_) instances which all point to this sync server and synchronize against it.
 
-Once sync is setup, synchronization is automatic and ongoing - you don't need to trigger it manually. It should "just work".
+Once sync is set up, synchronization is automatic and ongoing - you don't need to trigger it manually. It should "just work".
 
-## How to setup synchronization
+## How to set up synchronization
 
 ### Setup synchronization from desktop instance to sync server
 
 This approach is used when you already have a desktop instance of Trilium and you want to [[setup sync server on your web host|Server installation]]. 
 
-So let's assume your server instance is already setup. Then open your desktop instance, click on Options -> Sync tab -> Sync configuration and set "Server instance address" to point to your sync server. Click Save.
+So let's assume your server instance is already deployed but it's uninitialized (no data). Then open your desktop instance, click on Options -> Sync tab -> Sync configuration and set "Server instance address" to point to your sync server. Click Save.
 
 [[images/sync-config.png]]
 
-Now click on "Test sync" button which will tell you if the handshake with sync server succeeded. If yes, sync with sync server started and might take some time to finish, but you can close the Options dialog and keep using Trilium.
+Now click on "Test sync" button which will tell you if the handshake with sync server succeeded. If yes, sync with sync server started - client started pushing all the data towards the server instance. This might take some time to finish, but you can close the Options dialog and keep using Trilium.
 
-You can also check the server instance periodically to see if the sync finished. Once it's finished you should see login screen.
- 
+You can also check the server instance periodically to see if the sync finished. Once it's finished you should see the login screen.
+
 ### Setup synchronization from sync server do desktop instance
 
-This is used when you already have sync server and you want to setup desktop instance to sync with (from) it.
+This is used when you already have sync server and you want to set up desktop instance to sync with (from) it.
 
 Here we assume that you downloaded [the most recent release](https://github.com/zadam/trilium/releases/latest) for your platform, unzipped it and ran it.
 
-Since the desktop instance is completely empty, it will first ask if you want to create initial document or you want to setup sync with sync server - you need to choose the second option.
+Since the desktop instance is completely empty, it will first ask if you want to create initial document or you want to set up sync with sync server - you need to choose the second option.
 
 [[images/sync-init.png]]
 
@@ -53,4 +53,4 @@ Trilium handles this situation by just picking up the newer change and discardin
 
 ## Hash check
 
-After each completed sync, Trilium computes hash of all synced data on both client and sync server. If there's a difference, something went wrong and Trilium will notify you about this.
+After each completed sync, Trilium computes hash of all synced data on both client and sync server. If there's a difference, something went wrong and Trilium will run automatic recovery mechanism.

@@ -11,7 +11,9 @@ Alternatively you can click on block toolbar and then on "Insert image":
 
 [[images/block-toolbar-insert-image.png]]
 
-You can also copy paste image from web - but beware that in such case only reference is copied and image copy won't be saved in Trilium. Image will not be available if it's deleted or moved from its original location (or you're offline). The workaround is to first save the image to your computer and then add it to Trilium with one of the methods mentioned above.
+You can also copy paste image from web
+- Version 0.41.5 and onwards: image will be downloaded and embedded
+- Pre version 0.41.5: only the reference is copied and image copy won't be saved in Trilium. Image will not be available if it's deleted or moved from its original location (or you're offline). The workaround is to first save the image to your computer and then add it to Trilium with one of the methods mentioned above.
 
 ## Compression
 

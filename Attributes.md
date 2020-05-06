@@ -40,6 +40,7 @@ Following labels are used for advanced configuration:
 * `cssClass` - value of this label is then added as CSS class to the node representing given note in the tree. This can be useful for advanced [[theming|themes]]. Can be used in `template` notes.
 * `iconClass` - value of this label is added as a CSS class to the icon on the tree which can help visually distinguish the notes in the tree. Example might be `bx bx-home` - icons are taken from [boxicons](https://boxicons.com/). Can be used in [[template]] notes.
 * `bookZoomLevel` - applies only to [[book note]] and sets the "zoom level" (how many notes fit on 1 row)
+* `customRequestHandler` and `customResourceProvider` - see [[Custom request handler]]
 
 ## Relations
 Relation is a kind of link between two notes.

@@ -36,6 +36,7 @@ Following labels are used for advanced configuration:
 * `sorted` - keeps  child notes sorted by title alphabetically
 * `hidePromotedAttributes`
 * `readOnly` - editor is in read only mode. Works only for text notes. See some use cases [here](https://github.com/zadam/trilium/issues/371).
+* `autoReadOnlyDisabled` - text/code notes can be set automatically into read mode when they are too large. You can disable this behavior on per-note basis by adding this label to the note
 * `cssClass` - value of this label is then added as CSS class to the node representing given note in the tree. This can be useful for advanced [[theming|themes]]. Can be used in `template` notes.
 * `iconClass` - value of this label is added as a CSS class to the icon on the tree which can help visually distinguish the notes in the tree. Example might be `bx bx-home` - icons are taken from [boxicons](https://boxicons.com/). Can be used in [[template]] notes.
 * `bookZoomLevel` - applies only to [[book note]] and sets the "zoom level" (how many notes fit on 1 row)

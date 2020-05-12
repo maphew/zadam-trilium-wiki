@@ -1,6 +1,6 @@
 Trilium by default comes with few color themes, with white being the default. To switch to dark theme, you just need to go to Options (top-right) -> Appearance tab and change the theme.
 
-This is how it looks like:
+This is what it looks like:
 
 [[images/dark-theme.png]]
 

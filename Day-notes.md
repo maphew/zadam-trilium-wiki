@@ -28,4 +28,4 @@ Trilium has some special support for day notes in the form of [backend Script AP
 
 Day (and year, month) notes are created with a label - e.g. `@dateNote=2018-08-16` this can then be used by other scripts to add new notes to day note etc.
 
-Journal also has relation "child:child:child:template=Day template" (see [[attribute inheritance]]) which effectively adds [[template]] to day notes (grand-grand-grand children of Journal).
+Journal also has relation `child:child:child:template=Day template` (see [[attribute inheritance]]) which effectively adds [[template]] to day notes (grand-grand-grand children of Journal).

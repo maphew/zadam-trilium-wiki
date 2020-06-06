@@ -33,3 +33,7 @@ Clicking an undelete will recover the note, it's content and attributes - note s
 To be able to undelete a note, it is necessary that deleted note's parent must be undeleted (otherwise there's no place where we can undelete it to). This might become a problem when you delete more notes in succession - the solution is then undelete in the reverse order of your deletion.
 
 After the 7 days (configurable) the notes will be "erased" - their title, content, revisions and attributes will be erased and it will not be possible anymore to recover them (unless you restore [[backup]]).
+
+## See also
+
+* [[Read-only note]]

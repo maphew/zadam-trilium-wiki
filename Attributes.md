@@ -52,7 +52,6 @@ More importantly relations are used for some more advanced things - like attachi
 ### Standard relations
 
 [[Events]]:
-* `runOnNoteView` - executes when note is displayed on frontend
 * `runOnNoteCreation` - executes when note is created on backend
 * `runOnNoteTitleChange` - executes when note title is changed (includes note creation as well)
 * `runOnNoteChange`  - executes when note is changed (includes note creation as well)

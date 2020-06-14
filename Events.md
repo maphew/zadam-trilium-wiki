@@ -1,4 +1,4 @@
-In general we may say that [[script|scripts]] note execution is triggered by events.
+[[Script|scripts]] notes can be triggered by events. Note that these are backend events and thus relation need to point to the "JS backend" code note.
 
 ## Global events
 
@@ -13,8 +13,6 @@ Global events are attached to the script note via label. Simply create e.g. "run
 ## Entity events
 
 Other events are bound to some entity, these are defined as [[relations|Attributes]] - meaning that script is triggered only if note has this script attached to it through relations (or it can inherit it).
-
-Note that these are backend events and thus relation need to point to the "JS backend" code note.
 
 * `runOnNoteCreation` - executes when note is created on backend
 * `runOnNoteTitleChange` - executes when note title is changed (includes note creation as well)

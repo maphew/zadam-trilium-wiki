@@ -11,6 +11,12 @@ Positions are:
 Create a code note of type JS frontend and give it `widget` label.
 
 ```javascript
+/*
+ * This defines a custom widget which displays number of words and characters in a current text note.
+ * To be activated for a given note, add label 'wordCount' to the note, you can also make it inheritable and thus activate it for the whole subtree.
+ * 
+ * See it in action in "Books" and its subtree.
+ */
 const TPL = `<div style="padding: 10px; border-top: 1px solid var(--main-border-color);">
     <strong>Word count: </strong>
     <span class="word-count"></span>
@@ -34,7 +40,8 @@ class WordCountWidget extends api.TabAwareWidget {
     }
     
     async refreshWithNote(note) {
-        if (note.type !== 'text') { // show widget only on text notes
+        if (note.type !== 'text' || !note.hasLabel('wordCount')) { 
+            // show widget only on text notes and when marked with 'wordCount' label
             this.toggleInt(false); // hide
             
             return;
@@ -46,10 +53,29 @@ class WordCountWidget extends api.TabAwareWidget {
         
         const text = $(content).text(); // get plain text only
         
-        const words = text.split(/\s+/);
+        const counts = this.getCounts(text);
 
-        this.$wordCount.text(words.length);
-        this.$characterCount.text(words.join('').length);
+        this.$wordCount.text(counts.words);
+        this.$characterCount.text(counts.characters);
+    }
+    
+    getCounts(text) {
+        const chunks = text
+            .split(/[\s-+:,/\\]+/)
+            .filter(chunk => chunk !== '');
+        
+        let words;
+        
+        if (chunks.length === 1 && chunks[0] === '') {
+            words = 0;
+        }
+        else {
+            words = chunks.length;
+        }
+        
+        const characters = chunks.join('').length;
+        
+        return {words, characters};
     }
     
     async entitiesReloadedEvent({loadResults}) {

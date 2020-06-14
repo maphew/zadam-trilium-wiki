@@ -14,7 +14,8 @@ Global events are attached to the script note via label. Simply create e.g. "run
 
 Other events are bound to some entity, these are defined as [[relations|Attributes]] - meaning that script is triggered only if note has this script attached to it through relations (or it can inherit it).
 
-* `runOnNoteView` - executes when note is displayed on frontend
+Note that these are backend events and thus relation need to point to the "JS backend" code note.
+
 * `runOnNoteCreation` - executes when note is created on backend
 * `runOnNoteTitleChange` - executes when note title is changed (includes note creation as well)
 * `runOnNoteChange`  - executes when note is changed (includes note creation as well)

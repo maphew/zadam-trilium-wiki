@@ -40,6 +40,7 @@
     * [[Script API]]
     * [[Custom request handler]]
     * [[Events]]
+    * [[Custom Widget]]
   * [[Advanced showcases]]
     * [[Day notes]]
     * [[Weight Tracker]]

@@ -15,8 +15,9 @@ if (req.method == 'POST' && secret === 'secret-password') {
     // alternetively you can just use constant noteId for simplicity (get that from "Note Info" dialog of the desired parent note)
     const targetParentNoteId = await api.currentNote.getRelationValue('targetNote');
     
-    await api.createTextNote(targetParentNoteId, title, content);
-    res.send(201);
+    const {note} = await api.createTextNote(targetParentNoteId, title, content);
+
+    res.status(201).json(note);
 }
 else {
     res.send(400);

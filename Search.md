@@ -24,6 +24,7 @@ Input string is tokenized by whitespace separators and each individual token (wo
 Here you query by standard [[attributes]]:
 
 * `@abc` - returns notes with label abc
+* `@!abc` - returns notes which don't have label abc
 * `@year=2019` - matches notes with label `year` having value `2019`
 * `@year!=2019` - matches notes with label `year`, but not having value 2019 or not having label `year` at all.
   * if you want to express condition that note must have `year` label, but not value 2019, then you can do that with `@year @year!=2019`

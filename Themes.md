@@ -108,3 +108,4 @@ Following are themes developed by Trilium users:
 * https://github.com/ZMonk91/Material-Dark-Trilium
 * https://github.com/jaroet/trilium-theme-lightslategray
 * https://github.com/raphwriter/trilium-theme-melon
+* https://github.com/Engr-AllanG/trilium-theme-Neon_Dark

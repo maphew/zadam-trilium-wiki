@@ -1,5 +1,5 @@
 Sometimes the fastest way to assess the software is just through screenshots so here they are:
-
+Test
 [[images/screenshot.png]]
 
 [[images/dark-theme.png]]

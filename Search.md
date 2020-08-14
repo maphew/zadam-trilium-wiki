@@ -1,5 +1,7 @@
 Trilium supports searching in notes. There are several ways to search notes:
 
+* local search - searches within currently displayed note. Press `CTRL-F` to open the search dialog. In server version this is handled by the browser, in desktop (electron) version there's a separate dialog.
+
 * full text search - search in text and [[code note|code notes]] content. Since this is implemented as a database search, this works only for not protected notes (doesn't matter if you're in protected session or not)
 
 * [[attribute|Attributes]] search - you can e.g. search for notes having certain label - see *Attribute query syntax* below.

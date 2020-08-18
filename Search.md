@@ -53,6 +53,7 @@ It's also possible to query by so called "virtual attributes":
 * `type` - `text`, `code`, `image`, `file`, `search` or `relation-map`
 * `mime` - e.g. `text/html` for text note
 * `text` - fulltext attribute of both title and content together
+  * For example `@text*=*Hello`. So that you can combine searching for both text and attributes.
 * `isArchived` - filters only for [[archived notes]], `@!archived` then filters only for non-archived notes. Note that this filter does not work in OR relation, it is always AND.
 * `in` - for example `@in=VuvLpfAPx2L9` will filter only notes which have note with noteId `VuvLpfAPx2L9` as one of the ancestors - i.e. note is in the subtree of `VuvLpfAPx2L9`. With negating operator - `@in!=VuvLpfAPx2L9` will filter notes which don't have note `VuvLpfAPx2L9` as their ancestor. Since Trilium 0.37
 

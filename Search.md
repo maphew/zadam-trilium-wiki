@@ -3,11 +3,91 @@ Trilium supports searching in notes. There are several ways to search notes:
 * local search - searches within currently displayed note. Press `CTRL-F` to open the search dialog. In server version this is handled by the browser, in desktop (electron) version there's a separate dialog.
 
 * note search - you can find notes by search for text in the title, note's content or note's [attributes]. You can also [[save search|saved search]].
+  * You can activate note search by clicking on magnifier icon on the left or pressing `CTRL-S` keyboard [[shortcut|keyboard shortcuts]].
 
-* you can save search string (composed of either fulltext or attribute search) into so-called "saved search" note. If you expand this note, you will see the search results as child notes.
-  * saved search can also reference [[script|scripts]] through relation - upon expanding, the script will provide a list of results
+## Simple note search examples
 
-You can activate search by clicking on magnifier icon on the left or pressing `CTRL-S` keyboard [[shortcut|keyboard shortcuts]].
+`rings tolkien` - will try to find notes which have anywhere words "rings" and "tolkien"
+
+`"The Lord of the Rings" Tolkien` - same as above but "The Lord of the Rings" must be exact match
+
+`towers #book` - searches notes containing "towers" word anywhere and they also need to have "book" label
+
+`towers #book or #author` - searches notes containing "towers" word anywhere and matching note must have either "book" or "author" label
+
+`towers #!book` - searches notes containing "towers" word anywhere and which do **not** have "book"
+
+`#book #publicationYear = 1954` - will find notes with "book" label and label "publicationYear" containing this specific value
+
+`#genre *=* fan` - matches notes with "genre" label which has value which contains "fan" substring. Besides `*=*` for "contains", there's also `=*` for "starts with", `*=` for "ends with", `!=` for "is not equal to" 
+
+`#book #publicationYear >= 1950 #publicationYear < 1960` - you can also use numeric operators - this will find all books published in 1950s
+
+`#dateNote >= TODAY-30` - special "smart search" will find notes with label "dateNote" with date corresponding to last 30 days. Complete list of smart values: NOW +- seconds, TODAY +- days, WEEK +- weeks, MONTH +- months, YEAR +- years
+
+`~author.title *=* Tolkien` - find notes which have relation "author" which points to a note with title containing word "Tolkien"
+
+## Advanced use cases
+
+`~author.relations.son.title = 'Christopher Tolkien'` - This will search for notes which have “author” relation to a note which has a “son” relation to “Christopher Tolkien” note. This situation can be modeled by this note structure:
+
+* Books
+  * Lord of the Rings
+     * label: “book”
+     * relation: “author” points to “J. R. R. Tolkien” note
+* People
+  * J. R. R. Tolkien
+    * relation “son” points to "Christopher Tolkien" note
+  * Christoper Tolkien
+
+`~author.title *= Tolkien OR (#publicationDate >= 1954 AND #publicationDate <= 1960)` - you can also use boolean expressions and parenthesis to group expressions
+
+`note.parents.title = 'Books'` will find all notes who have parent note with name “Book”.
+
+`note.parents.parents.title = 'Books'` This again works transitively so this will find notes whose parent of parent is named ‘Book’.
+
+`note.ancestors.title = 'Books'` This is sort of extension of parents - this will find notes which have an ancestor anywhere in their note path (so parent, grand-parent, grand-grand-parent …) with title ‘Book’. This is a nice way how to reduce scope of the search to a particular sub-tree.
+                                 
+`note.children.title = 'sub-note'` So this works in the other direction and will find notes which have a child called “sub-note”.
+          
+### Search with note properties
+
+Note has certain properties which can be also used for searching:
+
+* dateModified
+* dateCreated
+* utcDateModified
+* utcDateCreated
+* isProtected
+* type (text, code, search, relation-map, book)
+* title (when you want to search specifically the title)
+* text - search through note title, 
+* labelCount
+* relationCount
+* attributeCount - labelCount + relationCount
+* parentCount
+* childrenCount
+* isArchived
+
+These are accessed through `note.`, e.g.:
+
+```
+note.type = code
+```
+          
+### Order by and limit
+
+```
+#author=Tolkien orderBy #publicationDate desc, note.title limit 10
+```
+
+Example above will do the following things (in this sequence):
+
+1.  find notes with label author having value “Tolkien”
+2.  order the results by publicationDate in descending order (so newest first)
+    1.  in case publication date is equal, use note.title as secondary ordering in ascending order
+3.  take only the first 10 results  
+
 
 ## Fulltext
 

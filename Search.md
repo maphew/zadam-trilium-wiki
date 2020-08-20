@@ -13,11 +13,11 @@ You can activate search by clicking on magnifier icon on the left or pressing `C
 
 ## Fulltext
 
-Fulltext search is triggered whenever search string doesn't start with `@` (used in attribute search) or `=` (saved search with script). 
+Fulltext search is triggered whenever search string doesn't start with `#` (used in attribute search). 
 
 Fulltext searches on both title and content of undeleted, unprotected text and code notes which are not [[archived|archived notes]].
 
-Input string is tokenized by whitespace separators and each individual token (word) must be present in the title or content. If you don't want this automatic tokenization, you can surround your search with double quotes, e.g. `"hello world"` will search for exact match.
+Input string is tokenized by whitespace separators and each individual token (word) must be present in the title, content or note's attributes. If you don't want this automatic tokenization, you can surround your search with double quotes, e.g. `"hello world"` will search for exact match.
 
 ## Attribute query syntax
 
@@ -25,18 +25,18 @@ Input string is tokenized by whitespace separators and each individual token (wo
 
 Here you query by standard [[attributes]]:
 
-* `@abc` - returns notes with label abc
-* `@!abc` - returns notes which don't have label abc
-* `@year=2019` - matches notes with label `year` having value `2019`
-* `@year!=2019` - matches notes with label `year`, but not having value 2019 or not having label `year` at all.
-  * if you want to express condition that note must have `year` label, but not value 2019, then you can do that with `@year @year!=2019`
-* `@year<=2000` - return notes with label `year` having value 2000 or smaller. `>`, `<`, `>=` and `<=` are supported.
+* `#abc` - returns notes with label abc. `~abc` will look for notes with relation abc.
+* `#!abc` - returns notes which don't have label abc
+* `#year = 2019` - matches notes with label `year` having value `2019`
+* `#year != 2019` - matches notes with label `year`, but not having value 2019 or not having label `year` at all.
+  * if you want to express condition that note must have `year` label, but not value 2019, then you can do that with `#year #year != 2019`
+* `#year <= 2000` - return notes with label `year` having value 2000 or smaller. `>`, `<`, `>=` and `<=` are supported.
   * In this case parameter can be parsed as a number so number-wise comparison is done. But it's also possible to compare strings lexicographically in the same way. This is useful for comparing dates as seen below.
-* `@rock @pop` - matches notes which have both `rock` and `pop` labels
-  * `@rock and @pop` is an alternative syntax for the same thing
-* `@rock or @pop` - only one of the labels must be present
+* `#rock #pop` - matches notes which have both `rock` and `pop` labels
+  * `#rock and #pop` is an alternative syntax for the same thing
+* `#rock or #pop` - only one of the labels must be present
   * `and` has a precedence over `or` in case both operators are used in a search string
-* `@frontMan=*John` - matches notes where `frontMan` label starts with "John". There's also `!=*` for "doesn't start with", `*=` for "ends with" and `!*=` for "does not end with", `*=*` for "contains" and `!*=*` for "does not contain"
+* `#frontMan =* John` - matches notes where `frontMan` label starts with "John". There's also `*=` for "ends with" and `*=*` for "contains".
 
 ### Virtual attributes
 
@@ -50,7 +50,7 @@ It's also possible to query by so called "virtual attributes":
 * `isProtected` - 1 if the note is protected, 0 otherwise
 * `title` - useful if you want to search title separately
 * `content`
-* `type` - `text`, `code`, `image`, `file`, `search` or `relation-map`
+* `type` - `text`, `code`, `image`, `file`, `book`, `search` or `relation-map`
 * `mime` - e.g. `text/html` for text note
 * `text` - fulltext attribute of both title and content together
   * For example `@text*=*Hello`. So that you can combine searching for both text and attributes.

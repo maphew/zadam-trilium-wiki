@@ -6,14 +6,14 @@ There are four types of attributes:
 * Relation - specifies named relation (link) to another note
 * Label and relation definition - these are described in [[Promoted attributes]] page
 
-Sometimes we're talking about labels and relations - keep in mind that both of them are types of attributes and are very similar.
+Sometimes we're talking about labels and relations - keep in mind that both of them are types of attributes.
 
 [[images/attributes.png]]
 
 ## Labels
 Labels are used for several things:
 
-* user can use them as labels with optional value - e.g. when catalogizing books, you might add labels like @year=1999, @genre=sci-fi, @author=Neal Stephenson
+* user can use them as labels with optional value - e.g. when catalogizing books, you might add labels like @year=1999, @genre=sci-fi, @author="Neal Stephenson"
 * attributes can be used to configure some advanced features / settings - see below
 * plugins / scripts can use these to mark notes with some special values / metadata (e.g. [[Weight Tracker]] will have "weight" attribute on [[day notes]] based on whose it can create chart).
 
@@ -45,9 +45,9 @@ Following labels are used for advanced configuration:
 ## Relations
 Relation is a kind of link between two notes.
 
-This could be used when you e.g. keep a people database, you can use relations to keep formal links between people - e.g. note "Mike" will have relation "is husband of" note "Kate".
+This could be used when you e.g. keep a book database, you can use relations to keep formal links between the book (note) and the book's author (note) by defining an "author" relation on the book note pointing to the author's note.
 
-More importantly relations are used for some more advanced things - like attaching scripts to events happening on certain note.
+Relations are used also for some advanced scripting - like attaching scripts to events happening on certain note.
 
 ### Standard relations
 
@@ -66,7 +66,7 @@ Other relations:
 
 ## Multiplicity
 
-Attributes allow multiplicity - there can be multiple attributes with the same name. We're then calling such attributes "multivalue".
+Attributes allow multiplicity - there can be multiple attributes with the same name. We're then calling such attributes "multi valued".
 
 ## Attribute inheritance
 

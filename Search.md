@@ -2,9 +2,7 @@ Trilium supports searching in notes. There are several ways to search notes:
 
 * local search - searches within currently displayed note. Press `CTRL-F` to open the search dialog. In server version this is handled by the browser, in desktop (electron) version there's a separate dialog.
 
-* full text search - search in text and [[code note|code notes]] content. Since this is implemented as a database search, this works only for not protected notes (doesn't matter if you're in protected session or not)
-
-* [[attribute|Attributes]] search - you can e.g. search for notes having certain label - see *Attribute query syntax* below.
+* note search - you can find notes by search for text in the title, note's content or note's [attributes]. You can also [[save search|saved search]].
 
 * you can save search string (composed of either fulltext or attribute search) into so-called "saved search" note. If you expand this note, you will see the search results as child notes.
   * saved search can also reference [[script|scripts]] through relation - upon expanding, the script will provide a list of results
@@ -89,17 +87,6 @@ Using this you can create queries like:
 * `@dateModified>=NOW-3600` - show me notes changed in the last hour
 * `@dateCreated=*TODAY-1` - show me notes created during whole yesterday
 
-## Saved search
-
-Trilium provides a way to save common search as a note in the note tree. Search results will then appear as subnotes of this "saved search" note. You can see how this works in action:
-
-[[gifs/saved-search.gif]]
-
-### Saved search with script relation
-
-If saved search string starts with `=`, then the following string is taken as a relation name and the target script is executed to get the list of note results.
-
-So let's say the search string is `=handler`, then Trilium tries to find this saved note's relation with name "handler". Relation is expected to point to [[script|scripts]] which is then executed - script is expected to return a list of notes which should be presented as search results. This option exists for use cases where normal attribute/fulltext search doesn't cover all needs.
 
 ## Auto trigger search from URL
 

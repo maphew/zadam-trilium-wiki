@@ -1,4 +1,4 @@
-** This document describes search syntax as used in versions 0.43 and older. For up-to-date syntax see [[Search]].**
+**This document describes search syntax as used in versions 0.43 and older. For up-to-date syntax see [[Search]].**
 
 Trilium supports searching in notes. There are several ways to search notes:
 

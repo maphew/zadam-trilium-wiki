@@ -10,7 +10,7 @@ Server installation has both desktop and [[mobile frontend]].
 
 ## Configuration
 
-For server installations, you might want to configure e.g. port or [[TLS|TLS configuration]]. This is done in the Trilium config file, by default it's in `config.ini` in the [[data directory]]
+For server installations, you might want to configure e.g. port or [[TLS|TLS configuration]]. This is done in the Trilium config file, by default it's in `config.ini` in the [[data directory]].
 
 ### Config location
 
@@ -21,6 +21,16 @@ If this is not desired, you may change it via `TRILIUM_DATA_DIR` environment var
 ```bash
 export TRILIUM_DATA_DIR=/home/myuser/data/my-trilium-data
 ```
+
+### Disable authentication
+Among others, you can also disable authentication (in case you run on localhost only or authentication is handled by another component) with:
+
+```
+[General]
+noAuthentication=true
+```
+
+Note that disabling authentication is possible only since version 0.44.
 
 ## Reverse proxy setup
 

@@ -14,7 +14,6 @@ In both cases it is possible to switch to editable mode again.
 CKEditor supports markdown-like editing experience. It recognizes syntax and automatically converts it to rich text. See it in action:
 
 [[gifs/autoformat.gif]]
-ode
 Complete documentation for this feature is available in [CKEditor documentation](https://ckeditor.com/docs/ckeditor5/latest/features/autoformat.html).
 
 If the autoformat is not desirable for what you just wrote, you can press `CTRL-Z` which will un-autoformat the text to its original form.

@@ -1,3 +1,5 @@
+** This page describes search as of version 0.44 and newer. For 0.43 and older, see [[Old Search]].
+
 * local search - searches within currently displayed note. Press `CTRL-F` to open the search dialog. In server version this is handled by the browser, in desktop (electron) version there's a separate dialog.
 
 * note search - you can find notes by search for text in the title, note's content or note's [attributes]. You can also [[save search|saved search]].

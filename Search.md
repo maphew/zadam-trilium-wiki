@@ -54,6 +54,7 @@
 
 Note has certain properties which can be also used for searching:
 
+* noteId
 * dateModified - local dates are in the format "2019-05-19 16:39:47.003+0200" 
 * dateCreated
 * utcDateModified - UTC dates are in the format "2019-05-19 14:39:47.003Z"

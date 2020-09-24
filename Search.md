@@ -62,7 +62,7 @@ Note has certain properties which can be also used for searching:
 * isProtected (true, false)
 * type (text, code, search, relation-map, book)
 * title (when you want to search specifically the title)
-* text - search through note title, 
+* text - search through note title and content
 * labelCount
 * relationCount
 * attributeCount - labelCount + relationCount

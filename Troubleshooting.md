@@ -25,6 +25,8 @@ UPDATE options SET value = 'Eb8af1/T57b89lCRuS97tPEl4CwxsAWAU7YNJ77oY+s=' WHERE 
 UPDATE options SET value = 'QpC8XoiYYeqHPtHKRtbNxfTHsk+pEBqVBODYp0FkPBa22tlBBKBMigdLu5GNX8Uu' WHERE name = 'encryptedDataKey';
 ```
 
+After executing the changes, don't forget to commit/write the changes!
+
 This will set the password to "password". You can use that to login to the application again.
 
 If you already had protected notes (which are not unrecoverable), I recommend deleting them or alternatively export the unprotected notes, delete the document.db and start anew.

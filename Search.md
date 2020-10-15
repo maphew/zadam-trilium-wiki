@@ -15,7 +15,7 @@
 
 `towers #book or #author` - searches notes containing "towers" word anywhere and matching note must have either "book" or "author" label
 
-`towers #!book` - searches notes containing "towers" word anywhere and which do **not** have "book"
+`towers #!book` - searches notes containing "towers" word anywhere and which do **not** have "book" label
 
 `#book #publicationYear = 1954` - will find notes with "book" label and label "publicationYear" containing this specific value
 

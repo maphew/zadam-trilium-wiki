@@ -18,6 +18,12 @@ Complete documentation for this feature is available in [CKEditor documentation]
 
 If the autoformat is not desirable for what you just wrote, you can press `CTRL-Z` which will un-autoformat the text to its original form.
 
+## Math support
+
+Trilium provides Math support with the help of KaTex (available since 0.45):
+
+[[gifs/math.gif]]
+
 ## Cut selection to sub-note
 
 **This feature is available since 0.39.3**

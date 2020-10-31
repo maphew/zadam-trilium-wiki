@@ -39,6 +39,10 @@ Trilium periodically checks logical consistency of the database (e.g. that every
 
 In such case, it is recommended to file a bug report and attach anonymized database (see below).
 
+## Broken script prevents application startup
+
+See https://github.com/zadam/trilium/wiki/Document#restoring-demo-document
+
 ## Reporting bugs
 
 It's a great help to send bug reports. Here are some tips where to look at:

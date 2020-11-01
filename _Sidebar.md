@@ -25,7 +25,7 @@
     * [[Mobile frontend]]
   * [[Upgrading Trilium]]
   * [[TLS configuration]]
-  * [[Setting Database Path]]
+  * [[Data-Directory]]
   * [[Synchronization]]
   * [[Web clipper]]
 * Advanced usage

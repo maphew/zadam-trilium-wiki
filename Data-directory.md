@@ -55,7 +55,7 @@ Here is a pre-defined template, where you just need to add your path to:
             <string>launchctl</string>
             <string>setenv</string>
             <string>TRILIUM_DATA_DIR</string>
-            <string>/Users/def/Library/Application Support/trilium-data</string>
+            <string>/Users/**YourUserName**/Library/Application Support/trilium-data</string>
         </array>
     </dict>
 </plist>

@@ -9,7 +9,7 @@
 For setting a custom database Path, you have to set it manually.
 
 Specifically for OSx, that has changed, and export isn't enough.
-You need to create a file under `~/Library/LaunchAgents` to load it properly each login.
+You need to create a .plist file under `~/Library/LaunchAgents` to load it properly each login.
 
 To load it manually, u need to use `launchctl setenv TRILIUM_DATA_DIR <yourpath>`
 

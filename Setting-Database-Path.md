@@ -1,9 +1,9 @@
-Windows (to be done)
+# Windows (to be done)
 ***
 
 
 
-OSx (tested on Catalina)
+# OSx (tested on Catalina)
 ***
 
 For setting a custom database Path, you have to set it manually.

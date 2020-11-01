@@ -24,10 +24,41 @@ If you want to backup your Trilium data, just backup this single file - it conta
 
 ### Changing the location of data directory
 
-If you want to use some other location for the data directory than the default one, you may change it via TRILIUM_DATA_DIR environment variable to some other location, e.g.:
+If you want to use some other location for the data directory than the default one, you may change it via TRILIUM_DATA_DIR environment variable to some other location:
+
+#### Linux
 
 ```
 export TRILIUM_DATA_DIR=/home/myuser/data/my-trilium-data
+```
+
+#### Mac OS X
+
+You need to create a .plist file under `~/Library/LaunchAgents` to load it properly each login.
+
+To load it manually, u need to use `launchctl setenv TRILIUM_DATA_DIR <yourpath>`
+
+Here is a pre-defined template, where you just need to add your path to:
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>set.trium.env</string>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>ProgramArguments</key>
+        <array>
+            <string>launchctl</string>
+            <string>setenv</string>
+            <string>TRILIUM_DATA_DIR</string>
+            <string>/Users/def/Library/Application Support/trilium-data</string>
+        </array>
+    </dict>
+</plist>
 ```
 
 ### Create a script to run with specific data directory

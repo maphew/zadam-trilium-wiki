@@ -47,7 +47,7 @@ Here is a pre-defined template, where you just need to add your path to:
 <plist version="1.0">
     <dict>
         <key>Label</key>
-        <string>set.trium.env</string>
+        <string>set.trillium.env</string>
         <key>RunAtLoad</key>
         <true/>
         <key>ProgramArguments</key>

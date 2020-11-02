@@ -56,6 +56,10 @@ Once we pass these checks we will just create the desired note using [[Script AP
 
 Another common use case is that you want to just expose a file note - in such case you create label `customResourceProvider` (value is again path regex).
 
+Note: The file that is supposed to be exposed needs to wear an "#customResourceProvider" and then it can be called from anywhere.
+For example, your file is in custom/fonts, you call it via custom/fonts/myFont.woff
+myFont.woff must wear the "#customRessourceProvider" tag.
+
 ## Advanced concepts
 
 `api.req` and `api.res` are Express.js objects - you can always look into its [documentation](https://expressjs.com/en/api.html) for details.

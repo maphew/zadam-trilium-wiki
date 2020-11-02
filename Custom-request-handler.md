@@ -58,7 +58,7 @@ Another common use case is that you want to just expose a file note - in such ca
 
 Note: The file that is supposed to be exposed needs to wear an "#customResourceProvider" tag and then it can be called from anywhere.
 For example, your file is in custom/fonts, you can call it via custom/fonts/myFont.woff
-But only myFont.woff wears the `"#customRessourceProvider"` tag. Otherwise, nothing would be found.
+But only myFont.woff wears the `customRessourceProvider` label. Otherwise, nothing would be found.
 
 ## Advanced concepts
 

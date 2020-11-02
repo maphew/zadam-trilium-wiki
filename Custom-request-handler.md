@@ -56,7 +56,7 @@ Once we pass these checks we will just create the desired note using [[Script AP
 
 Another common use case is that you want to just expose a file note - in such case you create label `customResourceProvider` (value is again path regex).
 
-Note: The file that is supposed to be exposed needs to wear an "#customResourceProvider" tag and then it can be called from anywhere.
+Note: The file that is supposed to be exposed needs to wear an "#customResourceProvider" label and then it can be called from anywhere.
 For example, your file is in custom/fonts, you can call it via `custom/fonts/myFont.woff`
 But only if `myFont.woff` wears the `customRessourceProvider` label. Otherwise, nothing would be found.
 

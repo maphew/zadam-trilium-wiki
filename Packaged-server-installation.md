@@ -4,8 +4,8 @@ This is essentially Trilium sources + node modules + node.js runtime packaged in
 
 * ssh into your server
 * use `wget` (or `curl` or whatever) to download latest [
-trilium-linux-x64-server-[VERSION].7z](https://github.com/zadam/trilium/releases/latest) (notice -server suffix) on your server
-* unpack the archive, e.g. using `p7zip -d trilium-linux-x64-server-[VERSION].7z`
+trilium-linux-x64-server-[VERSION].xz](https://github.com/zadam/trilium/releases/latest) (notice -server suffix) on your server
+* unpack the archive, e.g. using `tar -xf -d trilium-linux-x64-server-[VERSION].tar.xz`
 * `cd trilium-linux-x64-server`
 * `./trilium.sh`
 * you can open the browser and open http://[your-server-hostname]:8080 and you should see Trilium initialization page

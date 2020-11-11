@@ -95,6 +95,9 @@ Once you made your changes, you can reload the Trilium frontend by pressing CTRL
 If you want to give some specific notes special styling in the tree, you can give them `cssClass` [[label|attributes]] which is then put into the node representing given note in the tree.
 
 There's also an `iconClass` using which you can define custom icons for notes in the tree - you can either use supplied ones from [boxicons](https://boxicons.com/) (e.g. `bx bx-home`) or you can define your own CSS classes.
+Some of those are actually different. So you have `#iconClass="bx bxs-piano"`for instance instead of `bx bx-piano`.
+On the boxicons site, you can find out, looking at the font tab, after u opened a file, how its called.
+
 
 `iconClass` and `cssClass` are especially powerful when used with [[template]].
 

@@ -17,7 +17,7 @@ Replace [VERSION] for actual latest version or use "series" tag - e.g. `0.39-lat
 ## Run image
 
 ~~~~
-sudo docker run -t -i -p 127.0.0.1:8080:8080 -v ~/trilium-data:/root/trilium-data zadam/trilium:latest
+sudo docker run -t -i -p 127.0.0.1:8080:8080 -v ~/trilium-data:/root/trilium-data zadam/trilium:[VERSION]
 ~~~~
 
 Command above is mounting volume to the host system so that trilium's data (most importantly [[document]]) is persisted and not cleared after container stops.

@@ -20,7 +20,7 @@ Data directory is normally named `trilium-data` and it is stored in:
 * user's home is a fallback if some of the paths above don't exist
 * user's home is also a default setup for [[docker|Docker server installation]]
 
-If you want to backup your Trilium data, just backup this single file - it contains everything you need.
+If you want to backup your Trilium data, just backup this single directory - it contains everything you need.
 
 ### Changing the location of data directory
 

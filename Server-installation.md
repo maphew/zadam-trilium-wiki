@@ -5,6 +5,7 @@ There are three options how to do this, each one with some advantage:
 * Recommended: [[Docker|Docker server installation]] - images for **AMD64** and **ARM**
 * [[Packaged server installation]]
 * [[Manual installation|Manual server installation]]
+* [[Kubernetes|Kubernetes server installation]]
 
 Server installation has both desktop and [[mobile frontend]].
 

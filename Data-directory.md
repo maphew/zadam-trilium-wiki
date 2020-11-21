@@ -63,7 +63,7 @@ Here is a pre-defined template, where you just need to add your path to:
 
 ### Create a script to run with specific data directory
 
-And alternative to globally setting environment variable is to run only the Trilium Notes with this environment variable. This then allows for different setup styles like two [[document]] instances or "portable" installation.
+An alternative to globally setting environment variable is to run only the Trilium Notes with this environment variable. This then allows for different setup styles like two [[document]] instances or "portable" installation.
 
 To do this in unix based systems simply run trilium like this:
 

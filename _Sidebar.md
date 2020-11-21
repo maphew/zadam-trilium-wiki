@@ -22,6 +22,7 @@
     * [[Packaged server installation]]
     * [[Docker server installation]]
     * [[Manual server installation]]
+    * [[Kubernetes server installation]]
     * [[Mobile frontend]]
   * [[Upgrading Trilium]]
   * [[TLS configuration]]

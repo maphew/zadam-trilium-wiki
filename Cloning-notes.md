@@ -47,7 +47,7 @@ In the demo, you can see how clone can be created using context menu. It's possi
 
 You can also notice how after creating the clone, all clones are highlighted. This is so you can easily see which notes are cloned into other locations in the hierarchy.
 
-Please note: In more recent versions, titles of cloned noted in the tree view have an asterisk to the right. Also, the "Paths" dropdown has been changed to a dropdown at the top of the tree view. As documented [here](https://github.com/zadam/trilium/issues/1139#issuecomment-651582746).
+Please note: in more recent versions, titles of cloned notes in the tree view have an asterisk to the right. Also, the "Paths" dropdown has been changed to a dropdown at the top of the tree view. As documented [here](https://github.com/zadam/trilium/issues/1139#issuecomment-651582746).
 
 ## Prefix
 

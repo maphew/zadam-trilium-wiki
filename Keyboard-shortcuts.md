@@ -60,6 +60,8 @@ These are hooked in Electron to be similar to native browser keyboard shortcuts.
 * `F5`, `CTRL-R` - reloads trilium frontend
 * `CTRL+SHIFT+I` - show developer tools
 * `CTRL+F` - show search dialog
+* `CTRL+-` - zoom out
+* `CTRL+=` - zoom in
 
 ## Other
 

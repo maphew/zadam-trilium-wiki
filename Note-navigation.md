@@ -12,7 +12,7 @@ Of course this is basic and expected functionality, but it's worth mentioning th
 
 ## Jump to note
 
-This is useful to quickly find and view arbitrary note - click on `Jump to` button on the top or press `CTRL-J`.
+This is useful to quickly find and view arbitrary note - click on `Jump to` button on the top or presss `CTRL-J`.
 Then type part of the note name and autocomplete will help you pick the desired note.
 
 [[gifs/jump-to.gif]]

@@ -1,4 +1,4 @@
-A common pattern in note taking is that a lot of notes will be centered around certain date - e.g. you have some tasks which needs to be done on certain date, you have meeting minutes from certain date, you have your thoughts etc. and it all revolves around a date on which they occurred. For this reason it makes sense to create certain "day workspace" which will centralize all those notes relevant for certain date.
+A common pattern in note taking is that a lot of notes will be centered around a certain date - e.g. you have some tasks which needs to be done on a certain date, you have meeting minutes from a certain date, you have your thoughts etc. and it all revolves around a date on which they occurred. For this reason it makes sense to create a certain "day workspace" which will centralize all those notes relevant for a certain date.
 
 For this, Trilium provides a concept of "day note". Trilium semi-automatically generates a single note for each day. Under this note you can save all those relevant notes.
 
@@ -12,15 +12,24 @@ You can see structure of day notes appearing under "Journal" note - there's a no
 You can also notice how this day note has [[promoted attribute|Promoted attributes]] "weight" where you can track your daily weight. This data is then used in [[Weight tracker]].
 
 ## Templates
-Trilium provides [[template]] functionality and it could be used together with day notes.
+Trilium provides [[template]] functionality, and it could be used together with day notes.
 
-You can define one of the following relations on the root of the journal (identified by `@calendarRoot` label):
+You can define one of the following relations on the root of the journal (identified by `#calendarRoot` label):
 
 * yearTemplate
 * monthTemplate
 * dateTemplate
 
 All of these are relations. When Trilium creates a new note for year or month or date it will take a look to the root and attach a corresponding `@template` relation to the newly created role. Using this you can e.g. create your daily template with e.g. checkboxes for daily routine etc.
+
+## Date pattern
+
+It's possible to customize the title of generated date notes by defining a `#datePattern` label on a root calendar note (identified by `#calendarRoot` label). Following are possible values:
+
+* `{dayInMonthPadded} - {weekDay}` day notes are named e.g. "24 - Monday"
+* `{dayInMonthPadded}: {weekDay3}` day notes are named e.g. "24: Mon"
+* `{dayInMonthPadded}: {weekDay2}` day notes are named e.g. "24: Mo"
+* `{isoDate} - {weekDay}` day notes are named e.g. "2020-12-24 - Monday"
 
 ## Implementation
 

@@ -33,6 +33,16 @@ If you already had protected notes (which are not unrecoverable), I recommend de
 
 If you decide to continue using the existing document file, don't forget to change your password (Options -> Change password).
 
+## Broken note crashes Trilium
+
+Sometimes a particular problem can cause issues for Trilium (e.g. render note with faulty script) and causes Trilium to crash. But since Trilium will normally try to load previously open notes, it will attempt to load again the note causing the crash again.
+
+To break out of this vicious cycle you can specify `TRILIUM_START_NOTE_ID` environment variable which will reset the open tabs to only one with the specified note ID (just use `root`). In linux you could use it like this:
+
+```bash
+TRILIUM_START_NOTE_ID=root ./trilium
+```
+
 ## Sync and consistency checks
 
 Trilium periodically checks logical consistency of the database (e.g. that every note should have a parent). If some inconsistency is detected, user is notified on the UI about the inconsistency.

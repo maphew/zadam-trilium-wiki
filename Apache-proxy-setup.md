@@ -20,7 +20,7 @@ I've assumed you have created a DNS A record for `trilium.yourdomain.com` that y
 		
 		Choose standalone (2) and note the location of the created certificates (typically /etc/letsencrypt/live/...)
 
-	3. Create a new virtual host file for apache (you may want to use `apachectl -S` to determine the server root location, mine is /etc/apahce2)
+	3. Create a new virtual host file for apache (you may want to use `apachectl -S` to determine the server root location, mine is /etc/apache2)
 	
 			sudo nano /etc/apache2/sites-available/trilium.yourdomain.com.conf
 			

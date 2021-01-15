@@ -51,7 +51,13 @@ In such case, it is recommended to file a bug report and attach anonymized datab
 
 ## Broken script prevents application startup
 
-See https://github.com/zadam/trilium/wiki/Document#restoring-demo-document
+If you experiment with scripting, it might happen that you create a script which crashes whole Trilium. That's even worse if you set it as a startup script or in an active [[custom widget]].
+
+In such cases you can start Trilium in "safe mode" which will not execute any custom scripts:
+
+```bash
+TRILIUM_SAFE_MODE=true ./trilium
+```
 
 ## Reporting bugs
 

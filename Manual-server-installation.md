@@ -22,7 +22,7 @@ sudo apt install libpng16-16 libpng-dev pkg-config autoconf libtool build-essent
 ## Installation 
 
 ### Download
-You can either download source code zip/tar from [[latest release|https://github.com/zadam/trilium/releases/latest]] or clone git repository from stable branch with ```git clone -b stable https://github.com/zadam/trilium.git```
+You can either download source code zip/tar from [[latest release|https://github.com/zadam/trilium/releases/latest]] or clone git repository **from stable branch** with ```git clone -b stable https://github.com/zadam/trilium.git```
 
 ## Installation
 ~~~

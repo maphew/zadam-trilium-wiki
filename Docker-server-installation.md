@@ -25,5 +25,3 @@ Command above is mounting volume to the host system so that trilium's data (most
 If you want to run your instance in a non-default way, please use the volume switch as follows: `-v ~/YourOwnDirectory:/root/trilium-data zadam/trilium:[VERSION]`.
 It is important to be aware of how Docker works for volumes, with the first path being your own and the second the one to virtually bind to.
 https://docs.docker.com/storage/volumes/
-
-X

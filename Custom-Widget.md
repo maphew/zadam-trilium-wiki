@@ -17,7 +17,7 @@ Create a code note of type JS frontend and give it `widget` label.
  * 
  * See it in action in "Books" and its subtree.
  */
-const TPL = `<div style="padding: 10px; border-top: 1px solid var(--main-border-color);">
+const TPL = `<div style="contain: none; padding: 10px; border-top: 1px solid var(--main-border-color);">
     <strong>Word count: </strong>
     <span class="word-count"></span>
 

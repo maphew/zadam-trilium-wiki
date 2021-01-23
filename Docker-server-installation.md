@@ -4,6 +4,11 @@ Official docker images are published on docker hub for **AMD64**: https://hub.do
 
 Unofficial docker images for **ARMv7** and **ARMv8** provided by Howard (thanks!): https://hub.docker.com/r/hlince/trilium ([build scripts](https://gitea.e9g.rocks/howard/trilium-daily-build))
 
+## Prerequistes
+To start you will need to have docker installed on your computer. Here are two guides that can help:
+- https://docs.docker.com/engine/install/ubuntu/
+- https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
+
 ## Pull image
 
 ~~~~
@@ -15,12 +20,22 @@ Replace [VERSION] for actual latest version or use "series" tag - e.g. `0.39-lat
 **It's not recommended to use "latest" tag since it may upgrade your Trilium instance to new minor version which may potentially break your sync setup or cause other issues.**
 
 ## Run image
+These commands mount the volume to the host system so that trilium's data (most importantly [[document]]) is persisted and not cleared after container stops. 
 
+### Local only
+This will run the container so that it only available on the localhost. Use this to test the installation from a web browser on the same machine you run this command on
 ~~~~
 sudo docker run -t -i -p 127.0.0.1:8080:8080 -v ~/trilium-data:/root/trilium-data zadam/trilium:[VERSION]
 ~~~~
+1. Test to see that the docker image is running with `docker ps`
+2. Access the trilium by opening a browser and go to `127.0.0.1:8080`
 
-Command above is mounting volume to the host system so that trilium's data (most importantly [[document]]) is persisted and not cleared after container stops. 
+### Available anywhere
+This will run the container as a background process and will be available from any IP address
+~~~~
+docker run -d -p 0.0.0.0:8080:8080 -v ~/trilium-data:/root/trilium-data zadam/trilium
+~~~~
+To stop this background docker process us `docker ps` to get the "CONTAINER ID" and then use `docker stop <CONTAINER ID>`
 
 If you want to run your instance in a non-default way, please use the volume switch as follows: `-v ~/YourOwnDirectory:/root/trilium-data zadam/trilium:[VERSION]`.
 It is important to be aware of how Docker works for volumes, with the first path being your own and the second the one to virtually bind to.

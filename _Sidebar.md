@@ -25,6 +25,7 @@
     * [[Kubernetes server installation]]
     * [[Mobile frontend]]
   * [[Upgrading Trilium]]
+  * [[Apache proxy setup]]
   * [[TLS configuration]]
   * [[Data-Directory]]
   * [[Synchronization]]

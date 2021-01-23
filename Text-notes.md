@@ -9,7 +9,7 @@ Text notes are normally opened in edit mode, however there are two cases when th
 
 In both cases it is possible to switch to editable mode again.
  
-## Autoformat
+## Markdown & Autoformat
 
 CKEditor supports markdown-like editing experience. It recognizes syntax and automatically converts it to rich text. See it in action:
 
@@ -17,6 +17,8 @@ CKEditor supports markdown-like editing experience. It recognizes syntax and aut
 Complete documentation for this feature is available in [CKEditor documentation](https://ckeditor.com/docs/ckeditor5/latest/features/autoformat.html).
 
 If the autoformat is not desirable for what you just wrote, you can press `CTRL-Z` which will un-autoformat the text to its original form.
+
+Note that the use of `#` for Heading1 style is not supported because the editor assumes that is used for the title, start with `##` for Heading2. Explanation [here](https://ckeditor.com/docs/ckeditor5/latest/features/headings.html#heading-levels).
 
 ## Math support
 

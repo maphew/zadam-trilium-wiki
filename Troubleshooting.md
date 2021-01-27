@@ -59,6 +59,10 @@ In such cases you can start Trilium in "safe mode" which will not execute any cu
 TRILIUM_SAFE_MODE=true ./trilium
 ```
 
+## Restoring backup
+
+Trilium makes regular automatic backup so When things go really bad we might need the last option - [[restore backup|Backup#restoring-backup]].
+
 ## Reporting bugs
 
 It's a great help to send bug reports. Here are some tips where to look at:

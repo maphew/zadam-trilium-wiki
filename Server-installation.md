@@ -7,6 +7,7 @@ There are three options how to do this, each one with some advantage:
 * [[Manual installation|Manual server installation]]
 * [[Kubernetes|Kubernetes server installation]]
 * [Cloudron](https://www.cloudron.io/store/com.github.trilium.cloudronapp.html)
+* [HomelabOS](https://homelabos.com/docs/software/trilium/)
 
 Server installation has both web and [[mobile frontend]].
 

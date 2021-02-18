@@ -94,6 +94,16 @@ Example above will do the following things (in this sequence):
   1. in case publication date is equal, use note.title as secondary ordering in ascending order (`asc` is the default and thus can be ommitted)
 3. take only the first 10 results
 
+### Negation
+
+Some queries can be expressed only with negation:
+
+```
+#book AND not(note.ancestor.title = 'Tolkien')
+```
+
+This will find all the book notes which are not in the "Tolkien" subtree.
+
 ## Under the hood
 
 ### Label and relation shortcuts

@@ -73,7 +73,7 @@ Note has certain properties which can be also used for searching:
 * `ownedAttributeCount` = `ownedLabelCount` + `ownedRelationCount`
 * `attributeCount` = `labelCount` + `relationCount`
 * `targetRelationCount` - number of relations targeting this note
-* `parentCount` - essentially number of [[clones|note cloning]]
+* `parentCount` - essentially number of [[clones|cloning notes]]
 * `childrenCount`
 * `isArchived` (true, false)
 * `contentSize` - size of note content in bytes. Since v0.46.

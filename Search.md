@@ -54,26 +54,31 @@
 
 Note has certain properties which can be also used for searching:
 
-* noteId
-* dateModified - local dates are in the format "2019-05-19 16:39:47.003+0200" 
-* dateCreated
-* utcDateModified - UTC dates are in the format "2019-05-19 14:39:47.003Z"
-* utcDateCreated
-* isProtected (true, false)
-* type (text, code, search, relation-map, book)
-* title (when you want to search specifically the title)
-* text - search through note title and content
-* content - search just through note content
-* rawContent - search through raw note content (HTML tags are kept). Since v0.46.
-* labelCount
-* relationCount
-* attributeCount - labelCount + relationCount
-* parentCount
-* childrenCount
-* isArchived (true, false)
-* contentSize - size of note content in bytes. Since v0.46.
-* noteSize - estimated size of complete note (chiefly note content + note revision contents). Since v0.46.
-* revisionCount - number of note revisions. Since v0.46.
+* `noteId`
+* `dateModified` - local dates are in the format "2019-05-19 16:39:47.003+0200" 
+* `dateCreated`
+* `utcDateModified` - UTC dates are in the format "2019-05-19 14:39:47.003Z"
+* `utcDateCreated`
+* `isProtected` (true, false)
+* `type` (text, code, search, relation-map, book)
+* `title` (when you want to search specifically the title)
+* `text` - search through note title and content
+* `content` - search just through note content
+* `rawContent` - search through raw note content (HTML tags are kept). Since v0.46.
+* `ownedLabelCount`
+* `labelCount` (includes inherited labels)
+* `ownedRelationCount`
+* `relationCount` (includes inherited relations)
+* `ownedRelationCountIncludingLinks` and `relationCountIncludingLinks` - count also includes auto-generated relations `imageLink`, `internalLink`, `relationMapLink` and `includeNoteLink`
+* `ownedAttributeCount` = `ownedLabelCount` + `ownedRelationCount`
+* `attributeCount` = `labelCount` + `relationCount`
+* `targetRelationCount` - number of relations targeting this note
+* `parentCount` - essentially number of [[clones|cloning]]
+* `childrenCount`
+* `isArchived` (true, false)
+* `contentSize` - size of note content in bytes. Since v0.46.
+* `noteSize` - estimated size of complete note (chiefly note content + note revision contents). Since v0.46.
+* `revisionCount` - number of note revisions. Since v0.46.
 
 These are accessed through `note.`, e.g.:
 

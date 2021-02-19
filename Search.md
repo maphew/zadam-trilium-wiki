@@ -76,9 +76,9 @@ Note has certain properties which can be also used for searching:
 * `parentCount` - essentially number of [[clones|cloning notes]]
 * `childrenCount`
 * `isArchived` (true, false)
-* `contentSize` - size of note content in bytes. Since v0.46.
+* `contentSize` - size of note content in bytes. 
 * `noteSize` - estimated size of complete note (chiefly note content + note revision contents). Since v0.46.
-* `revisionCount` - number of note revisions. Since v0.46.
+* `revisionCount` - number of note revisions.
 
 These are accessed through `note.`, e.g.:
 

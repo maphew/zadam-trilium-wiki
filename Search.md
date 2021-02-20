@@ -73,6 +73,7 @@ Note has certain properties which can be also used for searching:
 * `ownedAttributeCount` = `ownedLabelCount` + `ownedRelationCount`
 * `attributeCount` = `labelCount` + `relationCount`
 * `targetRelationCount` - number of relations targeting this note
+* `targetRelationCountIncludingLinks` - count also includes auto-generated relations `imageLink`, `internalLink`, `relationMapLink` and `includeNoteLink`
 * `parentCount` - essentially number of [[clones|cloning notes]]
 * `childrenCount`
 * `isArchived` (true, false)

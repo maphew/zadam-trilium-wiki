@@ -37,6 +37,10 @@ There are several steps here:
 
 Relation definitions mentioned above come from "Person template" note which is assigned to any child of "My Family Tree" relation note. You can play with the whole thing in the [[demo document|Document#Demo document]].
 
+## Details
+
+You can specify which relations should be displayed with comma delimited names of relations in `displayRelations` label.
+
 ## See also
 
 * [[Link map]] is a similar concept to relation maps 

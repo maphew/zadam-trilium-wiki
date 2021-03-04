@@ -113,3 +113,4 @@ Following are themes developed by Trilium users:
 * https://github.com/raphwriter/trilium-theme-melon
 * https://github.com/Engr-AllanG/trilium-themes
 * https://github.com/idelem/trilium-theme-velvet
+* https://github.com/SADAVA/trilium-notes-theme-dark-plus

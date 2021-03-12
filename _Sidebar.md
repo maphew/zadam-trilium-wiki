@@ -27,6 +27,7 @@
     * [[Manual server installation]]
     * [[Kubernetes server installation]]
     * [[Apache proxy setup]]
+    * [[Nginx proxy setup]]
     * [[TLS configuration]]
   * [[Desktop installation]]
   * [[Synchronization]]

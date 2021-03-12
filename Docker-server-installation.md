@@ -23,7 +23,7 @@ Replace [VERSION] for actual latest version or use "series" tag - e.g. `0.39-lat
 These commands mount the volume to the host system so that trilium's data (most importantly [[document]]) is persisted and not cleared after container stops. 
 
 ### Local only
-This will run the container so that it only available on the localhost. Use this to test the installation from a web browser on the same machine you run this command on
+This will run the container so that it only available on the localhost. Use this to test the installation from a web browser on the same machine you run this command on, or if you are using a proxy with nginx/apache. 
 ~~~~
 sudo docker run -t -i -p 127.0.0.1:8080:8080 -v ~/trilium-data:/root/trilium-data zadam/trilium:[VERSION]
 ~~~~

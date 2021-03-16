@@ -25,7 +25,7 @@ These commands mount the volume to the host system so that trilium's data (most 
 ### Local only
 This will run the container so that it only available on the localhost. Use this to test the installation from a web browser on the same machine you run this command on, or if you are using a proxy with nginx/apache. 
 ~~~~
-sudo docker run -t -i -p 127.0.0.1:8080:8080 -v ~/trilium-data:/root/trilium-data zadam/trilium:[VERSION]
+sudo docker run -t -i -p 127.0.0.1:8080:8080 -v ~/trilium-data:/home/node/trilium-data zadam/trilium:[VERSION]
 ~~~~
 1. Test to see that the docker image is running with `docker ps`
 2. Access the trilium by opening a browser and go to `127.0.0.1:8080`
@@ -33,7 +33,7 @@ sudo docker run -t -i -p 127.0.0.1:8080:8080 -v ~/trilium-data:/root/trilium-dat
 ### Available anywhere
 This will run the container as a background process and will be available from any IP address
 ~~~~
-docker run -d -p 0.0.0.0:8080:8080 -v ~/trilium-data:/root/trilium-data zadam/trilium
+docker run -d -p 0.0.0.0:8080:8080 -v ~/trilium-data:/home/node/trilium-data zadam/trilium
 ~~~~
 To stop this background docker process us `docker ps` to get the "CONTAINER ID" and then use `docker stop <CONTAINER ID>`
 

@@ -15,6 +15,7 @@
     * [[Note navigation]]
     * [[Search]]
     * [[Note hoisting]]
+    * [[Workspace]]
   * [[Keyboard shortcuts]]
   * [[Themes]]
   * Import & Export

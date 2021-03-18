@@ -6,6 +6,7 @@ Global events are attached to the script note via label. Simply create e.g. "run
 
 * `run`
   * `frontendStartup` - executes on frontend upon startup
+  * `mobileStartup` - executes on mobile frontend upon startup
   * `backendStartup` - executes on backend upon startup
   * `hourly` - executes once an hour on backend 
   * `daily` - executes once a day on backend

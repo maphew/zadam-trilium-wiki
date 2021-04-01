@@ -33,7 +33,7 @@ sudo docker run -t -i -p 127.0.0.1:8080:8080 -v ~/trilium-data:/home/node/triliu
 ### Available anywhere
 This will run the container as a background process and will be available from any IP address
 ~~~~
-docker run -d -p 0.0.0.0:8080:8080 -v ~/trilium-data:/home/node/trilium-data zadam/trilium
+docker run -d -p 0.0.0.0:8080:8080 -v ~/trilium-data:/home/node/trilium-data zadam/trilium:[VERSION]
 ~~~~
 To stop this background docker process use `docker ps` to get the "CONTAINER ID" and then use `docker stop <CONTAINER ID>`
 

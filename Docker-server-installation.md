@@ -37,6 +37,7 @@ docker run -d -p 0.0.0.0:8080:8080 -v ~/trilium-data:/home/node/trilium-data zad
 ~~~~
 To stop this background docker process use `docker ps` to get the "CONTAINER ID" and then use `docker stop <CONTAINER ID>`
 
+### Different data directory location
 If you want to run your instance in a non-default way, please use the volume switch as follows: `-v ~/YourOwnDirectory:/home/node/trilium-data zadam/trilium:[VERSION]`.
 It is important to be aware of how Docker works for volumes, with the first path being your own and the second the one to virtually bind to.
 https://docs.docker.com/storage/volumes/

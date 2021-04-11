@@ -3,6 +3,7 @@ Template is a note which serves as a kind of "template" for other kind of notes 
 Assignment of a template relation to a note brings these three effects:
 
 * all attributes from the template note are [[inherited|attribute inheritance]] to the instance notes
+  * note that even attributes with `isInheritable=false` are inherited to the instance notes, but only inheritable attributes are then inherited to the children of instance notes
 * note content is copied from the template note to the instance note (if the instance note content is empty at the time of template attribute assignment)
 * all template's children notes are deep-duplicated to the instance note
 

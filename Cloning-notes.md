@@ -16,7 +16,7 @@ This is a pretty powerful approach, but it also carries a hidden assumption that
 Now, I'm starting to learn about [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) and would like to create notes related to this topic. But now I'm facing a problem of where to "categorize" this. The issue here is that Bash is both a programming language and a tool (shell) very much tied into Linux. It seems it belongs to both of these, I can't (and don't want to) choose one over the other.
 
 ## Solution
-Solution to the problem shown above is to allow notes to have multiple parents. 
+The solution to the problem shown above is to allow notes to have multiple parents. 
 
 I call these "clones", but that is a bit misleading - there's no original and cloned note - the notes in both of the parents categories are identical. 
 

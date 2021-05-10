@@ -115,3 +115,4 @@ Following are themes developed by Trilium users:
 * https://github.com/idelem/trilium-theme-velvet
 * https://github.com/SADAVA/trilium-notes-theme-dark-plus
 * https://github.com/WKSu/trilium-solarized-theme
+* https://github.com/en3r0/Trilium-Nord-Theme/tree/main

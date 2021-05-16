@@ -20,7 +20,7 @@ Now click on "Test sync" button which will tell you if the handshake with sync s
 
 You can also check the server instance periodically to see if the sync finished. Once it's finished you should see the login screen.
 
-### Setup synchronization from sync server do desktop instance
+### Setup synchronization from sync server to desktop instance
 
 This is used when you already have sync server and you want to set up desktop instance to sync with (from) it.
 

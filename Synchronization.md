@@ -22,11 +22,11 @@ You can also check the server instance periodically to see if the sync finished.
 
 ### Setup synchronization from sync server to desktop instance
 
-This is used when you already have sync server and you want to set up desktop instance to sync with (from) it.
+This is used when you already have sync server, and you want to set up a desktop instance to sync with (from) it.
 
 Here we assume that you downloaded [the most recent release](https://github.com/zadam/trilium/releases/latest) for your platform, unzipped it and ran it.
 
-Since the desktop instance is completely empty, it will first ask if you want to create initial document or you want to set up sync with sync server - you need to choose the second option.
+Since the desktop instance is completely empty, it will first ask if you want to create an initial document, or you want to set up sync with sync server - you need to choose the second option.
 
 [[images/sync-init.png]]
 
@@ -45,12 +45,24 @@ Two different setups are supported:
 * you can explicitly set proxy server to be used in Options / Sync. Only unauthenticated proxy servers are currently supported.
 * if no proxy server is explicitly configured, then Trilium will use system proxy settings 
 
+## Certificate issues
+
+When TLS is in use, Trilium client will attempt to verify the server certificate. In some cases (self-signed certs, some corporate proxy servers), the verification will be unsuccessful and sync will fail. In those cases you can run the Trilium client with environment variable `NODE_TLS_REJECT_UNAUTHORIZED` set to `0`:
+
+```shell
+export NODE_TLS_REJECT_UNAUTHORIZED=0
+```
+
+TLS certificate won't be verified and simply accepted as it is.
+
+Newer Trilium versions contain this in a script called `trilium-no-cert-check.sh`.
+
 ## Conflict resolution
 
-You can sometimes encounter a situation where you edit same note in multiple instances before the note changes are synchronized.
+You can sometimes encounter a situation where you edit the same note in multiple instances before the note changes are synchronized.
 
-Trilium handles this situation by just picking up the newer change and discarding the older change. The older change should still be visible in [[note revisions]] so it should be possible to recover any data lost in conflict resolution.
+Trilium handles this situation by just picking up the newer change and discarding the older change. The older change should still be visible in [[note revisions]], so it should be possible to recover any data lost in conflict resolution.
 
 ## Hash check
 
-After each completed sync, Trilium computes hash of all synced data on both client and sync server. If there's a difference, something went wrong and Trilium will run automatic recovery mechanism.
+After each completed sync, Trilium computes a hash of all synced data on both client and sync server. If there's a difference, something went wrong and Trilium will run an automatic recovery mechanism.

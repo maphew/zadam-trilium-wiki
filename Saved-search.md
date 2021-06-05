@@ -1,4 +1,4 @@
-** As of v0.46 this page is outdated **
+**As of v0.46 this page is outdated**
 
 Trilium provides a way to save common search as a note in the note tree. Search results will then appear as subnotes of this "saved search" note. You can see how this works in action:
 

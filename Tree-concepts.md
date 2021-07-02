@@ -16,6 +16,8 @@ Prefix is branch (placement) specific title prefix for the note. Let's say you h
 
 To edit prefix, right click on a note in the tree pane and choose "Edit branch prefix".
 
+Prefix is not part of the note itself and thus is not encrypted when the note is protected. That can be useful when you want to keep part of the title in the tree visible even when protected for easier orientation.
+
 ## Subtree
 
 Subtree is a set of notes consisting of a particular note (subtree root) and all its children, children of these children (= all its descendants). Some operations work on subtrees (e.g. export).

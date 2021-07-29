@@ -1,1 +1,1 @@
-yes
+Back to [Overview](https://github.com/zadam/trilium/wiki)

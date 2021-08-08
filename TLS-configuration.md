@@ -19,6 +19,6 @@ certPath=/[username]/.acme.sh/[hostname]/fullchain.cer
 keyPath=/[username]/.acme.sh/[hostname]/example.com.key
 ``` 
 
-Above is only example of how this is setup on my environment when I generated the certificate using Let's encrypt acme utility. Your paths may be completely different. (Note that if you are using a Docker installation, these paths should be in a volume or other path understood by the docker container.)
+Above is only example of how this is setup on my environment when I generated the certificate using Let's encrypt acme utility. Your paths may be completely different. (Note that if you are using a Docker installation, these paths should be in a volume or other path understood by the docker container, e.g., /home/node/trilium-data/[DIR IN DATA DIRECTORY].)
 
 After you set this up, you may restart trilium and now visit the hostname with "https".

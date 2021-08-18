@@ -4,7 +4,7 @@ Official docker images are published on docker hub for **AMD64**: https://hub.do
 
 Unofficial docker images for **ARMv7** and **ARMv8** provided by Howard (thanks!): https://hub.docker.com/r/hlince/trilium ([build scripts](https://gitea.e9g.rocks/howard/trilium-daily-build)). (note that I can't give neither guarantees, nor support when you use unofficial images)
 
-## Prerequistes
+## Prerequisites
 To start you will need to have docker installed on your computer. Here are two guides that can help:
 - https://docs.docker.com/engine/install/ubuntu/
 - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04

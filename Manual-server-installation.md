@@ -1,4 +1,4 @@
-This pages describes manually installing Trilium on your server.
+This page describes manually installing Trilium on your server.
 
 ## Requirements
 
@@ -13,7 +13,7 @@ If your linux distribution has only outdated version of node.js, you can take a 
 
 ### Dependencies
 
-There are some dependencies required mainly to compile image support. You can see command for Debian and its derivatives (like Ubuntu) below:
+There are some dependencies required. You can see command for Debian and its derivatives (like Ubuntu) below:
 
 ~~~~
 sudo apt install libpng16-16 libpng-dev pkg-config autoconf libtool build-essential nasm libx11-dev libxkbfile-dev
@@ -33,6 +33,9 @@ cd trilium
 
 # download all node dependencies
 npm install
+
+# make sure the better-sqlite3 binary is there
+npm rebuild
 ~~~~
 
 ## Run
@@ -44,7 +47,7 @@ cd trilium
 nohup node src/www &
 ~~~~
 
-Application by default starts up on port 8080, so you can open your browser and navigate to http://localhost:8080 to access Trilium (replace "localhost" with your hostname).
+The application by default starts up on port 8080, so you can open your browser and navigate to http://localhost:8080 to access Trilium (replace "localhost" with your hostname).
 
 ## TLS
 

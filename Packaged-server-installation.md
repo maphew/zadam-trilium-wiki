@@ -10,7 +10,47 @@ trilium-linux-x64-server-[VERSION].xz](https://github.com/zadam/trilium/releases
 * `./trilium.sh`
 * you can open the browser and open http://[your-server-hostname]:8080 and you should see Trilium initialization page
 
-The problem with above steps is that once you close the SSH connection, trilium process is terminated. To avoid that, kill it (with e.g. `CTRL-C`) and run again like this: `nohup ./trilium &`
+The problem with above steps is that once you close the SSH connection, the Trilium process is terminated. To avoid that, you have two options:
+* Kill it (with e.g. `CTRL-C`) and run again like this: `nohup ./trilium &`.  
+* Configure systemd to automatically run Trilium in the background on every boot
+
+## Configure Trilium to auto-run on boot with systemd
+* After downloading, extract and move Trilium:
+
+```
+tar -xvf trilium-linux-x64-server-[VERSION].tar.xz
+sudo mv trilium-linux-x64-server /opt/trilium
+```
+* Create the service:
+```
+sudo nano /etc/systemd/system/trilium.service
+```
+* Paste this into the file (replace the user and group as needed):
+```
+[Unit]
+Description=Trilium Daemon
+After=syslog.target network.target
+
+[Service]
+User=xxx
+Group=xxx
+Type=simple
+ExecStart=/opt/trilium/trilium.sh
+WorkingDirectory=/opt/trilium/
+
+TimeoutStopSec=20
+KillMode=process
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+* Save the file (CTRL-S) and exit (CTRL-X)
+* Enable and launch the service:
+```
+sudo systemctl enable --now -q trilium
+```
+* You can now open a browser to http://[your-server-hostname]:8080 and you should see the Trilium initialization page.
 
 ## Common issues
 

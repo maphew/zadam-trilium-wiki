@@ -23,7 +23,7 @@
 
 `#book #publicationYear >= 1950 #publicationYear < 1960` - you can also use numeric operators - this will find all books published in 1950s
 
-`#dateNote >= TODAY-30` - special "smart search" will find notes with label "dateNote" with date corresponding to last 30 days. Complete list of smart values: NOW +- seconds, TODAY +- days, WEEK +- weeks, MONTH +- months, YEAR +- years
+`#dateNote >= TODAY-30` - special "smart search" will find notes with label "dateNote" with date corresponding to last 30 days. Complete list of smart values: NOW +- seconds, TODAY +- days, MONTH +- months, YEAR +- years
 
 `~author.title *=* Tolkien` - find notes which have relation "author" which points to a note with title containing word "Tolkien"
 

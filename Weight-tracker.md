@@ -5,6 +5,10 @@ Weight Tracker is a [[Script API]] showcase present in the [[demo document|Docum
 ## Demo
 [[images/weight-tracker.png]]
 
+## How to remove Weight Tracker button from the top bar
+
+In the link map of Weight Tracker, there is a note "Button". Open it and delete or comment out its contents. Weight Tracker button will disappear after you close and open the app.
+
 ## Implementation
 
 Note "Weight Tracker" in the screenshot above is of type "Render HTML note". Such note doesn't have any useful content itself, the only purpose of it is to provide a place where some [[script|scripts]] can render some output. This script is defined in [[relation|attributes]] `renderNote` - coincidentally it's the Weight Tracker's child `Implementation`.

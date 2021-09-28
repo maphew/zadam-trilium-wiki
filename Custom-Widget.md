@@ -12,19 +12,23 @@ Create a code note of type JS frontend and **give it a `widget` label**.
 
 ```javascript
 /*
- * This defines a custom widget which displays number of words and characters in a current text note.
+ * This defines a custom widget which displays number of sentences, words, and characters in a current text note.
  * To be activated for a given note, add label 'wordCount' to the note, you can also make it inheritable and thus activate it for the whole subtree.
  * 
  * See it in action in "Books" and its subtree.
  */
 const TPL = `<div style="contain: none; padding: 10px; border-top: 1px solid var(--main-border-color);">
-    <strong>Word count: </strong>
-    <span class="word-count"></span>
+    <i>Word count: </i>
+    <strong><span class="word-count"></span></strong>
 
     &nbsp;
 
-    <strong>Character count: </strong>
-    <span class="character-count"></span>
+    <i>Character count: </i>
+    <strong><span class="character-count"></span></strong>
+    &nbsp;
+
+    <i>Sentence count: </i>
+    <strong><span class="sentence-count"></span></strong>
 </div`;
 
 class WordCountWidget extends api.TabAwareWidget {
@@ -36,6 +40,7 @@ class WordCountWidget extends api.TabAwareWidget {
         this.$widget = $(TPL);
         this.$wordCount = this.$widget.find('.word-count');
         this.$characterCount = this.$widget.find('.character-count');
+        this.$sentenceCount = this.$widget.find('.sentence-count');
         return this.$widget;
     }
 
@@ -54,9 +59,9 @@ class WordCountWidget extends api.TabAwareWidget {
         const text = $(content).text(); // get plain text only
 
         const counts = this.getCounts(text);
-
         this.$wordCount.text(counts.words);
         this.$characterCount.text(counts.characters);
+        this.$sentenceCount.text(counts.sentences);
     }
 
     getCounts(text) {
@@ -74,8 +79,8 @@ class WordCountWidget extends api.TabAwareWidget {
         }
 
         const characters = chunks.join('').length;
-
-        return {words, characters};
+        const sentences = text.split(/\s+[^.!?]*[.!?]/g).length;
+        return {words, characters, sentences};
     }
 
     async entitiesReloadedEvent({loadResults}) {

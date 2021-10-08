@@ -85,7 +85,7 @@ all the `await` (and `async`) should disappear from the backend code, but should
 
 ### Migrate custom themes
 
-With the redesign you might need to adjust your custom themes - especially if you don't use only the CSS variables but also trilium's classes.
+With the redesign you might need to adjust your custom themes - check the modified list of available CSS variables in the [default theme](https://github.com/zadam/trilium/blob/master/src/public/stylesheets/theme-light.css). If your theme also uses CSS selectors then that will probably have to be rewritten as well.
 
 Additionally, CSS themes are now loaded differently than before - previously all themes were loaded at the startup and which one was active was decided by the active CSS class. Themes were then prefixed like this:
 

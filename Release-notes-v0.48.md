@@ -25,7 +25,7 @@ Now supports also hierarchical view of the notes:
 Mermaid diagrams
 ----------------
 
-Thanks to @abitofeverything for this contribution!
+Thanks to [@abitofevrything](https://github.com/abitofevrything) for this contribution!
 
 ![](relnotes48/mermaid.png)
 

@@ -140,7 +140,7 @@ This where I store hard "knowledge" - summarized topics and findings from differ
 
 ### Work knowledge base
 
-I usually keep top level note for the company I currently work at (past jobs are moved elsewhere). I track basic organization of the company (divisions, business units), who is who ([relation maps](https://github.com/zadam/trilium/wiki/Relation-maps)) are again useful for visualization), projects I work at etc.
+I usually keep top level note for the company I currently work at (past jobs are moved elsewhere). I track basic organization of the company (divisions, business units), who is who ([relation maps](https://github.com/zadam/trilium/wiki/Relation-map)) are again useful for visualization), projects I work at etc.
 
 There's a number of credentials to various company services I need to use. Companies usually have a bunch of complex processes and tools. I record meeting minutes, link to the company wiki (which is usually difficult to find relevant info). In general there's a lot of company specific information I need to know or need have them at hand in a nice structure I can understand. Often it's just copy pasting and reshuffling of existing information into something more understandable for me.
 

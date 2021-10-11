@@ -6,7 +6,7 @@ This is what it looks like:
 
 ## Custom CSS themes
 
-Trilium provides a concept of custom user theme. You can make yourself one by creating a CSS [[code note|code notes]] and annotating it with `appTheme` [[label|attributes]].
+Trilium provides a concept of custom user theme. You can make yourself one by creating a CSS [[code note|code notes]] and annotating it with `#appTheme=my-theme-name` [[label|attributes]].
 
 You can see an example of what you can put there below:
 
@@ -67,8 +67,6 @@ body.theme-steel-blue .CodeMirror {
 ```
 
 We define a custom font (provided by [[custom request handler]]) and then just define a bunch of CSS variables. These variables are then used in Trilium's CSS stylesheets. You can also use standard CSS selectors for further customization (open dev tools using `CTRL-SHIFT-I` to help with that), but keep in mind that HTML structure can change in future releases which might break your selectors. For that reason it is better to restrict yourself to use CSS variables as much as possible.
-
-All selectors should be prefixed with `body.theme-my-theme` so that the stylesheet is applied only when your theme is selected. This class name is automatically created from note's name - e.g. "My theme" will transform into `theme-my-theme` (`theme-` is a common prefix). If you want to manually specify the class name you set it as a value for `appTheme` (`theme-` prefix is prepended to final class as well).
 
 To activate your custom theme, go to Options -> Appearance. In the select box you should see all notes (themes) labeled with `appTheme`.
 

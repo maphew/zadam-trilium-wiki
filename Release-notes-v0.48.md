@@ -87,6 +87,8 @@ all the `await` (and `async`) should disappear from the backend code, but should
 
 With the redesign you might need to adjust your custom themes - check the modified list of available CSS variables in the [default theme](https://github.com/zadam/trilium/blob/master/src/public/stylesheets/theme-light.css). If your theme also uses CSS selectors then that will probably have to be rewritten as well.
 
+Themes are annotated with `#appTheme` label, previously this label could but did not have to contain value - with this release the value is required so define the label as e.g. `#appTheme=my-theme-name`.
+
 Additionally, CSS themes are now loaded differently than before - previously all themes were loaded at the startup and which one was active was decided by the active CSS class. Themes were then prefixed like this:
 
     body.theme-steel-blue {

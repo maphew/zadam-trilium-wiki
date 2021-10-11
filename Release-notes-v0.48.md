@@ -106,7 +106,7 @@ Additionally, CSS themes are now loaded differently than before - previously all
 
 This prefixing is not needed anymore (and also doesn't work anymore). Remove the prefixes like this:
 
-    root {
+    :root {
         --main-font-family: 'Raleway';
         --main-font-size: normal;
         

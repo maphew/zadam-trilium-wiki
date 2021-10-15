@@ -21,6 +21,7 @@ Let's assume you want to restore the weekly backup, here's how to do it:
 * at this point stop/kill Trilium
 * delete `~/trilium-data/document.db`, `~/trilium-data/document.db-wal` and `~/trilium-data/document.db-shm` (latter two files are auto generated)
 * copy and rename this `~/trilium-data/backup/backup-weekly.db` to `~/trilium-data/document.db`
+* make sure that the file is writable, e.g. with `chmod 600 document.db`
 * start Trilium again
 
 If you have configured sync then you need to do it across all members of the sync cluster, otherwise older version (restored backup) of the document will be detected and synced to the newer version.

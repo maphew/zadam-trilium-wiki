@@ -25,7 +25,7 @@ Now supports also hierarchical view of the notes:
 Mermaid diagrams
 ----------------
 
-Thanks to @abitofeverything for this contribution!
+Thanks to [@abitofevrything](https://github.com/abitofevrything) for this contribution!
 
 ![](relnotes48/mermaid.png)
 
@@ -85,7 +85,9 @@ all the `await` (and `async`) should disappear from the backend code, but should
 
 ### Migrate custom themes
 
-With the redesign you might need to adjust your custom themes - especially if you don't use only the CSS variables but also trilium's classes.
+With the redesign you might need to adjust your custom themes - check the modified list of available CSS variables in the [default theme](https://github.com/zadam/trilium/blob/master/src/public/stylesheets/theme-light.css). If your theme also uses CSS selectors then that will probably have to be rewritten as well.
+
+Themes are annotated with `#appTheme` label, previously this label could but did not have to contain value - with this release the value is required so define the label as e.g. `#appTheme=my-theme-name`.
 
 Additionally, CSS themes are now loaded differently than before - previously all themes were loaded at the startup and which one was active was decided by the active CSS class. Themes were then prefixed like this:
 
@@ -104,7 +106,7 @@ Additionally, CSS themes are now loaded differently than before - previously all
 
 This prefixing is not needed anymore (and also doesn't work anymore). Remove the prefixes like this:
 
-    root {
+    :root {
         --main-font-family: 'Raleway';
         --main-font-size: normal;
         

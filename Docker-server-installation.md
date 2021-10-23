@@ -13,9 +13,20 @@ To start you will need to have docker installed on your computer. Here are two g
 docker pull zadam/trilium:[VERSION]
 ~~~~
 
-Replace [VERSION] for actual latest version or use "series" tag - e.g. `0.39-latest`.
+Replace [VERSION] for actual latest version or use "series" tag - e.g. `0.48-latest`.
 
 **It's not recommended to use "latest" tag since it may upgrade your Trilium instance to new minor version which may potentially break your sync setup or cause other issues.**
+
+## Prepare data directory on the host system
+
+Trilium needs a directory where it can store its data, this then needs to be mounted into the docker container. The container runs as user "node" so we need to make the directory available to this user:
+
+```
+mkdir ~/trilium-data
+chmod 777 ~/trilium-data
+```
+
+Since this effectively allows reading/writing this directory to any user on the system, it's recommended to do this on only single-user systems. This directory will be used (mounted) below.
 
 ## Run image
 These commands mount the volume to the host system so that trilium's data (most importantly [[document]]) is persisted and not cleared after container stops. 

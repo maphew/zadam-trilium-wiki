@@ -2,7 +2,7 @@ A common pattern in note taking is that a lot of notes will be centered around a
 
 For this, Trilium provides a concept of "day note". Trilium semi-automatically generates a single note for each day. Under this note you can save all those relevant notes. 
 
-Select an existing day note, and the right sidebar contains a calendar widget. Select any day to create a note for that day. ![image](https://user-images.githubusercontent.com/69441971/116097284-88c8cc00-a699-11eb-8e5f-bbc19a63f823.png)
+Select an existing day note, and the menubar contains a calendar widget. Select any day to create a note for that day. ![image](https://user-images.githubusercontent.com/69441971/116097284-88c8cc00-a699-11eb-8e5f-bbc19a63f823.png)
 
 
 This pattern works well also because of [[cloning|Cloning notes]] functionality - note can appear in multiple places in the note tree so besides appearing under day note, it can also be categorized into other notes.

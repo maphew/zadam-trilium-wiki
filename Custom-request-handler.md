@@ -13,11 +13,12 @@ if (req.method == 'POST' && secret === 'secret-password') {
     // notes must be saved somewhere in the tree hierarchy specified by a parent note. 
     // This is defined by a relation from this code note to the "target" parent note
     // alternetively you can just use constant noteId for simplicity (get that from "Note Info" dialog of the desired parent note)
-    const targetParentNoteId = await api.currentNote.getRelationValue('targetNote');
+    const targetParentNoteId = api.currentNote.getRelationValue('targetNote');
     
-    const {note} = await api.createTextNote(targetParentNoteId, title, content);
+    const {note} = api.createTextNote(targetParentNoteId, title, content);
+    const notePojo = note.getPojo();
 
-    res.status(201).json(note);
+    res.status(201).json(notePojo);
 }
 else {
     res.send(400);

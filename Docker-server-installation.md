@@ -39,13 +39,6 @@ sudo docker run -t -i -p 127.0.0.1:8080:8080 -v ~/trilium-data:/home/node/triliu
 1. Test to see that the docker image is running with `docker ps`
 2. Access the trilium by opening a browser and go to `127.0.0.1:8080`
 
-### Local Network only
-This command will run the container so that it is only available on your local network. You can access it from outside by using a VPN like WireGuard to get into your own network first. Where `[local-ip]` is the local IP of the device you are using (often in the 192.168.x.x range). 
-
-~~~~
-sudo docker run -t -i -p [local-ip]:8080:8080 -v ~/trilium-data:/home/node/trilium-data zadam/trilium:[VERSION]
-~~~~
-
 ### Available anywhere
 This will run the container as a background process and will be available from any IP address
 ~~~~

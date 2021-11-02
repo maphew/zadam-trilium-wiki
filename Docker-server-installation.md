@@ -40,7 +40,7 @@ sudo docker run -t -i -p 127.0.0.1:8080:8080 -v ~/trilium-data:/home/node/triliu
 2. Access the trilium by opening a browser and go to `127.0.0.1:8080`
 
 ### Local network only
-This command will run the container so that it is only available on your local network. This is preferable if you do not want to open ports to the rest of the internet. However, you can still access it from outside by using a VPN like WireGuard to get into your own network first.
+This command will run the container so that it is only available on your local network. This is preferable if you do not want to open ports to the rest of the internet. However, you can still access it from outside by using a VPN like WireGuard to get into your own network first. This method does assume that your local network limits outside access. 
 
 First, you have to create a new network in Docker to access your local network. Here is an example, give note to "parent" and the network numbers as it may differ from your own. For more detailed information, [click here](https://blog.oddbit.com/post/2018-03-12-using-docker-macvlan-networks/).
 ~~~~

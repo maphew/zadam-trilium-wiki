@@ -18,7 +18,7 @@ You can see an example of what you can put there below:
   src: url('/custom/fonts/raleway.woff2') format('woff2');
 }
 
-body.theme-my-theme {
+:root {
     --main-font-family: 'Raleway' !important;
     --main-font-size: normal;
     --tree-font-family: inherit;
@@ -57,11 +57,11 @@ body.theme-my-theme {
     --scrollbar-border-color: rgba(175, 184, 198, 0.5);
 }
 
-body.theme-my-theme .note-detail-text {
+body .note-detail-text {
     font-size: 120%;
 }
 
-body.theme-steel-blue .CodeMirror {
+body .CodeMirror {
     filter: invert(100%) hue-rotate(180deg);
 }
 ```

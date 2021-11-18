@@ -36,7 +36,9 @@ So we have a script which will add the button to the toolbar. But how can we exe
 
 We need to execute it every time Trilium starts up, but we probably don't want to have to manually click on play button on every start up.
 
-The solution is marked by red circle at the bottom - this note has [[label|Attributes]] @run=frontendStartup - this is one of the "system" labels which Trilium understands. As you might guess, this will cause all such labeled script notes to be executed once Trilium frontend starts up.
+The solution is marked by red circle at the bottom - this note has [[label|Attributes]] `#run=frontendStartup` - this is one of the "system" labels which Trilium understands. As you might guess, this will cause all such labeled script notes to be executed once Trilium frontend starts up.
+
+(`#run=frontendStartup` does not work for mobile server frontend - if you want to have scripts running there, give the script ``#run=mobileStartup` label)
 
 ### More showcases
 

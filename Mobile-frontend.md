@@ -27,3 +27,7 @@ Mobile frontend provides only some of the features of the full desktop frontend:
 ## Forcing mobile/desktop frontend
 
 Trilium decides automatically whether to use mobile or desktop frontend. If this is not appropriate, you can use `?mobile` or `?desktop` query param on **login** page (i.e. you might need to log out).
+
+# Scripting
+
+You can alter the behavior with [[scripts]] just like for normal frontend. For script notes to be executed, they need to have label `#run=mobileStartup`.

@@ -51,7 +51,6 @@
     * [[Custom request handler]]
     * [[Events]]
     * [[Custom Widget]]
-    * [[Custom buttons]]
   * [[Advanced showcases]]
     * [[Day notes]]
     * [[Weight Tracker]]

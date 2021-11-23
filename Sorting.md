@@ -1,3 +1,5 @@
+** This documentation applies to 0.49 and later. In previous versions `#sorted` worked alphabetically **
+
 Child notes can be kept sorted by attaching `#sorted` [[label|Attributes]] to the parent note.
 
 Sorting works by comparing note property or a specific label on the child notes.

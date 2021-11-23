@@ -13,7 +13,7 @@ Sometimes we're talking about labels and relations - keep in mind that both of t
 ## Labels
 Labels are used for several things:
 
-* user can use them as labels with optional value - e.g. when catalogizing books, you might add labels like @year=1999, @genre=sci-fi, @author="Neal Stephenson"
+* user can use them as labels with optional value - e.g. when catalogizing books, you might add labels like #year=1999, #genre=sci-fi, #author="Neal Stephenson"
 * attributes can be used to configure some advanced features / settings - see below
 * plugins / scripts can use these to mark notes with some special values / metadata (e.g. [[Weight Tracker]] will have "weight" attribute on [[day notes]] based on whose it can create chart).
 
@@ -21,7 +21,7 @@ Labels can be used for [[searching|Search]].
 
 ### Standard labels
 
-Following labels are used for advanced configuration:
+The following labels are used for advanced configuration:
 
 * `disableVersioning` - disables auto-versioning. Useful for e.g. large, but unimportant notes - e.g. large JS libraries used for scripting
 * `calendarRoot` - marks note which should be used as root for [[day notes]]. Only one should be marked as such.
@@ -33,12 +33,12 @@ Following labels are used for advanced configuration:
    * `hourly` - run once an hour
    * `daily` - run once a day
 * `disableInclusion` - scripts with this label won't be included into parent script execution.
-* `sorted` - keeps  child notes sorted by title alphabetically
+* `sorted` - keeps child notes sorted. See [[Sorting]].
 * `hidePromotedAttributes`
 * `readOnly` - editor is in read only mode. Works only for text notes. See some use cases [here](https://github.com/zadam/trilium/issues/371).
 * `autoReadOnlyDisabled` - text/code notes can be set automatically into read mode when they are too large. You can disable this behavior on per-note basis by adding this label to the note
-* `cssClass` - value of this label is then added as CSS class to the node representing given note in the tree. This can be useful for advanced [[theming|themes]]. Can be used in `template` notes.
-* `iconClass` - value of this label is added as a CSS class to the icon on the tree which can help visually distinguish the notes in the tree. Example might be `bx bx-home` - icons are taken from [boxicons](https://boxicons.com/). Can be used in [[template]] notes.
+* `cssClass` - value of this label is then added as CSS class to the node representing the given note in the tree. This can be useful for advanced [[theming|themes]]. Can be used in `template` notes.
+* `iconClass` - value of this label is added as a CSS class to the icon on the tree, which can help visually distinguish the notes in the tree. An example might be `bx bx-home` - icons are taken from [boxicons](https://boxicons.com/). Can be used in [[template]] notes.
 * `customRequestHandler` and `customResourceProvider` - see [[Custom request handler]]
 
 ## Relations

@@ -1,4 +1,4 @@
-** This documentation applies to 0.49 and later. In previous versions `#sorted` worked alphabetically **
+**This documentation applies to 0.49 and later. In previous versions `#sorted` worked alphabetically**
 
 Child notes can be kept sorted by attaching `#sorted` [[label|Attributes]] to the parent note.
 

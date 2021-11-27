@@ -47,3 +47,13 @@ TRILIUM_DATA_DIR=/home/me/path/to/data/dir TRILIUM_PORT=12345 trilium
 ```
 
 You can save this command into a `.sh` script file or make an alias. Do this similarly for a second instance with different data directory and port.
+
+# Can I use Dropbox / Google Drive / OneDrive to sync data across multiple computers.
+
+The short answer is No.
+
+The general purpose applications are not suitable to sync database files which are open and being worked on by another application. The result is that they will corrupt the database file, resulting in data loss and this message in the logs:
+
+> SqliteError: database disk image is malformed
+
+The only supported way to sync Trilium's data across network is to use a [[sync/web server|Synchronization]].

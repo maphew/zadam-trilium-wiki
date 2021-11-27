@@ -50,10 +50,10 @@ You can save this command into a `.sh` script file or make an alias. Do this sim
 
 # Can I use Dropbox / Google Drive / OneDrive to sync data across multiple computers.
 
-The short answer is No.
+No.
 
-The general purpose applications are not suitable to sync database files which are open and being worked on by another application. The result is that they will corrupt the database file, resulting in data loss and this message in the logs:
+These general purpose sync apps are not suitable to sync database files which are open and being worked on by another application. The result is that they will corrupt the database file, resulting in data loss and this message in the Trilium logs:
 
 > SqliteError: database disk image is malformed
 
-The only supported way to sync Trilium's data across network is to use a [[sync/web server|Synchronization]].
+The only supported way to sync Trilium's data across the network is to use a [[sync/web server|Synchronization]].

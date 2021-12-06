@@ -14,21 +14,11 @@ Note that this is more of an acknowledgment of an existing state rather than sud
 
 Of course, PRs are welcome.
 
-# Why database instead of flat files?
+# Translation / localization support
 
-Trilium stores notes in a [[document]] which is an SQLite database. People often ask why doesn't Trilium rather use flat files
-for note storage - it's fair question since flat files are easily interoperable, work with SCM/git etc.
+Trilium is currently available only in English. Translation to other languages is not planned in the near/medium term because it brings a significant maintenance overhead. This decision might be revisited once Trilium stabilizes into a more mature product.
 
-Short answer is that file systems are simply not powerful enough for what we want to achieve with Trilium. Using filesystem would mean less features with probably more problems.
-
-More detailed answer:
-
-* [[clones|cloning notes]] are what you might call "hard directory link" in filesystem lingo, but this concept is not implemented in any filesystem
-* filesystems make a distinction between directory and file while there's intentionally no such difference in Trilium
-* files are stored in no particular order and user can't change this
-* Trilium allows storing note [[attributes]] which could be represented in extended user attributes but their support differs greatly among different filesystems / operating systems
-* Trilium makes links / relations between different notes which can be quickly retrieved / navigated (e.g. for [[link map]]). There's no such support in file systems which means these would have to be stored in some kind of side car files (mini-databases).
-* Filesystems are generally not transactional. While this is not completely required for a note taking application, having transactions make it way easier to keep notes and their metadata in predictable and consistent state.
+For Chinese, there's an unofficial fork [here](https://github.com/Nriver/trilium-translation). Use at your own risk.
 
 # Multi user support
 
@@ -57,3 +47,20 @@ These general purpose sync apps are not suitable to sync database files which ar
 > SqliteError: database disk image is malformed
 
 The only supported way to sync Trilium's data across the network is to use a [[sync/web server|Synchronization]].
+
+# Why database instead of flat files?
+
+Trilium stores notes in a [[document]] which is an SQLite database. People often ask why doesn't Trilium rather use flat files
+for note storage - it's fair question since flat files are easily interoperable, work with SCM/git etc.
+
+Short answer is that file systems are simply not powerful enough for what we want to achieve with Trilium. Using filesystem would mean less features with probably more problems.
+
+More detailed answer:
+
+* [[clones|cloning notes]] are what you might call "hard directory link" in filesystem lingo, but this concept is not implemented in any filesystem
+* filesystems make a distinction between directory and file while there's intentionally no such difference in Trilium
+* files are stored in no particular order and user can't change this
+* Trilium allows storing note [[attributes]] which could be represented in extended user attributes but their support differs greatly among different filesystems / operating systems
+* Trilium makes links / relations between different notes which can be quickly retrieved / navigated (e.g. for [[link map]]). There's no such support in file systems which means these would have to be stored in some kind of side car files (mini-databases).
+* Filesystems are generally not transactional. While this is not completely required for a note taking application, having transactions make it way easier to keep notes and their metadata in predictable and consistent state.
+

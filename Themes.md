@@ -115,3 +115,4 @@ Following are themes developed by Trilium users:
 * https://github.com/WKSu/trilium-solarized-theme
 * https://github.com/en3r0/Trilium-Nord-Theme
 * https://github.com/Sebiann/miku-hatsune-trilium-theme
+* https://github.com/AllanZyne/trilium-bear-theme

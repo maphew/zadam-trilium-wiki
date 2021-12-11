@@ -11,6 +11,8 @@
 
 `"The Lord of the Rings" Tolkien` - same as above but "The Lord of the Rings" must be exact match
 
+`note.content *=* rings OR note.content *=* tolkien` to find notes which contain "rings" or "tolkien"
+
 `towers #book` - combination of fulltext search with attribute search - this looks for notes containing "towers" word anywhere and they also need to have "book" label
 
 `towers #book or #author` - searches notes containing "towers" word anywhere and matching note must have either "book" or "author" label

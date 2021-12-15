@@ -39,7 +39,7 @@ ExecStart=/opt/trilium/trilium.sh
 WorkingDirectory=/opt/trilium/
 
 TimeoutStopSec=20
-KillMode=process
+# KillMode=process leads to error, according to https://www.freedesktop.org/software/systemd/man/systemd.kill.html
 Restart=always
 
 [Install]

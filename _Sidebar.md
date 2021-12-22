@@ -45,6 +45,7 @@
   * [[Relation map]]
   * [[Link map]]
   * [[Book note]]
+  * [[Sharing]]
   * [[Code notes]]
     * [[Scripts]]
     * [[Script API]]

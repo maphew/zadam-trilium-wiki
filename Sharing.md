@@ -6,11 +6,11 @@ Basic prerequisite for this feature is to have a [[server installation]] - this 
 
 Click on the "shared" switch, URL appears on which you can click.
 
-![](images/share-single-note.png)
+[[images/share-single-note.png]]
 
 And this is the opened link:
 
-![](images/share-single-note-web.png)
+[[images/share-single-note-web.png]]
 
 The URL refers to the localhost (127.0.0.1) because there's no configured sync server.
 
@@ -20,7 +20,7 @@ Sharing a note actually shares a whole subtree of notes, the note shown above ju
 
 If I share the whole "Formatting" subtree then the page looks like this:
 
-![](images/share-multiple-notes-web.png)
+[[images/share-multiple-notes-web.png]]
 
 You can see a basic navigation on the right. With this you can create small websites.
 
@@ -47,7 +47,7 @@ Note that you are responsible for keeping the aliases unique.
 
 All shared notes are grouped under automatically managed "Share Notes" note. Besides seeing what's shared, you can also effectively share/unshare notes by cloning/moving them from/to this note.
 
-![](images/shared-list.png)
+[[images/shared-list.png]]
 
 ## Limitations
 

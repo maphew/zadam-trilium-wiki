@@ -55,8 +55,6 @@ Shared notes functionality is compared to standard functionality very limited.
 
 The not exhaustive list of **what is missing** is:
 
-* math support
-* mermaid support
 * relation map support
 * scripting
 * book notes show only children note list

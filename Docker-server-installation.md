@@ -44,7 +44,7 @@ This command will run the container so that it is only available on your local n
 
 First, you have to create a new network in Docker to access your local network. Here is an example, give note to "parent" and the network numbers as it may differ from your own. For more detailed information, [click here](https://blog.oddbit.com/post/2018-03-12-using-docker-macvlan-networks/).
 ~~~~
-docker network create -d macvlan -0 parent=eth0 --subnet 192.168.2.0/24 --gateway 192.168.2.254 --iprange 192.168.2.252/27 mynet
+docker network create -d macvlan -o parent=eth0 --subnet 192.168.2.0/24 --gateway 192.168.2.254 --ip-range 192.168.2.252/27 mynet
 ~~~~
 
 Secondly, you have to adjust the docker run command so it takes this network into account but keep using localhost to limit the accessibility of the ports to the outside world.

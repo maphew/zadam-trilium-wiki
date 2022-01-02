@@ -64,6 +64,10 @@ All shared notes are grouped under automatically managed "Share Notes" note. Bes
 
 [[images/shared-list.png]]
 
+### Favicon
+
+You can define a custom favicon used for shared pages by create a relation `~shareFavicon` pointing to the file note containing the favicon (in e.g. the `ico` format).
+
 ## Limitations
 
 Shared notes functionality is compared to standard functionality very limited.

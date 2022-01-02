@@ -39,7 +39,16 @@ The default shared page is pretty rudimentary. In case you want to style it more
 
 It's possible to inject a JavaScript note to the shared note using `~shareJs` relation.
 
-In case you want to access e.g. attributes or traverse the tree in the linked JavaScript note, you can use the API available through global [`fetchNote(noteId = current)` function](https://github.com/zadam/trilium/blob/master/src/public/app/share.js).
+In case you want to access e.g. attributes or traverse the tree in the linked JavaScript note, you can use the API available through global [`fetchNote(noteId = current)` function](https://github.com/zadam/trilium/blob/master/src/public/app/share.js), e.g.:
+
+```javascript
+const currentNote = await fetchNote();
+const parentNote = await fetchNote(currentNote.parentNoteIds[0]);
+
+for (const attr of parentNote.attributes) {
+    console.log(attr.type, attr.name, attr.value);
+}
+```
 
 ### Creating human-readable URL aliases
 

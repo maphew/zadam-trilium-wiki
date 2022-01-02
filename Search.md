@@ -9,11 +9,11 @@
 
 `rings tolkien` - fulltext search, this will try to find notes which have anywhere words "rings" and "tolkien"
 
-`"The Lord of the Rings" Tolkien` - same as above but "The Lord of the Rings" must be exact match
+`"The Lord of the Rings" Tolkien` - same as above, but "The Lord of the Rings" must be exact match
 
 `note.content *=* rings OR note.content *=* tolkien` to find notes which contain "rings" or "tolkien"
 
-`towers #book` - combination of fulltext search with attribute search - this looks for notes containing "towers" word anywhere and they also need to have "book" label
+`towers #book` - combination of fulltext search with attribute search - this looks for notes containing "towers" word anywhere, and they also need to have "book" label
 
 `towers #book or #author` - searches notes containing "towers" word anywhere and matching note must have either "book" or "author" label
 
@@ -23,7 +23,7 @@
 
 `#genre *=* fan` - matches notes with "genre" label which has value which contains "fan" substring. Besides `*=*` for "contains", there's also `=*` for "starts with", `*=` for "ends with", `!=` for "is not equal to" 
 
-`#book #publicationYear >= 1950 #publicationYear < 1960` - you can also use numeric operators - this will find all books published in 1950s
+`#book #publicationYear >= 1950 #publicationYear < 1960` - you can also use numeric operators - this will find all books published in the 1950s
 
 `#dateNote >= TODAY-30` - special "smart search" will find notes with label "dateNote" with date corresponding to last 30 days. Complete list of smart values: NOW +- seconds, TODAY +- days, MONTH +- months, YEAR +- years
 
@@ -40,16 +40,20 @@
 * People
   * J. R. R. Tolkien
     * relation “son” points to "Christopher Tolkien" note
-  * Christoper Tolkien
+  * Christopher Tolkien
 
 `~author.title *= Tolkien OR (#publicationDate >= 1954 AND #publicationDate <= 1960)` - you can also use boolean expressions and parenthesis to group expressions
 
+However, if your search expression starts with a parenthesis, it needs to be prepended by an "expression separator sign", either # or ~. So the equivalent expression, just reordered, would look like:
+
+`# (#publicationDate >= 1954 AND #publicationDate <= 1960) OR ~author.title *= Tolkien`
+
 `note.parents.title = 'Books'` will find all notes which have (at least one) parent note with name “Book”.
 
-`note.parents.parents.title = 'Books'` This again works transitively so this will find notes whose parent of parent is named ‘Book’.
+`note.parents.parents.title = 'Books'` This again works transitively, so this will find notes whose parent of parent is named ‘Book’.
 
-`note.ancestors.title = 'Books'` This is sort of extension of parents - this will find notes which have an ancestor anywhere in their note path (so parent, grand-parent, grand-grand-parent …) with title ‘Book’. This is a nice way how to reduce scope of the search to a particular sub-tree.
-                                 
+`note.ancestors.title = 'Books'` This is sort of extension of parents - this will find notes which have an ancestor anywhere in their note path (so parent, grand-parent, grand-grand-parent …) with title ‘Book’. This is a nice way how to reduce the scope of the search to a particular sub-tree.
+
 `note.children.title = 'sub-note'` So this works in the other direction and will find notes which have (at least one) child called “sub-note”.
 
 ### Search with note properties
@@ -95,10 +99,10 @@ note.type = code AND note.mime = 'application/json'
 #author=Tolkien orderBy #publicationDate desc, note.title limit 10
 ```
 
-Example above will do the following things (in this sequence):
+The example above will do the following things (in this sequence):
 
 1. find notes with label author having value “Tolkien”
-2. order the results by publicationDate in descending order (so newest first)
+2. order the results by publicationDate in descending order (so the newest first)
   1. in case publication date is equal, use note.title as secondary ordering in ascending order (`asc` is the default and thus can be ommitted)
 3. take only the first 10 results
 
@@ -133,7 +137,7 @@ Take `tolkien #book` as an example. It contains:
 1. fulltext tokens - `tolkien`
 2. attribute expressions - `#book`
 
-The tricky part is to find out where does the fulltext end and where the attribute expression begins. This is done by detecting certain stop-characters/words - all tokens are considered as fulltext before one of `#`, `~` or `note.` prefixes are encountered. After that all characters/tokens are understood as attribute expression.
+The tricky part is to find out where does the fulltext end and where the attribute expression begins. This is done by detecting certain stop-characters/words - all tokens are considered as fulltext before one of `#`, `~` or `note.` prefixes are encountered. After that, all characters/tokens are understood as attribute expression.
 
 If you want to use `#`, `~` or `note.` as part of fulltext, you need to escape them, see below for details.
 
@@ -143,7 +147,7 @@ There are certain corner cases where this is not sufficient, e.g:
 tolkien (#publicationYear >= 1950 AND #publicationYear < 1960) OR #book`
 ``` 
 
-Here the expression starts with `(` which isn't (intentionally) a stop-character so the query above will not actually work as intended. Instead in these corner cases we need to add a separate extra stop character - `#` or `~` so the fixed query should look like:
+Here the expression starts with `(` which isn't (intentionally) a stop-character, so the query above will not actually work as intended. Instead, in these corner cases we need to add a separate extra stop character - `#` or `~` so the fixed query should look like:
 
 ```
 tolkien # (#publicationYear >= 1950 AND #publicationYear < 1960) OR #book`
@@ -153,11 +157,11 @@ The extra stop character has no other effect other than separating the fulltext 
 
 ### Escaping special characters
 
-Symbols or values sometimes have special meaning which might be not what you intend. This can be fixed by either enclosing the strings containing special characters into quotes or escaping individual characters with backslash:
+Symbols or values sometimes have special meaning, which might be not what you intend. This can be fixed by either enclosing the strings containing special characters into quotes or escaping individual characters with backslash:
 
 `"note.txt"` - "note." is normally stop-prefix, but here it will be used for fulltext search
 
-`\#hash` - `#` is normally stop-character, but here it's escaped with backslash so it's again used for fulltext
+`\#hash` - `#` is normally stop-character, but here it's escaped with backslash, so it's again used for fulltext
 
 `#myLabel = 'Say "Hello World"'`
 
@@ -165,7 +169,7 @@ There are three supported types of quotes - single, double and backtick.
 
 ### Type coercion
 
-It's important to realize that label value is always technically a string even if it contains logically different value. This then allows you to do things like:
+It's important to realize that a label value is always technically a string, even if it contains logically different value. This then allows you to do things like:
 
 ```
 note.dateCreated =* '2019-05'
@@ -173,11 +177,11 @@ note.dateCreated =* '2019-05'
 
 This will find notes created in May 2019 by simply doing string "starts with" operation on the date.
 
-This approach does not work well with numbers though so whenever there is a numeric operator detected, the label values will be coerced from their normal string form into numeric value for comparison. This then allows for e.g. `#publicationYear >= 1960` work correctly. 
+This approach does not work well with numbers though, so whenever there is a numeric operator detected, the label values will be coerced from their normal string form into a numeric value for comparison. This then allows for e.g. `#publicationYear >= 1960` work correctly. 
 
 ## Auto trigger search from URL
 
-Opening Trilium like in the example below will open search pane and automatically trigger search for "abc":
+Opening Trilium like in the example below will open the search pane and automatically trigger search for "abc":
 
 ```
 http://localhost:8080/#search=abc

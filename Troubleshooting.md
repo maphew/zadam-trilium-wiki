@@ -1,4 +1,4 @@
-Trilium is currently beta quality software so it's quite expected there will be some bugs.
+Trilium is currently beta quality software, so it's quite expected there will be some bugs.
 
 ## General quickfix
 
@@ -6,7 +6,7 @@ You guessed it - it's restart.
 
 If there's a UI problem, it usually means that the Trilium frontend got into inconsistent state and is acting up. Easiest way to fix it is to reload the application - just press `CTRL-R` and frontend will be reloaded.
 
-If this still doesn't help or you suspect it's actually backend issue, you can restart the whole application - in case of desktop (Electron) build, you just close the window and re-open it again.
+If this still doesn't help, or you suspect it's actually backend issue, you can restart the whole application - in case of desktop (Electron) build, you just close the window and re-open it again.
 
 ## Forgotten username/password
 
@@ -83,7 +83,7 @@ Trilium logs important events and errors into `logs` directory (inside [[data di
 
 ### Anonymized database
 
-In some cases it's necessary to see the database structure to be able to debug the problem. Of course we can't ask you to send us your [[document|Document]] file with your notes.
+In some cases it's necessary to see the database structure to be able to debug the problem. Of course, we can't ask you to send us your [[document|Document]] file with your notes.
 
 For this Trilium supports anonymization of the database - you can trigger this in Options -> Advanced tab.
 
@@ -97,4 +97,4 @@ If the database is corrupted in a way which prevents Trilium to start up, you wo
 node src/anonymize.js
 ```
 
-This needs to be executed in the directory with Trilium source files, for desktop builds this in in `resources/app` directory.
+This needs to be executed in the directory with Trilium source files, for desktop builds this in `resources/app` directory.

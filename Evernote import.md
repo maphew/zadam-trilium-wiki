@@ -7,7 +7,7 @@ To export ENEX file, you need to have desktop version of Evernote (i.e. not web/
 
 Once you have ENEX file, you can import it to Trilium. Right click on some note (to which you want to import the file), click on "Import" and select the ENEX file.
 
-After importing the ENEX file, go over the imported notes and resources to be sure the import went well and you didn't lose any data.
+After importing the ENEX file, go over the imported notes and resources to be sure the import went well, and you didn't lose any data.
 
 ## Limitations
 

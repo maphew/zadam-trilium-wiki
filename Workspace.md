@@ -15,8 +15,6 @@ So far workspace consists of these features:
 
 Let's say you have identified the workspaces and their subtrees. Define on the root of this subtree following labels:
 
-*   `workspace` - just marks this note as workspace, button to enter the workspace is controlled by this
-*   `workspaceIconClass` - controls box icon to be displayed in the tree and tabs, example `bx bx-home`. See [https://boxicons.com/](https://boxicons.com/)
-*   `workspaceTabBackgroundColor` - color of the tab, use any CSS color format, e.g. "lightblue" or "#ddd"
-
-Workspaces are available since Trilium v0.46.
+*   `#workspace` - just marks this note as workspace, button to enter the workspace is controlled by this
+*   `#workspaceIconClass` - controls box icon to be displayed in the tree and tabs, example `bx bx-home`. See [https://boxicons.com/](https://boxicons.com/)
+*   `#workspaceTabBackgroundColor` - color of the tab, use any CSS color format, e.g. "lightblue" or "#ddd"

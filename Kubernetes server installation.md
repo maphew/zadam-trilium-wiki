@@ -1,4 +1,4 @@
-As trilium can be run in Docker it also can be deployed in Kubernetes.
+As Trilium can be run in Docker it also can be deployed in Kubernetes.
 Trilium can be applied to Kubernetes manually or per helm chart.
 
 The recommended way is helm.

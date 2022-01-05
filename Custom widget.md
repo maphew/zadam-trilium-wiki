@@ -8,27 +8,23 @@ Positions are:
 
 ## Example - word count widget
 
-Create a code note of type JS frontend and **give it a `widget` label**.
+Create a code note of type JS frontend and **give it a `#widget` label**.
 
 ```javascript
 /*
- * This defines a custom widget which displays number of sentences, words, and characters in a current text note.
+ * This defines a custom widget which displays number of words and characters in a current text note.
  * To be activated for a given note, add label 'wordCount' to the note, you can also make it inheritable and thus activate it for the whole subtree.
  * 
  * See it in action in "Books" and its subtree.
  */
-const TPL = `<div style="contain: none; padding: 10px; border-top: 1px solid var(--main-border-color);">
-    <i>Word count: </i>
-    <strong><span class="word-count"></span></strong>
+const TPL = `<div style="padding: 10px; border-top: 1px solid var(--main-border-color); contain: none;">
+    <strong>Word count: </strong>
+    <span class="word-count"></span>
 
     &nbsp;
 
-    <i>Character count: </i>
-    <strong><span class="character-count"></span></strong>
-    &nbsp;
-
-    <i>Sentence count: </i>
-    <strong><span class="sentence-count"></span></strong>
+    <strong>Character count: </strong>
+    <span class="character-count"></span>
 </div`;
 
 class WordCountWidget extends api.TabAwareWidget {
@@ -36,32 +32,28 @@ class WordCountWidget extends api.TabAwareWidget {
 
     get parentWidget() { return 'center-pane'; }
 
+    isEnabled() {
+        return super.isEnabled()
+            && note.type === 'text'
+            && note.hasLabel('wordCount');
+    }
+
     doRender() {
         this.$widget = $(TPL);
         this.$wordCount = this.$widget.find('.word-count');
         this.$characterCount = this.$widget.find('.character-count');
-        this.$sentenceCount = this.$widget.find('.sentence-count');
         return this.$widget;
     }
 
     async refreshWithNote(note) {
-        if (note.type !== 'text' || !note.hasLabel('wordCount')) { 
-            // show widget only on text notes and when marked with 'wordCount' label
-            this.toggleInt(false); // hide
-
-            return;
-        }
-
-        this.toggleInt(true); // display
-
         const {content} = await note.getNoteComplement();
 
         const text = $(content).text(); // get plain text only
 
         const counts = this.getCounts(text);
+
         this.$wordCount.text(counts.words);
         this.$characterCount.text(counts.characters);
-        this.$sentenceCount.text(counts.sentences);
     }
 
     getCounts(text) {
@@ -79,8 +71,8 @@ class WordCountWidget extends api.TabAwareWidget {
         }
 
         const characters = chunks.join('').length;
-        const sentences = text.split(/\s+[^.!?]*[.!?]/g).length;
-        return {words, characters, sentences};
+
+        return {words, characters};
     }
 
     async entitiesReloadedEvent({loadResults}) {

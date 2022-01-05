@@ -7,7 +7,7 @@ Trilium supports simple backup scheme where it saves copy of the [[document]] on
 
 So in total you'll have at most 4 backups from different points in time which should protect you from various problems. These backups are stored by default in `backup` directory placed in the [[data directory]].
 
-This is only very basic backup solution and you're encouraged to add some better backup solution - e.g. backing up the [[document]] to cloud / different computer etc.
+This is only very basic backup solution, and you're encouraged to add some better backup solution - e.g. backing up the [[document]] to cloud / different computer etc.
 
 Note that [[synchronization]] provides also some backup capabilities by its nature of distributing the data to other computers.
 
@@ -25,3 +25,18 @@ Let's assume you want to restore the weekly backup, here's how to do it:
 * start Trilium again
 
 If you have configured sync then you need to do it across all members of the sync cluster, otherwise older version (restored backup) of the document will be detected and synced to the newer version.
+
+# Disabling backup
+
+Although this is not recommended, it is possible to disable backup in `config.ini` in the [[data directory]]:
+
+```ini
+[General]
+
+... some other configs
+
+# set to true to disable backups (e.g. because of limited space on server)
+noBackup=true
+```
+
+See [sample config](https://github.com/zadam/trilium/blob/master/config-sample.ini).

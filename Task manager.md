@@ -9,11 +9,11 @@ Task Manager also integrates with [[day notes]] - notes are [[cloned|cloning not
 
 ## Implementation
 
-New tasks are created in the TODO note which has "child:template" [[relation|attributes]] (see [[attribute inheritance]]) pointing to the task template.
+New tasks are created in the TODO note which has `~child:template` [[relation|attributes]] (see [[attribute inheritance]]) pointing to the task template.
 
 ### Attributes
 
-Task template defines several [[promoted attributes]] - todoDate, doneData, tags, location. Importantly it also defines `runOnAttributeChange` relation - [[event|events]] handler which is run on attribute change. This [[script|scripts]] handles when e.g. we fill out the doneDate attribute - meaning the task is done and should be moved to "Done" note and removed from TODO, locations and tags.
+Task template defines several [[promoted attributes]] - todoDate, doneData, tags, location. Importantly it also defines `~runOnAttributeChange` relation - [[event|events]] handler which is run on attribute change. This [[script|scripts]] handles when e.g. we fill out the doneDate attribute - meaning the task is done and should be moved to "Done" note and removed from TODO, locations and tags.
 
 ### New task button
 
@@ -56,6 +56,6 @@ span.fancytree-node.done .fancytree-title {
 }
 ```
 
-This [[code note|code notes]] has `appCss` [[label|attributes]] which is recognized by Trilium on startup and loaded as CSS into the application.
+This [[code note|code notes]] has `#appCss` [[label|attributes]] which is recognized by Trilium on startup and loaded as CSS into the application.
 
-Second part of this functionality is based in event handler described above which assigns `cssClass` label to the task to either "done" or "todo" based on the task status.
+Second part of this functionality is based in event handler described above which assigns `#cssClass` label to the task to either "done" or "todo" based on the task status.

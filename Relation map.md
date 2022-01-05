@@ -43,4 +43,4 @@ You can specify which relations should be displayed with comma delimited names o
 
 ## See also
 
-* [[Link map]] is a similar concept to relation maps 
+* [[Note map]] is a similar concept

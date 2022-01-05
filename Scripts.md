@@ -17,7 +17,7 @@ Let's take a look at our demo script (shipped with default Trilium [[document]])
 
 First take a look at the red circle all the way on the top - this what we want to achieve - new button in UI which will create new note representing a task/todo item.
 
-Red point below the first one marks the note type we have create for this script - it's "JavaScript frontend". It's frontend because adding button to UI is clearly frontend responsibility.
+Red point below the first one marks the note type we have created for this script - it's "JavaScript frontend". It's frontend because adding button to UI is clearly frontend responsibility.
 
 In the note content you can see the code which calls one of the API methods, this one is specifically meant to add new buttons. Code needs to set few button properties:
 
@@ -28,7 +28,7 @@ In the note content you can see the code which calls one of the API methods, thi
 
 ### Action handler
 
-Saving the note to the database is backend's responsibility so we immediately pass control to the backend and ask it to create a note. Once this is done, we show the newly created note so that the user can set the task title and maybe some attributes.
+Saving the note to the database is backend's responsibility, so we immediately pass control to the backend and ask it to create a note. Once this is done, we show the newly created note so that the user can set the task title and maybe some attributes.
 
 ### Script execution
 

@@ -26,6 +26,6 @@ Alternatively if you only wish to quickly preview the content, you can hover ove
 
 Trilium also provides "inline" linking - type `@` and you'll see an autocomplete, just type few characters from the desired note title, press enter and you have a link.
 
-## Link map
+## Note map
 
-Trilium provides a visualisation of incoming and outgoing links for a particular note. See [[link map]] for details.
+Trilium provides a visualisation of incoming and outgoing links for a particular note. See [[note map]] for details.

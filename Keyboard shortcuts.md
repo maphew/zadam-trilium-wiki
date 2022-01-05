@@ -1,6 +1,6 @@
 This is supposed to be a complete list of keyboard shortcuts. Note that some of these may work only in certain contexts (e.g. in tree pane or note editor).
 
-Since Trilium 0.38, it is possible to configure keyboard shortcuts in Options -> Keyboard shortcuts.
+It is also possible to configure most keyboard shortcuts in Options -> Keyboard shortcuts.
 
 ## Note navigation
 
@@ -11,7 +11,7 @@ Since Trilium 0.38, it is possible to configure keyboard shortcuts in Options ->
 * `CTRL+.` - scroll to current note (useful when you scroll away from your note or your focus is currently in the editor)
 * `BACKSPACE` - jumps to parent note
 * `ALT+C` - collapse whole note tree
-* `ALT+-` (alt with minus sign) - collapse sub-tree (if some subtree takes too much space on tree pane you can collapse it)
+* `ALT+-` (alt with minus sign) - collapse subtree (if some subtree takes too much space on tree pane you can collapse it)
 
 See demo of some of these features in [[note navigation|Note navigation]].
 

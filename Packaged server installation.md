@@ -63,7 +63,7 @@ Error: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required b
     at tryModuleLoad (module.js:505:12)
 ```
 
-If you get an error like this, you need to either upgrade your glibc (typically by upgrading to up to date distribution version) or use some other [[server installation]] method.
+If you get an error like this, you need to either upgrade your glibc (typically by upgrading to up-to-date distribution version) or use some other [[server installation]] method.
 
 ## TLS
 

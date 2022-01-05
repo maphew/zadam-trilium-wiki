@@ -22,25 +22,22 @@ Note that the use of `#` for Heading1 style is not supported because the editor 
 
 ## Math support
 
-Trilium provides Math support with the help of KaTex (available since 0.45):
+Trilium provides Math support with the help of KaTex:
 
 [[gifs/math.gif]]
 
 ## Cut selection to sub-note
-
-**This feature is available since 0.39.3**
-
-One of the common situations in Trilium is when you're editing a document and it gets somewhat large so you start splitting it up into subnotes - the process is essentially like this:
+One of the common situations in Trilium is when you're editing a document, and it gets somewhat large, so you start splitting it up into sub-notes - the process is essentially like this:
 
 * select the desired piece of text and cut it into clipboard
-* create new subnote & give it name
-* paste the content from clipboard into subnote
+* create new sub-note & give it name
+* paste the content from clipboard into sub-note
 
 Trilium provides a way to automate this:
 
 [[gifs/cut-to-subnote.gif]]
 
-You can notice how heading "Formatting" is automatically detected and new subnote is named "Formatting".
+You can notice how heading "Formatting" is automatically detected and new sub-note is named "Formatting".
 
 It is also possible to assign a keyboard shortcut for this action.
 

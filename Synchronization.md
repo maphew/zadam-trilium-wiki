@@ -1,4 +1,4 @@
-Trilium is offline-first note taking application - when you use the desktop application, all the data is stored locally, but you also have an option to set up synchronization to the server instance. When you add another desktop client, you can get to star-shaped topology:
+Trilium is offline-first note-taking application - when you use the desktop application, all the data is stored locally, but you also have an option to set up synchronization to the server instance. When you add another desktop client, you can get to star-shaped topology:
 
 [[images/star-topology.png]]
 
@@ -12,7 +12,7 @@ Once sync is set up, synchronization is automatic and ongoing - you don't need t
 
 This approach is used when you already have a desktop instance of Trilium and you want to [[setup sync server on your web host|Server installation]]. 
 
-So let's assume your server instance is already deployed but it's uninitialized (no data). Then open your desktop instance, click on Options -> Sync tab -> Sync configuration and set "Server instance address" to point to your sync server. Click Save.
+So let's assume your server instance is already deployed, but it's uninitialized (no data). Then open your desktop instance, click on Options -> Sync tab -> Sync configuration and set "Server instance address" to point to your sync server. Click Save.
 
 [[images/sync-config.png]]
 

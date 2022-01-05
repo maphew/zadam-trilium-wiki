@@ -52,7 +52,7 @@ However, if your search expression starts with a parenthesis, it needs to be pre
 
 `note.parents.parents.title = 'Books'` This again works transitively, so this will find notes whose parent of parent is named ‘Book’.
 
-`note.ancestors.title = 'Books'` This is sort of extension of parents - this will find notes which have an ancestor anywhere in their note path (so parent, grand-parent, grand-grand-parent …) with title ‘Book’. This is a nice way how to reduce the scope of the search to a particular sub-tree.
+`note.ancestors.title = 'Books'` This is sort of extension of parents - this will find notes which have an ancestor anywhere in their note path (so parent, grandparent, grand-grand-parent …) with title ‘Book’. This is a nice way how to reduce the scope of the search to a particular subtree.
 
 `note.children.title = 'sub-note'` So this works in the other direction and will find notes which have (at least one) child called “sub-note”.
 
@@ -103,7 +103,7 @@ The example above will do the following things (in this sequence):
 
 1. find notes with label author having value “Tolkien”
 2. order the results by publicationDate in descending order (so the newest first)
-  1. in case publication date is equal, use note.title as secondary ordering in ascending order (`asc` is the default and thus can be ommitted)
+  1. in case publication date is equal, use note.title as secondary ordering in ascending order (`asc` is the default and thus can be omitted)
 3. take only the first 10 results
 
 ### Negation

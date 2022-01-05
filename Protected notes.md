@@ -6,17 +6,15 @@ For such sensitive data Trilium can protect these notes which essentially means:
     * This means that without your password, protected notes are not decipherable so even if somebody managed to steal your Trilium [[document|Document]], your protected notes could not be read.
 * time-limited access to protected notes
     * To first access protected notes you need to enter your password which will decrypt the note and allow you to read / write them. But after certain time period (by default 10 minutes) this decrypted note is unloaded from memory and to read it again you need to enter your password again.
-      * This time limit counts from the last interaction with protected session - so e.g. if you continuously write into a protected note, session is getting extended automatically and you are not kicked out. Once you change to an unprotected note, expiration starts counting and session ends in 10 minutes (unless you again interact with protected notes).
+      * This time limit counts from the last interaction with protected session - so e.g. if you continuously write into a protected note, session is getting extended automatically, and you are not kicked out. Once you change to an unprotected note, expiration starts counting and session ends in 10 minutes (unless you again interact with protected notes).
     * This protects against a possible scenario where you leave your computer unlocked for a long time and somebody can access your Trilium application.
-* protected notes protect only confidentiality and partially integrity of the notes. User outside of the protected sessions can still e.g. delete the protected notes or move them to a new location.
+* protected notes protect only confidentiality and partially integrity of the notes. User outside the protected sessions can still e.g. delete the protected notes or move them to a new location.
     
 ## How to use protected notes
 
 Notes are by default unprotected. If you want your note to be protected, click on shield icon next to the note title as seen here:
 
 [[gifs/protecting-note.gif]]
-
-You can also notice how protected notes are greyed in the note tree and given subtle shield background in the note editor so you have good overview of what's protected and what isn't.
 
 ## What is encrypted
 
@@ -30,7 +28,6 @@ Encrypted:
 
 Not encrypted:
 * structure of the notes - i.e. you can still see that there are protected notes.
-   * there's no attempt to hide the fact there are encrypted notes
 * various metadata - e.g. date of last modification
 * [[attributes]]
 
@@ -47,9 +44,3 @@ Not encrypted:
     * data encryption key is random key generated at the time of [[document|Document]] initialization and is constant over the lifetime of the document. If we change password, we re-encrypt only this key.
 5. We use data encryption key to decrypt actual data - note title and content.
     * encryption used is again AES-128 with [CBC chaining](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation). Unique IV is generated with every encryption operation and stored together with the cipher text.
-
-## Search
-
-Since full text search is implemented as a database search, it cannot work over encrypted data in protected notes. Searching by [[attributes]] is not affected and will find protected notes since attributes are not encrypted.
-
-As a limited work around you can use Jump-To dialog (by default `CTRL-J`) which uses an in-memory search of titles only and will find protected notes if the protected session is active.

@@ -14,7 +14,7 @@ Project is hosted [here](https://github.com/zadam/trilium-web-clipper). Firefox 
 Trilium will save these clippings as a new child note under a "clipper inbox" note. Clipper inbox is:
 
 * if there's a note with [[label|attributes]] `clipperInbox`, then this note is used as parent for the clipped notes
-* otherwise [[day note|day notes]] is used as a parent 
+* otherwise, [[day note|day notes]] is used as a parent 
 
 If there's multiple clippings from the same page (and on the same day), then they will be added to the same note.
 
@@ -27,6 +27,6 @@ Extension is available from:
 
 # Configuration
 
-The extension needs to connect to a running Trilium instance. By default it scans a port range on the local computer to find a desktop Trilium instance.
+The extension needs to connect to a running Trilium instance. By default, it scans a port range on the local computer to find a desktop Trilium instance.
 
 It's also possible to configure [[server|Server installation]] address for cases when the desktop application is not currently running.

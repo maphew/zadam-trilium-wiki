@@ -6,8 +6,6 @@ You can use alt-left and alt-right to move back and forward in history of viewed
 
 This works identically to browser backwards / forwards, it's actually using built-in browser support for this.
 
-Of course this is basic and expected functionality, but it's worth mentioning that Trilium plays nicely here.
-
 [[gifs/back-and-forwards.gif]]
 
 ## Jump to note
@@ -21,7 +19,7 @@ Then type part of the note name and autocomplete will help you pick the desired 
 
 Jump to note also has the ability to show the list of recently viewed / edited notes and quickly jump to it.
 
-To access this functionality, click on `Jump to` button on the top. By default (when nothing is entered into autocomplete), this dialog will show the list of recent notes.
+To access this functionality, click on `Jump to` button on the top. By default, (when nothing is entered into autocomplete), this dialog will show the list of recent notes.
 
 Alternatively you can click on the "time" icon on the right.
 

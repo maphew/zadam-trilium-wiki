@@ -27,12 +27,12 @@ else {
 
 This script note has also following two attributes:
 
-* label `customRequestHandler` with value `create-note`
-* relation `targetNote` pointing to a note where new notes should be saved
+* label `#customRequestHandler` with value `create-note`
+* relation `~targetNote` pointing to a note where new notes should be saved
 
 ### Explanation
 
-Let's test this by using a HTTP client to send a request:
+Let's test this by using an HTTP client to send a request:
 
 ```http request
 POST http://my.trilium.org/custom/create-note
@@ -49,7 +49,7 @@ Notice the `/custom` part in the request path - Trilium considers any request wi
 
 Trilium will then find our code note created above and execute it. `api.req`, `api.res` are set to [request](https://expressjs.com/en/api.html#req) and [response](https://expressjs.com/en/api.html#res) objects from which we can get details of the request and also respond.
 
-In the code note we check the request method and then use trivial authentication - keep in mind that these endpoints are by default totally unauthenticated and you need to take care of this yourself.
+In the code note we check the request method and then use trivial authentication - keep in mind that these endpoints are by default totally unauthenticated, and you need to take care of this yourself.
 
 Once we pass these checks we will just create the desired note using [[Script API]].
 
@@ -57,9 +57,9 @@ Once we pass these checks we will just create the desired note using [[Script AP
 
 Another common use case is that you want to just expose a file note - in such case you create label `customResourceProvider` (value is again path regex).
 
-Note: The file that is supposed to be exposed needs to wear an "#customResourceProvider="fonts/myFont.woff"
-For example, your file is in custom/fonts, you can call it via `custom/fonts/myFont.woff`
-But only if `myFont.woff` wears the `customRessourceProvider` label. Otherwise, nothing would be found.
+Note: The file that is supposed to be exposed needs to have a label `#customResourceProvider="fonts/myFont.woff`
+
+For example, your file is in custom/fonts, you can call it via `custom/fonts/myFont.woff`.
 
 ## Advanced concepts
 
@@ -79,7 +79,7 @@ The last part is dynamic so the matching of the URL must also be dynamic - for t
 notes/([0-9]+)
 ```
 
-Additionally this also defines a matching group with the use of parenthesis which then makes it easier to extract the value. The matched groups are available in `api.pathParams`:
+Additionally, this also defines a matching group with the use of parenthesis which then makes it easier to extract the value. The matched groups are available in `api.pathParams`:
 
 ```javascript
 const noteId = api.pathParams[0];

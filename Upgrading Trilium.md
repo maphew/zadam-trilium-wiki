@@ -13,6 +13,6 @@ During Trilium startup, [[document]] will be checked whether it conforms to the 
 
 # Sync compatibility
 
-[[Synchronization]] protocol is versioned and all members of the sync cluster need to talk in the same protocol version. Therefore when you are upgrading from one version to another, it might be necessary to upgrade all instances in the cluster.
+[[Synchronization]] protocol is versioned and all members of the sync cluster need to talk in the same protocol version. Therefore, when you are upgrading from one version to another, it might be necessary to upgrade all instances in the cluster.
 
 Change in protocol version is usually indicated on a release page. 

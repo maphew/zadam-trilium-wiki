@@ -1,4 +1,4 @@
-I've assumed you have created a DNS A record for `trilium.yourdomain.com` that you want to use for your trilium server.
+I've assumed you have created a DNS A record for `trilium.yourdomain.com` that you want to use for your Trilium server.
 
 1. Download docker image and create container
 		

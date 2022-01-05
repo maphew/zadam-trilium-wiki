@@ -14,7 +14,7 @@ Each note can have more than one such branches, in other words any note can have
 
 Prefix is branch (placement) specific title prefix for the note. Let's say you have your note placed into two different places in the tree, but you want to change the title a bit in one of the placements. For this you can use prefix.
 
-To edit prefix, right click on a note in the tree pane and choose "Edit branch prefix".
+To edit prefix, right-click on a note in the tree pane and choose "Edit branch prefix".
 
 Prefix is not part of the note itself and thus is not encrypted when the note is protected. That can be useful when you want to keep part of the title in the tree visible even when protected for easier orientation.
 

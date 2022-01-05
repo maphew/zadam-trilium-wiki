@@ -5,4 +5,4 @@ For [[Scripts]] to do anything useful, Trilium publishes "Script API". Actually 
 
 ## Backwards compatibility
 
-Note that Script API is now highly experimental and subject to change in the future.
+Note that Script API is now experimental and subject to change in the future.

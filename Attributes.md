@@ -1,19 +1,18 @@
 Note attributes are key-value records owned by (assigned to) given note.
 
-There are four types of attributes:
+There are 2 types of attributes:
 
 * Labels - simple key-value text record
 * Relation - specifies named relation (link) to another note
-* Label and relation definition - these are described in [[Promoted attributes]] page
 
 Sometimes we're talking about labels and relations - keep in mind that both of them are types of attributes.
 
 [[images/attributes.png]]
 
 ## Labels
-Labels are used for several things:
+Labels can be used for several things:
 
-* user can use them as labels with optional value - e.g. when catalogizing books, you might add labels like #year=1999, #genre=sci-fi, #author="Neal Stephenson"
+* as labels with optional value - e.g. when cataloguing books, you might add labels like #year=1999, #genre="sci-fi", #author="Neal Stephenson"
 * attributes can be used to configure some advanced features / settings - see below
 * plugins / scripts can use these to mark notes with some special values / metadata (e.g. [[Weight Tracker]] will have "weight" attribute on [[day notes]] based on whose it can create chart).
 
@@ -40,6 +39,15 @@ The following labels are used for advanced configuration:
 * `cssClass` - value of this label is then added as CSS class to the node representing the given note in the tree. This can be useful for advanced [[theming|themes]]. Can be used in `template` notes.
 * `iconClass` - value of this label is added as a CSS class to the icon on the tree, which can help visually distinguish the notes in the tree. An example might be `bx bx-home` - icons are taken from [boxicons](https://boxicons.com/). Can be used in [[template]] notes.
 * `customRequestHandler` and `customResourceProvider` - see [[Custom request handler]]
+* `widget` - see [[Custom widget]],
+* `workspace`, `workspaceIconClass`, `workspaceTabBackgroundColor` - see [[Workspace] 
+* `searchHome` - new search notes will be created as children of this note (otherwise they are created in [[Day notes]])
+* `hoistedSearchHome` - new search notes will be created as children of this note when hoisted to some ancestor of this note
+* `inbox` - default inbox location for new notes
+* `hoistedInbox` - default inbox location for new notes when hoisted to some ancestor of this note
+* `sqlConsoleHome` - default location of SQL console notes
+* `bookmarked` and `bookmarkFolder` - see [[Bookmarks]]
+* `shareXXX` labels described in [[Sharing]]
 
 ## Relations
 Relation is a kind of link between two notes.
@@ -62,10 +70,15 @@ Other relations:
 * `template` - attached note's attributes will be inherited even without parent-child relationship. See [[template]] for details.
 * `renderNote` - notes of type "render HTML note" will be rendered using a code note (HTML or script) and it is necessary to point using this relation to which note should be rendered
 * `widget` - target of this relation will be executed and rendered as a widget in the sidebar
+* `shareXXX` relations described in [[Sharing]]
 
 ## Multiplicity
 
-Attributes allow multiplicity - there can be multiple attributes with the same name. We're then calling such attributes "multi valued".
+Attributes allow multiplicity - there can be multiple attributes with the same name. We're then calling such attributes "multivalued".
+
+## Attribute definitions / promoted attributes
+
+Special kind of labels are used to create "label/attribute" definitions. See  [[Promoted attributes]] for details.
 
 ## Attribute inheritance
 

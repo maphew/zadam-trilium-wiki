@@ -12,6 +12,7 @@ It is also possible to configure most keyboard shortcuts in Options -> Keyboard 
 * `BACKSPACE` - jumps to parent note
 * `ALT+C` - collapse whole note tree
 * `ALT+-` (alt with minus sign) - collapse subtree (if some subtree takes too much space on tree pane you can collapse it)
+* you can define a [[label|attributes]] `#keyboardShortcut` with e.g. value `Ctrl+I`. Pressing this keyboard combination will then bring you to the note on which it is defined. Note that Trilium must be reloaded/restarted (Ctrl+R) for changes to be in effect.
 
 See demo of some of these features in [[note navigation|Note navigation]].
 

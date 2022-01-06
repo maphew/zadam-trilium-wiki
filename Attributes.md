@@ -48,6 +48,7 @@ The following labels are used for advanced configuration:
 * `sqlConsoleHome` - default location of SQL console notes
 * `bookmarked` and `bookmarkFolder` - see [[Bookmarks]]
 * `shareXXX` labels described in [[Sharing]]
+* `keyboardShortcut` can be defined as e.g. "Ctrl+I". Pressing this keyboard combination will then bring you to the note on which it is defined. Note that Trilium must be reloaded/restarted (Ctrl+R) for changes to be in effect.
 
 ## Relations
 Relation is a kind of link between two notes.

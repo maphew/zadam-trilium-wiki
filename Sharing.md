@@ -54,7 +54,7 @@ for (const attr of parentNote.attributes) {
 
 Shared notes are accessible using URLs like `http://domain/share/knvU8aJy4dJ7`, where the last part is the note's ID.
 
-You can add `#shareAlias` to individual notes to make the URLs nicer, e.g. `#shareAlias=highlighting` will make the URL look like `http://domain/share/formatting`.
+You can add `#shareAlias` to individual notes to make the URLs nicer, e.g. `#shareAlias=highlighting` will make the URL look like `http://domain/share/highlighting`.
 
 Note that you are responsible for keeping the aliases unique.
 

@@ -32,3 +32,7 @@ You can export whole subtree to ZIP archive which will have directory structured
 If you want to export just single note without its subtree, you can do it from Note actions menu:
 
 [[gifs/markdown-export-note.gif]]
+
+### Exporting protected notes
+
+If you want to export protected notes, enter a protected session first! This will export the notes in an unencrypted form, so if you reimport into Trilium, make sure to re-protect these notes.

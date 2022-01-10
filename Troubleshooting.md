@@ -87,6 +87,8 @@ In some cases, it's necessary to see the database structure to be able to debug 
 
 For this, Trilium supports anonymization of the database - you can trigger this in Options -> Advanced tab.
 
+![image](https://user-images.githubusercontent.com/617641/148821689-52a0aeb6-e61d-4f9b-880d-c1696e9d2429.png)
+
 This will create a copy of your document and remove all sensitive data (currently note titles, contents, revisions, history and some of the options, and non-system attributes) while leaving all structure and metadata (e.g. date of last change). After this is done, the database is [VACUUMed](https://sqlite.org/lang_vacuum.html) to make sure there's no stale sensitive data in the document file. The resulting file is stored in `anonymized` directory (placed in the [[data directory]]). You can safely attach it with your bug report or send it to zadam.apps@gmail.com
 
 #### Command line anonymization

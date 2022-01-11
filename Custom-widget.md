@@ -27,15 +27,15 @@ const TPL = `<div style="padding: 10px; border-top: 1px solid var(--main-border-
     <span class="character-count"></span>
 </div`;
 
-class WordCountWidget extends api.TabAwareWidget {
+class WordCountWidget extends api.NoteContextAwareWidget {
     get position() { return 100; } // higher value means position towards the bottom/right
 
     get parentWidget() { return 'center-pane'; }
 
     isEnabled() {
         return super.isEnabled()
-            && note.type === 'text'
-            && note.hasLabel('wordCount');
+            && this.note.type === 'text'
+            && this.note.hasLabel('wordCount');
     }
 
     doRender() {

@@ -57,5 +57,6 @@
     * [[Day notes]]
     * [[Weight Tracker]]
     * [[Task Manager]]
+  * [[ETAPI]] (REST API)
 * [[FAQ]]
 * [[Troubleshooting]]

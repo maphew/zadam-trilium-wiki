@@ -68,6 +68,10 @@ All shared notes are grouped under automatically managed "Share Notes" note. Bes
 
 You can define a custom favicon used for shared pages by create a relation `~shareFavicon` pointing to the file note containing the favicon (in e.g. the `ico` format).
 
+### Sharing a note as the root
+
+You can add the `#shareRoot` attribute to a folder or note, and it will be linked when you visit http://domain/share. This can make it easier to use Trilium as a fully-fledged website because you can create a note to act as a "home-page".
+
 ## Limitations
 
 Shared notes functionality is compared to standard functionality very limited.

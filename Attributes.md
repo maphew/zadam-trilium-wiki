@@ -40,7 +40,7 @@ The following labels are used for advanced configuration:
 * `iconClass` - value of this label is added as a CSS class to the icon on the tree, which can help visually distinguish the notes in the tree. An example might be `bx bx-home` - icons are taken from [boxicons](https://boxicons.com/). Can be used in [[template]] notes.
 * `customRequestHandler` and `customResourceProvider` - see [[Custom request handler]]
 * `widget` - see [[Custom widget]],
-* `workspace`, `workspaceIconClass`, `workspaceTabBackgroundColor` - see [[Workspace] 
+* `workspace`, `workspaceIconClass`, `workspaceTabBackgroundColor` - see [[Workspace]] 
 * `searchHome` - new search notes will be created as children of this note (otherwise they are created in [[Day notes]])
 * `hoistedSearchHome` - new search notes will be created as children of this note when hoisted to some ancestor of this note
 * `inbox` - default inbox location for new notes

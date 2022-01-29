@@ -1,4 +1,4 @@
-ETAPI is Trilium's public/external REST API.
+ETAPI is Trilium's public/external REST API. It is available since Trilium v0.50.
 
 The documentation is in OpenAPI format, available [here](https://github.com/zadam/trilium/blob/master/src/etapi/etapi.openapi.yaml).
 

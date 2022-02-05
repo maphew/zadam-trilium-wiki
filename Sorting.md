@@ -1,3 +1,9 @@
+## One time sorting
+
+You can sort notes one time by right-clicking parent note in the note tree, Advanced -> Sort notes by ...
+
+## Automatic / permanent sorting
+
 **This documentation applies to 0.49 and later. In previous versions `#sorted` worked alphabetically**
 
 Child notes can be kept sorted by attaching `#sorted` [[label|Attributes]] to the parent note.

@@ -41,6 +41,8 @@ Relation definitions mentioned above come from "Person template" note which is a
 
 You can specify which relations should be displayed with comma delimited names of relations in `displayRelations` label.
 
+Alternatively, you can specify comma delimited list of relation names in `hideRelations` which will display all relations, except for the ones defined in the label.
+
 ## See also
 
 * [[Note map]] is a similar concept

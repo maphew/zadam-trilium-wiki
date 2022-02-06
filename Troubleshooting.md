@@ -59,6 +59,10 @@ In such cases you can start Trilium in "safe mode" which will not execute any cu
 TRILIUM_SAFE_MODE=true ./trilium
 ```
 
+Depending on the Trilium distribution, there are also ready made scripts for this: `trilium-safe-mode.bat` and `trilium-safe-mode.sh`.
+
+Once Trilium starts up, find the note which caused the crash and fix it/delete it.
+
 ## Restoring backup
 
 Trilium makes regular automatic backup, so When things go really bad we might need the last option - [[restore backup|Backup#restoring-backup]].

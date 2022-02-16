@@ -26,7 +26,7 @@ export TRILIUM_DATA_DIR=/home/myuser/data/my-trilium-data
 ```
 
 ### Disable authentication
-Among others, you can also disable authentication (in case you run on localhost only or authentication is handled by another component) with:
+Among others, you can also disable authentication (in case you run on localhost only or authentication is handled by another component) by adding the following to `config.ini`:
 
 ```
 [General]

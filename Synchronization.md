@@ -18,7 +18,7 @@ So let's assume your server instance is already deployed, but it's uninitialized
 
 Now click on "Test sync" button which will tell you if the handshake with sync server succeeded. If yes, sync with sync server started - client started pushing all the data towards the server instance. This might take some time to finish, but you can close the Options dialog and keep using Trilium.
 
-You can also check the server instance periodically to see if the sync finished. Once it's finished you should see the login screen.
+You can also check the server instance periodically to see if the sync finished. Once it's finished, you should see the login screen.
 
 ### Setup synchronization from sync server to desktop instance
 
@@ -47,7 +47,7 @@ Two different setups are supported:
 
 ## Certificate issues
 
-When TLS is in use, Trilium client will attempt to verify the server certificate. In some cases (self-signed certs, some corporate proxy servers), the verification will be unsuccessful and sync will fail. In those cases you can run the Trilium client with environment variable `NODE_TLS_REJECT_UNAUTHORIZED` set to `0`:
+When TLS is in use, Trilium client will attempt to verify the server certificate. In some cases (self-signed certs, some corporate proxy servers), the verification will be unsuccessful and sync will fail. In those cases, you can run the Trilium client with environment variable `NODE_TLS_REJECT_UNAUTHORIZED` set to `0`:
 
 ```shell
 export NODE_TLS_REJECT_UNAUTHORIZED=0

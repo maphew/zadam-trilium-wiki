@@ -44,7 +44,7 @@ I have Trilium Notes opened non-stop. Sometimes I forget to lock my computer whe
 
 ### Archiving notes
 
-Notes can lose relevancy with time - let's say I switch jobs - all the notes specific to the former employer immediately lose most of its import. This doesn't mean I want to delete these notes though - typically I just want them to somehow deprioritize - in Trilium I would do that by assigning an [inherited](https://github.com/zadam/trilium/wiki/Attribute inheritance) [label](https://github.com/zadam/trilium/wiki/Attributes) ```archived``` to the company root note. The main effect of this label is that all the notes from this sub-tree are filtered out from search results (fast search via note autocomplete is my main [navigation approach](https://github.com/zadam/trilium/wiki/Note navigation)). Apart from this, I also typically move such outdated notes to some less prominent place in the hierarchy.
+Notes can lose relevancy with time - let's say I switch jobs - all the notes specific to the former employer immediately lose most of its import. This doesn't mean I want to delete these notes though - typically I just want them to somehow deprioritize - in Trilium I would do that by assigning an [inherited](https://github.com/zadam/trilium/wiki/Attribute-inheritance) [label](https://github.com/zadam/trilium/wiki/Attributes) ```archived``` to the company root note. The main effect of this label is that all the notes from this sub-tree are filtered out from search results (fast search via note autocomplete is my main [navigation approach](https://github.com/zadam/trilium/wiki/Note-navigation)). Apart from this, I also typically move such outdated notes to some less prominent place in the hierarchy.
 
 I use archivation also for notes which are not very relevant from their creation - an example might be automatically imported reddit comments.
 
@@ -77,14 +77,14 @@ What notes do I keep under this day note?
 
 * TODO list for given day (this can be automated - see [Task Manager](https://github.com/zadam/trilium/wiki/Task-manager))
 * Personal diary
-* [clones](https://github.com/zadam/trilium/wiki/Cloning notes) of notes I created during this day (which kind of represents what I've been working on).
+* [clones](https://github.com/zadam/trilium/wiki/Cloning-notes) of notes I created during this day (which kind of represents what I've been working on).
 * I often clone notes (or sub-trees) of e.g. projects I'm working on at given day so they are at hand
 * I have some [scripts](https://github.com/zadam/trilium/wiki/Scripts) which allow me to track certain daily metrics (like weight). These are saved into one daily "data note" (actually JSON [code note](https://github.com/zadam/trilium/wiki/Code-notes)).
   * I have other scripts which then help me to visualize these data (see a [Weight Tracker](https://github.com/zadam/trilium/wiki/Weight tracker) example)
   * I have a script which automatically imports all my comments from reddit into the day note.
     * People are sometimes wondering why. The answer is that I usually put some effort and thought into a comment and that's why I feel it's worth preserving, especially if it can be done automatically.
 
-For most notes, this day note placement is *secondary* and their primary location is somewhere else (e.g. for a book review I've been working on it's *Book / Reviews*, not the day note). So for this pattern to work, ability to [clone](https://github.com/zadam/trilium/wiki/Cloning notes) notes into multiple places is pretty fundamental.
+For most notes, this day note placement is *secondary* and their primary location is somewhere else (e.g. for a book review I've been working on it's *Book / Reviews*, not the day note). So for this pattern to work, ability to [clone](https://github.com/zadam/trilium/wiki/Cloning-notes) notes into multiple places is pretty fundamental.
 
 ### Projects
 
@@ -104,13 +104,13 @@ This might seem creepy to some, but I keep a profile on most people. It contains
 
 Naturally I have a lot of (extended) family members, friends, acquaintances etc. so I need some way to sort them. My main method is to sort them by social circle (work, high school, sports club etc.), sometimes also by their town of residence. Family *circle* is still too large so the further organization is by *clan* (as in "Smiths"). Some people are members of several such circles, so they are just cloned into multiple places.
 
-For family specifically it's pretty useful to create [relation map](https://github.com/zadam/trilium/wiki/Relation map) to visualize relationships:
+For family specifically it's pretty useful to create [relation map](https://github.com/zadam/trilium/wiki/Relation-map) to visualize relationships:
 
 [[images/relation-map-family.png|width=800]]
 
 ### Books
 
-Of course, I keep standard "To read" list. I also keep a record on the books I've read - typically one book has one subtree where the root has some basic info like author, page count, publication date, date started, date finished (in the form of [promoted labels](https://github.com/zadam/trilium/wiki/Promoted attributes)). I also write a (private) review and keep list of highlights from Kindle, optionally with some commentary, these are usually stored in sub notes (unless they are pretty short).
+Of course, I keep standard "To read" list. I also keep a record on the books I've read - typically one book has one subtree where the root has some basic info like author, page count, publication date, date started, date finished (in the form of [promoted labels](https://github.com/zadam/trilium/wiki/Promoted-attributes)). I also write a (private) review and keep list of highlights from Kindle, optionally with some commentary, these are usually stored in sub notes (unless they are pretty short).
 
 To keep the list of books manageable, I sort them per year (of reading them), this also gives me some basic overview of "reading performance" for given year. I plan to create a [script](https://github.com/zadam/trilium/wiki/Scripts) which would show some timeline chart visualizing book attributes ```dateStarted``` - ```dateFinished``` to have  nicer view of my reading sprints and trends.
 
@@ -140,7 +140,7 @@ This where I store hard "knowledge" - summarized topics and findings from differ
 
 ### Work knowledge base
 
-I usually keep top level note for the company I currently work at (past jobs are moved elsewhere). I track basic organization of the company (divisions, business units), who is who ([relation maps](https://github.com/zadam/trilium/wiki/Relation map)) are again useful for visualization), projects I work at etc.
+I usually keep top level note for the company I currently work at (past jobs are moved elsewhere). I track basic organization of the company (divisions, business units), who is who ([relation maps](https://github.com/zadam/trilium/wiki/Relation-map)) are again useful for visualization), projects I work at etc.
 
 There's a number of credentials to various company services I need to use. Companies usually have a bunch of complex processes and tools. I record meeting minutes, link to the company wiki (which is usually difficult to find relevant info). In general there's a lot of company specific information I need to know or need have them at hand in a nice structure I can understand. Often it's just copy pasting and reshuffling of existing information into something more understandable for me.
 

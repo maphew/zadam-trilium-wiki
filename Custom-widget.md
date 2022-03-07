@@ -25,7 +25,7 @@ const TPL = `<div style="padding: 10px; border-top: 1px solid var(--main-border-
 
     <strong>Character count: </strong>
     <span class="character-count"></span>
-</div`;
+</div>`;
 
 class WordCountWidget extends api.NoteContextAwareWidget {
     get position() { return 100; } // higher value means position towards the bottom/right

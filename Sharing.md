@@ -75,6 +75,7 @@ You can add the `#shareRoot` attribute to a folder or note, and it will be linke
 ### Other options
 
 * if a note has `#shareRaw` label, the note will be shared raw, without HTML wrapper
+* if a note has `#shareDisallowRobotIndexing` label, it will carry `<meta name="robots" content="noindex,follow" />` meta tag and `X-Robots-Tag: noindex` header, which will advise crawlers to skip this page
 
 ## Limitations
 

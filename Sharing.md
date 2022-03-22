@@ -72,6 +72,10 @@ You can define a custom favicon used for shared pages by create a relation `~sha
 
 You can add the `#shareRoot` attribute to a folder or note, and it will be linked when you visit http://domain/share. This can make it easier to use Trilium as a fully-fledged website because you can create a note to act as a "home-page".
 
+### Other options
+
+* if a note has `#shareRaw` label, the note will be shared raw, without HTML wrapper
+
 ## Limitations
 
 Shared notes functionality is compared to standard functionality very limited.

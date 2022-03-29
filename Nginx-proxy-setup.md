@@ -29,6 +29,8 @@ server {
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
         proxy_pass http://IP:port; #change it to your IP and port
         proxy_read_timeout 90;
         proxy_redirect http://IP:port https://trilium.example.net; #change them based on your IP, port and domain

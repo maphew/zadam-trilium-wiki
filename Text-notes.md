@@ -46,3 +46,5 @@ It is also possible to assign a keyboard shortcut for this action.
 Text notes can "include" another note as a read only widget. This can be useful for e.g. including a dynamically generated chart (from scripts & "render HTML" note) or other more advanced use cases.
 
 This functionality is available in the block toolbar icon.
+
+![image](https://user-images.githubusercontent.com/617641/161419847-7709db0e-04cf-4157-b6ec-0ef6cdaa3f74.png)

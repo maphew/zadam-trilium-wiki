@@ -1,5 +1,5 @@
 # Overview
-Basic overview of the Trilium project is available at project homepage - https://github.com/zadam/trilium
+Basic overview of the Trilium project is available at project homepage - https://github.com/zadam/trilium#trilium-notes
 
 # Documentation
 This [wiki](https://github.com/zadam/trilium/wiki) contains additional and more in-depth information on some topics. See the sidebar for listing of all available pages.

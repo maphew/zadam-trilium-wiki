@@ -105,6 +105,7 @@ You can also create specific styling for given note types (and mime types). For 
 
 Following are themes developed by Trilium users:
 
+* https://github.com/tobealive/trilium-midnight-theme
 * https://github.com/Abourass/TriliumThemes
 * https://github.com/ZMonk91/Material-Dark-Trilium
 * https://github.com/jaroet/trilium-theme-lightslategray

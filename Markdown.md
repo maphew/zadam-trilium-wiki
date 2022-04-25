@@ -1,4 +1,4 @@
-Trilium Notes supports importing Markdown (CommonMark flavor).
+Trilium Notes supports importing Markdown restricted to the [CommonMark specification](https://spec.commonmark.org/current/) (where [tables are not supported](https://github.com/zadam/trilium/issues/2026) )
 
 ## Import
 

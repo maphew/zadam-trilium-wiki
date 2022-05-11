@@ -29,6 +29,8 @@
 
 `~author.title *=* Tolkien` - find notes which have relation "author" which points to a note with title containing word "Tolkien"
 
+`#publicationYear %= '19[0-9]{2}' - operator '%=' matches a regular expression (regex). Since Trilium 0.52
+
 ## Advanced use cases
 
 `~author.relations.son.title = 'Christopher Tolkien'` - This will search for notes which have “author” relation to a note which has a “son” relation to “Christopher Tolkien” note. This situation can be modeled by this note structure:

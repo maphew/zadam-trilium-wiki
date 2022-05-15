@@ -25,3 +25,5 @@ As an example, imagine you collect server outage incidents and write some notes.
 You can automatize the date assignment by assigning a label `#titleTemplate="${now.format('YYYY-MM-DD')}: " to the parent note "Incidents". Whenever a new child note is created, the title template is evaluated with the injected <a href="https://day.js.org/docs/en/display/format">now</a> object.
 
 Second variable injected is <a href="https://zadam.github.io/trilium/backend_api/Note.html">parentNote</a>, an example could be `#titleTemplate="${parentNote.getLabelValue('authorName')}'s literary works"`.
+
+See also [[template]] which provides similar capabilities, including default note's content.

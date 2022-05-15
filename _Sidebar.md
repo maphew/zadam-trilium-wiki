@@ -58,5 +58,6 @@
     * [[Weight Tracker]]
     * [[Task Manager]]
   * [[ETAPI]] (REST API)
+  * [[Default note title]]
 * [[FAQ]]
 * [[Troubleshooting]]

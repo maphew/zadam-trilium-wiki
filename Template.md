@@ -18,3 +18,5 @@ And then we have instance note - this note has a [[relation|attributes]] to the 
 From the visual perspective template can define a `#iconClass` and `#cssClass` attributes so that all e.g. books are shown with a particular icon and CSS style.
 
 You can check out the concept in the [[demo document|Document#demo-document]] in e.g. [[Relation map]], [[Task manager]] or [[Day notes]]. 
+
+See also [[default note title]] which allows you to create templates for note titles. Note templates and title templates can be combined by creating a `#titleTemplate` for a template note.

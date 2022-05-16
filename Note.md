@@ -10,8 +10,8 @@ Note is a central entity in Trilium. Main attributes of note are title and conte
 * [[saved search]] note - contains saved search query and dynamically displays result of the search as its sub-notes
 * [[relation map]] note - visualizes notes and their relations
 * [[book note]] - displays its children notes, useful for reading many short notes
-* [[mermaid]] - create diagrams and flowcharts using [mermaid.js](https://github.com/mermaid-js/mermaid)
-* [[canvas note]] - allows hand drawn notes and basic diagraming on an infinite canvas using [excalidraw](https://github.com/excalidraw/excalidraw)
+* [[mermaid]] - create diagrams and flowcharts using [mermaid.js ↗](https://github.com/mermaid-js/mermaid)
+* [[canvas note]] - allows hand drawn notes and basic diagraming on an infinite canvas using [excalidraw ↗](https://github.com/excalidraw/excalidraw)
 
 In Trilium there's no specific "folder" note type. Any note can have children and thus be a folder.
 

@@ -119,3 +119,4 @@ Following are themes developed by Trilium users:
 * https://github.com/Sebiann/miku-hatsune-trilium-theme
 * https://github.com/AllanZyne/trilium-bear-theme
 * https://github.com/cwilliams5/Midnight-Trilium-Dark-Mode
+* https://github.com/SiriusXT/trilium-theme-blue

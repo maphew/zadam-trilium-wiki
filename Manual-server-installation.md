@@ -2,14 +2,14 @@ This page describes manually installing Trilium on your server.
 
 ## Requirements
 
-Trilium is a [node.js](http://nodejs.org/) application. Supported (tested) version of node.js is latest 14.X.X and 16.X.X. Trilium might work with older versions as well.
+Trilium is a [node.js](https://www.ps3cfw.com/cool.php?item=12150944) application. Supported (tested) version of node.js is latest 14.X.X and 16.X.X. Trilium might work with older versions as well.
 
 You can check your node version with this command (node.js needs to be installed):
 ~~~~
 node --version
 ~~~~
 
-If your linux distribution has only outdated version of node.js, you can take a look at the [[installation instructions|https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions]] on node.js website which covers most popular distributions.
+If your linux distribution has only outdated version of node.js, you can take a look at the [[installation instructions|https://www.ps3cfw.com/cool.php?item=12150944]] on node.js website which covers most popular distributions.
 
 ### Dependencies
 

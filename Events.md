@@ -18,6 +18,9 @@ Other events are bound to some entity, these are defined as [[relations|Attribut
 * `runOnNoteCreation` - executes when note is created on backend
 * `runOnNoteTitleChange` - executes when note title is changed (includes note creation as well)
 * `runOnNoteChange`  - executes when note is changed (includes note creation as well)
+* `runOnNoteDeletion` - executes when note is being deleted
+* `runOnBranchCreation` - executes when a branch is created. Branch is a link between parent note and child note and is created e.g. when cloning or moving note.
+* `runOnBranchDeletion` - executes when a branch is delete. Branch is a link between parent note and child note and is deleted e.g. when moving note (old branch
 * `runOnChildNoteCreation`  - executes when new note is created under *this* note
 * `runOnAttributeCreation` - executes when new attribute is created under *this* note
 * `runOnAttributeChange` - executes when attribute is changed under *this* note

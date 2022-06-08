@@ -1,6 +1,6 @@
 ### Trilium Notes
 
-Trilium does not collect/send any data from the user's installation, i.e. no analytics, no telemetry etc.
+Trilium Notes does not collect/send any data from the user's installation, i.e. no analytics, no telemetry etc. The data flows only between user controlled / installed applications without any intermediary.
 
 Automatic network activity consists of:
 
@@ -9,8 +9,8 @@ Automatic network activity consists of:
 
 ### Trilium Web Clipper
 
-Trilium Web Clipper does not collect/send any data from the user's installation, i.e. no analytics, no telemetry etc.
+Trilium Web Clipper does not collect/send any data from the user's installation, i.e. no analytics, no telemetry etc. The data flows only between user controlled / installed applications without any intermediary.
 
 ### Trilium Sender for Android
 
-Trilium Sender for Android does not collect/send any data from the user's installation, i.e. no analytics, no telemetry etc.
+Trilium Sender for Android does not collect/send any data from the user's installation, i.e. no analytics, no telemetry etc. The data flows only between user controlled / installed applications without any intermediary.

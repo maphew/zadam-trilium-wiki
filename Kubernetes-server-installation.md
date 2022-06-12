@@ -5,7 +5,9 @@ The recommended way is helm.
 
 # Root privileges
 
-Trilium docker container needs to be run with root privileges, while Kubernetes by default runs containers under unprivileged users. You will have to [configure this in Deployment descriptor](https://dev.to/techworld_with_nana/run-pod-with-root-privileges-41n9).
+Trilium docker container needs to be run with root privileges. The node process inside the container will be started with reduced privileges (uid 1000) after some initialization logic. Make sure that you don't use a security context which changes the user id.
+
+The docker image will also fix the permissions of /home/node so you don't have to use an init container.
 
 # Helm Install
 

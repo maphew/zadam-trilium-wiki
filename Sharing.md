@@ -87,5 +87,6 @@ The not exhaustive list of **what is missing** is:
 * book notes show only children note list
 * code notes have no highlighting
 * note tree is static
+* Protected notes cannot be shared
 
 Some of these limitations might be removed/mitigated in the future.

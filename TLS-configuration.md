@@ -2,7 +2,7 @@ TLS configuration is required for server installation, it's not relevant for pur
 
 First thing to do is to get a TLS certificate. You have two options:
 
-* Recommended - get TLS certificate signed by root certificate authority. For personal usage, the best choice is [Let's encrypt](https://letsencrypt.org). It's free, automated and easy.
+* Recommended - get TLS certificate signed by root certificate authority. For personal usage, the best choice is [Let's encrypt](https://letsencrypt.org). It's free, automated and easy. You can take a look at Certbot for automatic TLS setup.
 * generate your own self-signed certificate. You will have extra trouble with importing the certificate into all machines from which you connect to the server installation so this is not recommended.
 
 ## Modifying config.ini

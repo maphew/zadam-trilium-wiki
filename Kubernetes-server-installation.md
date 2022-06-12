@@ -3,6 +3,10 @@ Trilium can be applied to Kubernetes manually or per helm chart.
 
 The recommended way is helm.
 
+# Root privileges
+
+Trilium docker container needs to be run with root privileges, while Kubernetes by default runs containers under unprivileged users. You will have to [configure this in Deployment descriptor](https://dev.to/techworld_with_nana/run-pod-with-root-privileges-41n9).
+
 # Helm Install
 
 Unofficial helm chart by [ohdearaugustin](https://github.com/ohdearaugustin): https://github.com/ohdearaugustin/charts

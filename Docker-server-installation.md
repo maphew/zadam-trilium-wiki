@@ -44,7 +44,12 @@ docker network create -d macvlan -o parent=eth0 --subnet 192.168.2.0/24 --gatewa
 
 Secondly, you have to adjust the docker run command so it takes this network into account but keep using localhost to limit the accessibility of the ports to the outside world.
 ~~~~
-docker run --net=mynet -d -p 127.0.0.1:8080:8080 -v ~/trilium-data:/home/node/trilium-data zadam/trilium:0.48-latest
+docker run --net=mynet -d -p 127.0.0.1:8080:8080 -v ~/trilium-data:/home/node/trilium-data zadam/trilium:0.52-latest
+~~~~
+
+Alternatively, if you wish to have the saved data and the application using a different UID & GID than 1000:1000, you can use the USER_UID & USER_GID environment variables:
+~~~~
+docker run --net=mynet -d -p 127.0.0.1:8080:8080 -e "USER_UID=1001" -e "USER_GID=1001" -v ~/trilium-data:/home/node/trilium-data zadam/trilium:0.52-latest
 ~~~~
 
 Finally, use docker inspect to find your local IP address to connect to. You can access this from all your devices connected to the local network as such: [local:ip]:8080.
@@ -64,3 +69,7 @@ To stop this background docker process use `docker ps` to get the "CONTAINER ID"
 If you want to run your instance in a non-default way, please use the volume switch as follows: `-v ~/YourOwnDirectory:/home/node/trilium-data zadam/trilium:[VERSION]`.
 It is important to be aware of how Docker works for volumes, with the first path being your own and the second the one to virtually bind to.
 https://docs.docker.com/storage/volumes/
+
+### Note about --user directive
+Please note, the --user directive is not supported and the container will not run without root.
+Instead please use the USER_UID & USER_GID environment variables as shown above.

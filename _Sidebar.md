@@ -26,6 +26,7 @@
   * [[Server installation]]
     * [[Packaged server installation]]
     * [[Docker server installation]]
+    * [[NixOS server installation]]
     * [[Manual server installation]]
     * [[Kubernetes server installation]]
     * [[Apache proxy setup]]

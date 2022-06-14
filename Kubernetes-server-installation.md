@@ -5,7 +5,8 @@ The recommended way is helm.
 
 # Root privileges
 
-Trilium docker container needs to be run with root privileges. The node process inside the container will be started with reduced privileges (uid 1000) after some initialization logic. Make sure that you don't use a security context which changes the user id.
+Trilium docker container needs to be run with root privileges. The node process inside the container will be started with reduced privileges (uid:gid 1000:1000) after some initialization logic. Make sure that you don't use a security context which changes the user id.
+To use a different uid:gid for file storage and the application, please use the USER_UID & USER_GID environment variables.
 
 The docker image will also fix the permissions of /home/node so you don't have to use an init container.
 

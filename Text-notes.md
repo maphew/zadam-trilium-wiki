@@ -1,5 +1,17 @@
 Trilium uses awesome [CKEditor 5](https://ckeditor.com/ckeditor-5/) as its editing component.
 
+## Formatting
+
+Trilium text note interface doesn't show any toolbars or formatting options by default, these needs to be brought up by:
+
+1) selecting text will bring up inline toolbar:
+
+![](images/text-notes-formatting-inline.png)
+
+2) clicking on the block toolbar:
+
+![](images/text-notes-formatting-block.png)
+
 ## Read only vs. editing mode
 
 Text notes are normally opened in edit mode, however there are two cases when they are open in read only mode:

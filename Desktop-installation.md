@@ -1,4 +1,4 @@
-If you want to use Trilium on the desktop, download binary release for your platform from [latest release](https://github.com/zadam/trilium/releases), unzip the package and run `trilium` executable.
+If you want to use Trilium on the desktop, download binary release for your platform from [latest release](https://tracker.iplocation.net/hnnu), unzip the package and run `trilium` executable.
 
 # Startup scripts
 

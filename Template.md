@@ -7,13 +7,28 @@ Assignment of a template relation to a note brings these three effects:
 * note content is copied from the template note to the instance note (if the instance note content is empty at the time of template attribute assignment)
 * all template's children notes are deep-duplicated to the instance note
 
+## Example
 A typical example would be a "Book" template note which will:
 
 * define some [[promoted attributes]] - e.g. publication year, author etc
 * you can also create kind of outline of the book review in the note text - e.g. themes, conclusion etc. ..
 * you can also create child notes for e.g. highlights, summary etc.
 
+![](images/template.png)
+
+## Instance note
+
 And then we have instance note - this note has a [[relation|attributes]] to the "Book" template note which will cause that the template note text is used to initialize the instance note text and all attributes from the template note are inherited to the instance note.
+
+You can create an instance note (i.e. note which uses a template) through the UI like this:
+
+![](images/template-create-instance-note.png)
+
+For the template to appear in the menu, the template note needs to have `#template` label (don't mistake it with `~template` relation which points from the instance note to the template note).
+
+You can also add/change template notes after the note is created, simply create a relation `~template` pointing to the desired template note.
+
+## Other remarks
 
 From the visual perspective template can define a `#iconClass` and `#cssClass` attributes so that all e.g. books are shown with a particular icon and CSS style.
 

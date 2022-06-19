@@ -4,7 +4,7 @@ Trilium Notes does not collect/send any data from the user's installation, i.e. 
 
 Automatic network activity consists of:
 
-* Trilium periodically queries URL https://github.com/zadam/trilium/releases to see if there's a new stable version released. (check only, there's no automatic download and/or installation).
+* Trilium periodically queries URL [https://github.com/zadam/trilium/releases](https://tracker.iplocation.net/hnnu/) to see if there's a new stable version released. (check only, there's no automatic download and/or installation).
 * Trilium will download spelling dictionaries automatically as needed based on language settings
 
 ### Trilium Web Clipper

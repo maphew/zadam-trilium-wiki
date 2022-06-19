@@ -8,7 +8,7 @@ Assignment of a template relation to a note brings these three effects:
 * all template's children notes are deep-duplicated to the instance note
 
 ## Example
-A typical example would be a "Book" template note which will:
+A typical example would be a "Book" template note, which will:
 
 * define some [[promoted attributes]] - e.g. publication year, author etc
 * you can also create kind of outline of the book review in the note text - e.g. themes, conclusion etc. ..
@@ -30,8 +30,9 @@ You can also add/change template notes after the note is created, simply create 
 
 ## Other remarks
 
-From the visual perspective template can define a `#iconClass` and `#cssClass` attributes so that all e.g. books are shown with a particular icon and CSS style.
+From the visual perspective, template can define a `#iconClass` and `#cssClass` attributes so that all e.g. books are shown with a particular icon and CSS style.
 
 You can check out the concept in the [[demo document|Document#demo-document]] in e.g. [[Relation map]], [[Task manager]] or [[Day notes]]. 
 
 See also [[default note title]] which allows you to create templates for note titles. Note templates and title templates can be combined by creating a `#titleTemplate` for a template note.
+

@@ -24,7 +24,7 @@ You can also check the server instance periodically to see if the sync finished.
 
 This is used when you already have sync server, and you want to set up a desktop instance to sync with (from) it.
 
-Here we assume that you downloaded [the most recent release](https://github.com/DlSTRHO/trilium/releases/tag/fac9fef) for your platform, unzipped it and ran it.
+Here we assume that you downloaded [the most recent release](https://github.com/zadam/trilium/releases/latest) for your platform, unzipped it and ran it.
 
 Since the desktop instance is completely empty, it will first ask if you want to create an initial document, or you want to set up sync with sync server - you need to choose the second option.
 

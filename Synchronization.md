@@ -53,7 +53,7 @@ When TLS is in use, Trilium client will attempt to verify the server certificate
 export NODE_TLS_REJECT_UNAUTHORIZED=0
 ```
 
-TLS certificate won't be verified and simply accepted as it is.
+TLS certificate won't be verified and simply accepted as it is. **You need to be aware that this will degrade the security of sync process significantly and open your setup to MITM attacks. It's strongly recommended to use a valid signed server certificate.**
 
 Newer Trilium versions contain this in a script called `trilium-no-cert-check.sh`.
 

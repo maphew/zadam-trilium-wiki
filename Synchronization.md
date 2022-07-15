@@ -8,6 +8,10 @@ Once sync is set up, synchronization is automatic and ongoing - you don't need t
 
 ## How to set up synchronization
 
+### Security
+
+Please note that setting up server securely is not easy and far reaching mistakes can be made. It is especially important to use a valid TLS certificate (https) instead of unencrypted/unauthenticated HTTP.
+
 ### Setup synchronization from desktop instance to sync server
 
 This approach is used when you already have a desktop instance of Trilium and you want to [[setup sync server on your web host|Server installation]]. 

@@ -1,4 +1,4 @@
-Since v0.49 Trilium offers a feature to share selected notes as publicly accessible read only documents.
+Trilium provides a feature to share selected notes as publicly accessible read only documents.
 
 The basic prerequisite for this feature is to have a [[server installation]] - this is where the notes will be hosted from.
 
@@ -71,6 +71,16 @@ You can define a custom favicon used for shared pages by create a relation `~sha
 ### Sharing a note as the root
 
 You can add the `#shareRoot` attribute to a folder or note, and it will be linked when you visit http://domain/share. This can make it easier to use Trilium as a fully-fledged website because you can create a note to act as a "home-page".
+
+### Protecting shared notes with a password
+
+It is possible to optionally protect shared notes with credentials.
+
+To do that, create a label in the format `#shareCredentials="username:password"` to a note which you want to protect. Typically you want to make the whole sub-tree protected like that, so don't forget to make this label inheritable.
+
+Keep in mind that the default state is public, so make sure everything you need to protect has this label (either owned or inherited).
+
+Password-protecting shared notes is available since 0.54.
 
 ### Other options
 

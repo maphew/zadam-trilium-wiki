@@ -18,3 +18,4 @@ Let's say you have identified the workspaces and their subtrees. Define on the r
 *   `#workspace` - just marks this note as workspace, button to enter the workspace is controlled by this
 *   `#workspaceIconClass` - controls box icon to be displayed in the tree and tabs, example `bx bx-home`. See [https://boxicons.com/](https://boxicons.com/)
 *   `#workspaceTabBackgroundColor` - color of the tab, use any CSS color format, e.g. "lightblue" or "#ddd"
+*   `#workspaceCalendarRoot` - marking a note with this label will define a new per-workspace calendar. If there's no such note, global calendar will be used.

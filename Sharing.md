@@ -76,9 +76,11 @@ You can add the `#shareRoot` attribute to a folder or note, and it will be linke
 
 It is possible to optionally protect shared notes with credentials.
 
-To do that, create a label in the format `#shareCredentials="username:password"` to a note which you want to protect. Typically you want to make the whole sub-tree protected like that, so don't forget to make this label inheritable.
+To do that, create a label in the format `#shareCredentials="username:password"` to a note which you want to protect. Typically, you want to make the whole sub-tree protected like that, so don't forget to make this label inheritable.
 
 Keep in mind that the default state is public, so make sure everything you need to protect has this label (either owned or inherited).
+
+Note titles of password protected notes may appear in the links and navigation from unprotected notes.
 
 Password-protecting shared notes is available since 0.54.
 

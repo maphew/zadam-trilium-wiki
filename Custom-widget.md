@@ -2,10 +2,10 @@ It's possible to create custom widget in three possible locations where you can 
 
 Positions are:
 
-* left-pane
-* center-pane
-* note-detail-pane - in center, but specific to note (split)
-* right-pane
+* `left-pane`
+* `center-pane`
+* `note-detail-pane` - located within `center-pane`, but specific to note (split)
+* `right-pane`
 
 ## Example - word count widget
 

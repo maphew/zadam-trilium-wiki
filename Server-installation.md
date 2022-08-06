@@ -15,7 +15,7 @@ Server installation has both web and [[mobile frontend]].
 
 ## Configuration
 
-For server installations, you might want to configure e.g. port or [[TLS|TLS configuration]]. This is done in the Trilium config file, by default it's in `config.ini` in the [[data directory]].
+For server installations, you might want to configure e.g. port or [[TLS|TLS configuration]]. This is done in the Trilium config file, by default it's in `config.ini` in the [[data directory]]. You can start creating your configuration by copying the provided `config-sample.ini` with default values to `config.ini`.
 
 ### Config location
 

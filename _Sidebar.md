@@ -19,6 +19,7 @@
     * [[Workspace]]
   * [[Keyboard shortcuts]]
   * [[Themes]]
+    * [[Theme Gallery]]
   * Import & Export
     * [[Markdown]]
     * [[Evernote|Evernote import]]

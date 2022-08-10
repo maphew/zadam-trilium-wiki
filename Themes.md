@@ -101,22 +101,6 @@ On the boxicons site, you can find out, looking at the font tab, after u opened 
 
 You can also create specific styling for given note types (and mime types). For example, file note containing PNG image will have these classes in the tree: `type-image mime-image-png`.
 
-## User provided themes
+## User-provided themes
 
-Following are themes developed by Trilium users:
-
-* https://github.com/tobealive/trilium-midnight-theme
-* https://github.com/tobealive/trilum-eote-theme
-* https://github.com/Abourass/TriliumThemes
-* https://github.com/ZMonk91/Material-Dark-Trilium
-* https://github.com/jaroet/trilium-theme-lightslategray
-* https://github.com/raphwriter/trilium-theme-melon
-* https://github.com/Engr-AllanG/trilium-themes
-* https://github.com/idelem/trilium-theme-velvet
-* https://github.com/SADAVA/trilium-notes-theme-dark-plus
-* https://github.com/WKSu/trilium-solarized-theme
-* https://github.com/en3r0/Trilium-Nord-Theme
-* https://github.com/Sebiann/miku-hatsune-trilium-theme
-* https://github.com/AllanZyne/trilium-bear-theme
-* https://github.com/cwilliams5/Midnight-Trilium-Dark-Mode
-* https://github.com/SiriusXT/trilium-theme-blue
+Some users made their custom themes publicly available. For a gallery of user themes, see [[Theme gallery]].

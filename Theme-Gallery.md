@@ -26,7 +26,7 @@ These are user-created themes which were made publicly available:
         <img src="https://camo.githubusercontent.com/8dfbcc44a82f8780d8e2f4e4621b9447f499db2667dce9a220393def28e384dd/68747470733a2f2f692e696d6775722e636f6d2f444d5437784f702e706e67" width="130px" />
         <img src="https://camo.githubusercontent.com/461416d49050e9e4415e4fe5315e2ea6987485d01a624c6d23203f78be33864b/68747470733a2f2f692e696d6775722e636f6d2f616852573667682e706e67" width="130px" />
     </td>
-    <td width="428px">
+    <td width="428px" valign="top">
         <a href="https://github.com/ZMonk91/Material-Dark-Trilium">MaterialDark</a><br/>
         👤 <a href="https://github.com/ZMonk91">ZMonk91</a><br/>
         <img src="https://camo.githubusercontent.com/3486f3d96d823468163a5f968b4b201254b6fd06164321551880c3de6353eeed/68747470733a2f2f692e696d6775722e636f6d2f5a65584635474c2e706e67" width="428px"/>

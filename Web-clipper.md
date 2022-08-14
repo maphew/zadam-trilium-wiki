@@ -30,3 +30,7 @@ Extension is available from:
 The extension needs to connect to a running Trilium instance. By default, it scans a port range on the local computer to find a desktop Trilium instance.
 
 It's also possible to configure [[server|Server installation]] address for cases when the desktop application is not currently running.
+
+## Username
+
+Older versions of Trilium (before 0.50) required username & password to authenticate, but this was reduced to just password. Web Clipper UI still contains the username field, just use arbitrary string.

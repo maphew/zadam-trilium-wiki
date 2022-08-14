@@ -23,3 +23,17 @@ In some cases you might want to take a look at the demo document after you delet
 Trilium provides a lot of flexibility, but with that you can also potentially shoot yourself in the foot (e.g. with startup script which blanks the app view).
 
 In such cases you can manually fix notes on the database layer - you can use e.g. [https://sqlitebrowser.org/](https://sqlitebrowser.org/) to open `document.db` file, find problematic notes and manually fix them. Don't forget to commit / write changes after you're done.
+
+## How to reset document
+
+If you previously just experimented with Trilium and want to get it to the initial state, you can do that by deleting the `document.db*` files, e.g. like this:
+
+```bash
+rm document.db*
+```
+
+If you don't need to preserve e.g. the `config.ini`, then you can also delete the whole [[data directory]] like this:
+
+```bash
+rm -r ./trilium-data
+```

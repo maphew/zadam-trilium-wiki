@@ -24,31 +24,42 @@ The following labels are used for advanced configuration:
 
 * `disableVersioning` - disables auto-versioning. Useful for e.g. large, but unimportant notes - e.g. large JS libraries used for scripting
 * `calendarRoot` - marks note which should be used as root for [[day notes]]. Only one should be marked as such.
-* `archived` - notes with this label won't be visible in autocomplete-based search (jump to, add link). Applies also to all its sub-notes.
-* `excludeFromExport` - notes (with their sub-tree) won't be included in any note export
+* `archived` - notes with this label won't be visible by default in search results (also in Jump To, Add Link dialogs etc). 
+* `excludeFromExport` - notes (with their sub-tree) won't be included in any note export.
 * `run` - defines on which events script should run. Possible values are:
    * `frontendStartup` - when Trilium frontend starts up (or is refreshed).
-   * `backendStartup` - when Trilium backend starts up
-   * `hourly` - run once an hour
-   * `daily` - run once a day
+   * `backendStartup` - when Trilium backend starts up.
+   * `hourly` - run once an hour. You can use additional label `runAtHour` to specify at which hour.
+   * `daily` - run once a day.
+* `runAtHour` - On which hour should this run. Should be used together with `#run=hourly`. Can be defined multiple times for more runs during the day.
+* `runOnInstance` - define which trilium instance this should run on. Defaults to all instances.
 * `disableInclusion` - scripts with this label won't be included into parent script execution.
-* `sorted` - keeps child notes sorted. See [[Sorting]].
-* `hidePromotedAttributes`
-* `readOnly` - editor is in read only mode. Works only for text notes. See some use cases [here](https://github.com/zadam/trilium/issues/371).
+* `sorted` - keeps child notes sorted (by title, alphabetically. See [[Sorting]]).
+* `top` - keeps this note at the top of the list within its parent (applies only on parents with `sorted` attribute).
+* `hidePromotedAttributes` - hide promoted attributes on this note.
+* `readOnly` - editor is in read only mode. Works only for text and code notes. See some use cases [here](https://github.com/zadam/trilium/issues/371).
 * `autoReadOnlyDisabled` - text/code notes can be set automatically into read mode when they are too large. You can disable this behavior on per-note basis by adding this label to the note
-* `cssClass` - value of this label is then added as CSS class to the node representing the given note in the tree. This can be useful for advanced [[theming|themes]]. Can be used in `template` notes.
-* `iconClass` - value of this label is added as a CSS class to the icon on the tree, which can help visually distinguish the notes in the tree. An example might be `bx bx-home` - icons are taken from [boxicons](https://boxicons.com/). Can be used in [[template]] notes.
+* `appCss` - marks CSS notes which are loaded into the Trilium application and can thus be used to modify Trilium's looks.
+* `appTheme` - marks CSS notes which are full Trilium themes and are thus available in Trilium options.
+* `cssClass` - the value of this label is then added as CSS class to the node representing the given note in the tree. This can be useful for advanced [[theming|themes]]. Can be used in `template` notes.
+* `iconClass` - the value of this label is added as a CSS class to the icon on the tree, which can help visually distinguish the notes in the tree. An example might be `bx bx-home` - icons are taken from [boxicons](https://boxicons.com/). Can be used in [[template]] notes.
+* `pageSize`- number of items per page in note listing.
 * `customRequestHandler` and `customResourceProvider` - see [[Custom request handler]]
-* `widget` - see [[Custom widget]],
-* `workspace`, `workspaceIconClass`, `workspaceTabBackgroundColor` - see [[Workspace]] 
+* `widget` - marks this note as a custom widget, which will be added to the Trilium component tree. See [[Custom widget]].
+* `workspace`, `workspaceIconClass`, `workspaceTabBackgroundColor`, `workspaceCalendarRoot` - see [[Workspace]] 
 * `searchHome` - new search notes will be created as children of this note (otherwise they are created in [[Day notes]])
 * `hoistedSearchHome` - new search notes will be created as children of this note when hoisted to some ancestor of this note
 * `inbox` - default inbox location for new notes
 * `hoistedInbox` - default inbox location for new notes when hoisted to some ancestor of this note
 * `sqlConsoleHome` - default location of SQL console notes
 * `bookmarked` and `bookmarkFolder` - see [[Bookmarks]]
-* `shareXXX` labels described in [[Sharing]]
-* `keyboardShortcut` can be defined as e.g. "Ctrl+I". Pressing this keyboard combination will then bring you to the note on which it is defined. Note that Trilium must be reloaded/restarted (Ctrl+R) for changes to be in effect.
+* `shareXXX` labels - see [[Sharing]]
+* `keyboardShortcut` - can be defined as e.g. "Ctrl+I". Pressing this keyboard combination will then bring you to the note on which it is defined. Note that Trilium must be reloaded/restarted (Ctrl+R) for changes to be in effect.
+* `displayRelations` and `hideRelations` - comma delimited names of relations which should be displayed/hidden. All other relations will be hidden/visible.
+* `hideRelations` - comma delimited names of relations which should be hidden. 
+* `titleTemplate` - see [[Default note title]].
+* `template` - this note will appear in the selection of available templates when creating new notes.
+* `toc` - `#toc` or `#toc=show` will force the table of contents to be shown, `#toc=hide` will force hiding it. 
 
 ## Relations
 Relation is a kind of link between two notes.
@@ -62,8 +73,10 @@ Relations are used also for some advanced scripting - like attaching scripts to 
 [[Events]]:
 * `runOnNoteCreation` - executes when note is created on backend
 * `runOnNoteTitleChange` - executes when note title is changed (includes note creation as well)
-* `runOnNoteChange`  - executes when note is changed (includes note creation as well)
-* `runOnChildNoteCreation`  - executes when new note is created under *this* note
+* `runOnNoteChange` - executes when note is changed (includes note creation as well)
+* `runOnNoteDeletion` - executes when note is being deleted.
+* `runOnBranchCreation` and `runOnBranchDeletion` - executes when a branch is created/deleted. Branches are links between a parent and a child note, and are created when e.g. cloning or moving notes.
+* `runOnChildNoteCreation` - executes when new note is created under *this* note
 * `runOnAttributeCreation` - executes when new attribute is created under *this* note
 * `runOnAttributeChange` - executes when attribute is changed under *this* note
 

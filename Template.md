@@ -24,7 +24,7 @@ You can create an instance note (i.e. note which uses a template) through the UI
 
 ![](images/template-create-instance-note.png)
 
-For the template to appear in the menu, the template note needs to have `#template` label (don't mistake it with `~template` relation which points from the instance note to the template note).
+For the template to appear in the menu, the template note needs to have `#template` label (don't mistake it with `~template` relation which points from the instance note to the template note). If you use [[workspaces|workspace]], you can alternatively mark templates with `#workspaceTemplate` which will display them only in the workspace.
 
 You can also add/change template notes after the note is created, simply create a relation `~template` pointing to the desired template note.
 

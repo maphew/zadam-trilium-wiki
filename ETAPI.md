@@ -20,6 +20,6 @@ GET https://myserver.com/etapi/app-info
 Authorization: Basic BATOKEN
 ```
 
-Where `BATOKEN` = BASE64(username + ':' + password)` (this is standard Basic Auth serialization)
+Where `BATOKEN = BASE64(username + ':' + password)` (this is a standard Basic Auth serialization)
 Where `username` is an arbitrary token and is not checked, use e.g. "trilium"
 And `password` is the generated ETAPI token described above. 

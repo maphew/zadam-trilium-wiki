@@ -6,4 +6,20 @@ The documentation is in OpenAPI format, available [here](https://github.com/zada
 
 ## Authentication
 
-All operations have to be authenticated using a token. You can get this token either from Options -> ETAPI or programmatically using the `/auth/login` REST call (see the [spec](https://github.com/zadam/trilium/blob/master/src/etapi/etapi.openapi.yaml)).
+All operations have to be authenticated using a token. You can get this token either from Options -> ETAPI or programmatically using the `/auth/login` REST call (see the [spec](https://github.com/zadam/trilium/blob/master/src/etapi/etapi.openapi.yaml)):
+
+```
+GET https://myserver.com/etapi/app-info
+Authorization: ETAPITOKEN
+```
+
+Alternatively, since 0.56 you can also use basic auth format:
+
+```
+GET https://myserver.com/etapi/app-info
+Authorization: Basic BATOKEN
+```
+
+Where `BATOKEN` = BASE64(username + ':' + password)` (this is standard Basic Auth serialization)
+Where `username` is an arbitrary token and is not checked, use e.g. "trilium"
+And `password` is the generated ETAPI token described above. 

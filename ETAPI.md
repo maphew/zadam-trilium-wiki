@@ -21,7 +21,7 @@ Authorization: Basic BATOKEN
 ```
 
 * Where `BATOKEN = BASE64(username + ':' + password)` - this is a standard Basic Auth serialization
-* Where `username` is an arbitrary string and is not checked, use e.g. "trilium"
+* Where `username` is "etapi"
 * And `password` is the generated ETAPI token described above. 
 
 Basic Auth is meant to be used with tools which support only basic auth.

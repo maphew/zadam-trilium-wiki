@@ -100,5 +100,6 @@ The not exhaustive list of **what is missing** is:
 * code notes have no highlighting
 * note tree is static
 * Protected notes cannot be shared
+* include notes
 
 Some of these limitations might be removed/mitigated in the future.

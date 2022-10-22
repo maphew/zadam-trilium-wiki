@@ -78,7 +78,7 @@ Relations are used also for some advanced scripting - like attaching scripts to 
 * `runOnNoteDeletion` - executes when note is being deleted.
 * `runOnBranchCreation` and `runOnBranchDeletion` - executes when a branch is created/deleted. Branches are links between a parent and a child note, and are created when e.g. cloning or moving notes.
 * `runOnAttributeCreation` - executes when new attribute is created for the note which defines this relation
-* `runOnAttributeChange` - executes when the attribute is changed of a note which defines this relation
+* `runOnAttributeChange` -  executes when the attribute is changed of a note which defines this relation. This is triggered also when the attribute is deleted
 
 Other relations:
 * `template` - attached note's attributes will be inherited even without parent-child relationship. See [[template]] for details.

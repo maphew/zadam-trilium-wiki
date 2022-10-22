@@ -71,14 +71,14 @@ Relations are used also for some advanced scripting - like attaching scripts to 
 ### Standard relations
 
 [[Events]]:
-* `runOnNoteCreation` - executes when note is created on backend
+* `runOnNoteCreation` - executes when note is created on backend. Use this relation if you want to run the script for all notes created under a specific subtree. In that case, create it on the subtree root note and make it inheritable. A new note created within the subtree (any depth) will trigger the script.
+* `runOnChildNoteCreation` - executes when new note is created under the note where this relation is defined
 * `runOnNoteTitleChange` - executes when note title is changed (includes note creation as well)
 * `runOnNoteChange` - executes when note is changed (includes note creation as well)
 * `runOnNoteDeletion` - executes when note is being deleted.
 * `runOnBranchCreation` and `runOnBranchDeletion` - executes when a branch is created/deleted. Branches are links between a parent and a child note, and are created when e.g. cloning or moving notes.
-* `runOnChildNoteCreation` - executes when new note is created under *this* note
-* `runOnAttributeCreation` - executes when new attribute is created under *this* note
-* `runOnAttributeChange` - executes when attribute is changed under *this* note
+* `runOnAttributeCreation` - executes when new attribute is created for the note which defines this relation
+* `runOnAttributeChange` - executes when the attribute is changed of a note which defines this relation
 
 Other relations:
 * `template` - attached note's attributes will be inherited even without parent-child relationship. See [[template]] for details.

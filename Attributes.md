@@ -49,7 +49,7 @@ The following labels are used for advanced configuration:
 * `workspace`, `workspaceIconClass`, `workspaceTabBackgroundColor`, `workspaceCalendarRoot` - see [[Workspace]] 
 * `searchHome` - new search notes will be created as children of this note (otherwise they are created in [[Day notes]])
 * `hoistedSearchHome` - new search notes will be created as children of this note when hoisted to some ancestor of this note
-* `inbox` - default inbox location for new notes
+* `inbox` - default inbox location for new notes - when you create a note using "new note" button in the sidebar, notes will be created as child notes in the note marked as with `#inbox` label.
 * `hoistedInbox` - default inbox location for new notes when hoisted to some ancestor of this note
 * `sqlConsoleHome` - default location of SQL console notes
 * `bookmarked` and `bookmarkFolder` - see [[Bookmarks]]

@@ -88,7 +88,7 @@ Password-protecting shared notes is available since 0.54.
 
 * if a note has `#shareRaw` label, the note will be shared raw, without HTML wrapper
 * if a note has `#shareDisallowRobotIndexing` label, it will carry `<meta name="robots" content="noindex,follow" />` meta tag and `X-Robots-Tag: noindex` header, which will advise crawlers to skip this page
-* if a text note has `#shareIndex` label, its content will display a list of all shared note roots
+* if a text note has `#shareIndex` label, its content will display a list of all shared note roots (since v0.57)
 
 ## Limitations
 

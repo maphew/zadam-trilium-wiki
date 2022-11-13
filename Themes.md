@@ -104,3 +104,7 @@ You can also create specific styling for given note types (and mime types). For 
 ## User-provided themes
 
 Some users made their custom themes publicly available. For a gallery of user themes, see [[Theme gallery]].
+
+## Asset path
+
+In case you want to use some built-in assets like `/assets/v0.57.0-beta/images/icon-grey.png` but want to avoid specifying the version, you can use a `vX` alias - in this case `/assets/vX/images/icon-grey.png`.

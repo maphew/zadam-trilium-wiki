@@ -48,6 +48,8 @@ Only in desktop (electron build):
 
 ## Editing notes
 
+Trilium uses CKEditor 5 for the [[text notes]] and CodeMirror 5 for [[code notes]]. Check the documentation of these projects to see all their built-in keyboard shortcuts.
+
 * `ENTER` in tree pane switches from tree pane into note title. Enter from note title switches focus to text editor. `CTRL+.` switches back from editor to tree pane.
 * `CTRL+K` - create / edit [[external link|Links]]
 * `CTRL+L` - create [[internal (note) link|Links]]

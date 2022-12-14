@@ -73,34 +73,4 @@ It's a great help to send bug reports. Here are some tips where to look at:
 
 Trilium uses GitHub issues - so please send your reports here: https://github.com/zadam/trilium/issues
 
-**To be clear, the following are not required for each and every bug report, but may be asked for on per-issue basis.**
-
-### Browser console
-
-If Trilium UI is acting up, open developer console by pressing `CTRL-SHIFT-I`, there might be some relevant errors or warnings.
-
-All JavaScript errors should be also logged to backend logs, but it's possible something was missed.
-
-### Backend logs
-
-Trilium logs important events and errors into `logs` directory (inside [[data directory]]). These logs are very helpful in debugging problems, so please attach the latest ones with your bug report. You don't have to worry, they don't contain any sensitive information about your notes.
-
-### Anonymized database
-
-In some cases, it's necessary to see the database structure to be able to debug the problem. Of course, we can't ask you to send us your [[document|Document]] file with your notes.
-
-For this, Trilium supports anonymization of the database - you can trigger this in Options -> Advanced tab.
-
-![image](https://user-images.githubusercontent.com/617641/148821689-52a0aeb6-e61d-4f9b-880d-c1696e9d2429.png)
-
-This will create a copy of your document and remove all sensitive data (currently note titles, contents, revisions, history and some of the options, and non-system attributes) while leaving all structure and metadata (e.g. date of last change). After this is done, the database is [VACUUMed](https://sqlite.org/lang_vacuum.html) to make sure there's no stale sensitive data in the document file. The resulting file is stored in `anonymized` directory (placed in the [[data directory]]). You can safely attach it with your bug report or send it to zadam.apps@gmail.com
-
-#### Command line anonymization
-
-If the database is corrupted in a way which prevents Trilium to start up, you won't be able to trigger the anonymization from the UI. For such a case, anonymization is also available from command line:
-
-```
-node src/anonymize.js
-```
-
-This needs to be executed in the directory with Trilium source files, for desktop builds this in `resources/app` directory.
+Check [[error logs]] page for info how to provide the necessary info.

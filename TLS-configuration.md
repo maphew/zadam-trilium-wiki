@@ -1,4 +1,4 @@
-TLS configuration is required for server installation, it's not relevant for purely desktop usage.
+TLS configuration is required for [[server installation]]. The page below describes steps to set up TLS in Trilium itself. You might also opt for TLS termination using some reverse proxy (e.g. nginx), in that case follow a [guide like this](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04).
 
 First thing to do is to get a TLS certificate. You have two options:
 

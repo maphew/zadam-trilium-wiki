@@ -1,4 +1,4 @@
-Trilium provides a feature to share selected notes as publicly accessible read only documents.
+Trilium provides a feature to share selected notes as **publicly** accessible read only documents.
 
 The basic prerequisite for this feature is to have a [[server installation]] - this is where the notes will be hosted from.
 
@@ -23,6 +23,12 @@ If I share the whole "Formatting" subtree then the page looks like this:
 [[images/share-multiple-notes-web.png]]
 
 You can see a basic navigation on the right. With this you can create small websites.
+
+## Security
+
+The notes you share are published on the open internet and can be accessed by anybody. The fact that the URLs look randomly does not provide real security guarantees. Please don't put sensitive information into shared notes.
+
+There is an opt-in feature to require a username/password, see `#shareCredentials` below.
 
 ## Advanced options
 

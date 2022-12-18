@@ -17,6 +17,7 @@ Other events are bound to some entity, these are defined as [[relations|Attribut
 
 * `runOnNoteCreation` - executes when note is created on backend
 * `runOnNoteTitleChange` - executes when note title is changed (includes note creation as well)
+* `runOnNoteContentChange` - executes when note content is changed (includes note creation as well).
 * `runOnNoteChange`  - executes when note is changed (includes note creation as well)
 * `runOnNoteDeletion` - executes when note is being deleted
 * `runOnBranchCreation` - executes when a branch is created. Branch is a link between parent note and child note and is created e.g. when cloning or moving note.

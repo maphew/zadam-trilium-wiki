@@ -1,4 +1,4 @@
-Trilium provides a feature to share selected notes as **publicly** accessible read only documents.
+Trilium provides a feature to share selected notes as **publicly accessible** read only documents.
 
 The basic prerequisite for this feature is to have a [[server installation]] - this is where the notes will be hosted from.
 

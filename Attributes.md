@@ -60,6 +60,7 @@ The following labels are used for advanced configuration:
 * `titleTemplate` - see [[Default note title]].
 * `template` - this note will appear in the selection of available templates when creating new notes.
 * `toc` - `#toc` or `#toc=show` will force the table of contents to be shown, `#toc=hide` will force hiding it. 
+* `color` - defines the color of the note in links, tree etc. Use any valid CSS value like `red` or `#f0a349`
 
 ## Relations
 Relation is a kind of link between two notes.

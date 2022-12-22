@@ -72,3 +72,15 @@ TRILIUM_DATA_DIR=/home/myuser/data/my-trilium-data trilium
 ```
 
 You can then save the above command as a shell script on your path for convenience.
+
+### Fine-grained directory/path location
+
+It's possible to configure e.g. backup and log directories separately, with following env. variables:
+
+* `TRILIUM_DOCUMENT_PATH`
+* `TRILIUM_BACKUP_DIR`
+* `TRILIUM_LOG_DIR`
+* `TRILIUM_ANONYMIZED_DB_DIR`
+* `TRILIUM_CONFIG_INI_PATH`
+
+If these are not set, default paths within the data directory will be used.

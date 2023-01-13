@@ -1,6 +1,6 @@
 This is supposed to be a complete list of keyboard shortcuts. Note that some of these may work only in certain contexts (e.g. in tree pane or note editor).
 
-It is also possible to configure most keyboard shortcuts in Options -> Keyboard shortcuts.
+It is also possible to configure most keyboard shortcuts in Options -> Keyboard shortcuts. Using `global:` prefix, you can assign a shortcut which will work even without Trilium being in focus (requires app restart to take effect).
 
 ## Note navigation
 

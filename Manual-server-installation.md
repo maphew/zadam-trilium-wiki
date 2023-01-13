@@ -44,7 +44,7 @@ npm rebuild
 cd trilium
 
 # using nohup to make sure trilium keeps running after user logs out
-nohup node src/www &
+nohup TRILIUM_ENV=dev node src/www &
 ~~~~
 
 The application by default starts up on port 8080, so you can open your browser and navigate to http://localhost:8080 to access Trilium (replace "localhost" with your hostname).

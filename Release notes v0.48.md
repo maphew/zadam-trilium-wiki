@@ -63,8 +63,8 @@ e.g. old script looked like this:
 
     const todayDateStr = api.formatDateISO(new Date());
     
-    const todayNote = await api.runOnServer(async todayDateStr => {
-        const dateNote = await api.getDateNote(todayDateStr);
+    const todayNote = await api.runOnBackend(async todayDateStr => {
+        const dateNote = await api.getDayNote(todayDateStr);
         
         ({note: logNote} = await api.createNote(dateNote.noteId, 'log'));
     }, [todayDateStr]);
@@ -75,8 +75,8 @@ all the `await` (and `async`) should disappear from the backend code, but should
 
     const todayDateStr = api.formatDateISO(new Date());
     
-    const todayNote = await api.runOnServer(todayDateStr => {
-        const dateNote = api.getDateNote(todayDateStr);
+    const todayNote = await api.runOnBackend(todayDateStr => {
+        const dateNote = api.getDayNote(todayDateStr);
         
         ({note: logNote} = api.createNote(dateNote.noteId, 'log'));
     }, [todayDateStr]);

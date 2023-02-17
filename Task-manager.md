@@ -27,7 +27,7 @@ api.addButtonToToolbar({
     action: async () => {
         // creating notes is backend (server) responsibility so we need to pass
         // the control there
-        const taskNoteId = await api.runOnServer(async () => {
+        const taskNoteId = await api.runOnBackend(async () => {
             const todoRootNote = await api.getNoteWithLabel('taskTodoRoot');
             const {note} = await api.createNote(todoRootNote.noteId, 'new task', '');
 

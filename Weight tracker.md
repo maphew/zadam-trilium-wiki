@@ -20,7 +20,7 @@ To get an idea of the script, here's the "JS code" note content:
 
 ```javascript
 async function getChartData() {
-    const days = await api.runOnServer(async () => {
+    const days = await api.runOnBackend(async () => {
         const notes = await api.getNotesWithLabel('weight');
         const days = [];
 

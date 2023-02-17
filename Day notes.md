@@ -36,7 +36,7 @@ It's possible to customize the title of generated date notes by defining a `#dat
 
 ## Implementation
 
-Trilium has some special support for day notes in the form of [backend Script API](https://zadam.github.io/trilium/backend_api/BackendScriptApi.html) - see e.g. getDateNote() function.
+Trilium has some special support for day notes in the form of [backend Script API](https://zadam.github.io/trilium/backend_api/BackendScriptApi.html) - see e.g. getDayNote() function.
 
 Day (and year, month) notes are created with a label - e.g. `#dateNote="2018-08-16"` this can then be used by other scripts to add new notes to day note etc.
 

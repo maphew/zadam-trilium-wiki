@@ -80,7 +80,7 @@ What notes do I keep under this day note?
 * [clones](https://github.com/zadam/trilium/wiki/Cloning-notes) of notes I created during this day (which kind of represents what I've been working on).
 * I often clone notes (or sub-trees) of e.g. projects I'm working on at given day so they are at hand
 * I have some [scripts](https://github.com/zadam/trilium/wiki/Scripts) which allow me to track certain daily metrics (like weight). These are saved into one daily "data note" (actually JSON [code note](https://github.com/zadam/trilium/wiki/Code-notes)).
-  * I have other scripts which then help me to visualize these data (see a [Weight Tracker](https://github.com/zadam/trilium/wiki/Weight tracker) example)
+  * I have other scripts which then help me to visualize these data (see a [Weight Tracker](https://github.com/zadam/trilium/wiki/Weight%20tracker) example)
   * I have a script which automatically imports all my comments from reddit into the day note.
     * People are sometimes wondering why. The answer is that I usually put some effort and thought into a comment and that's why I feel it's worth preserving, especially if it can be done automatically.
 

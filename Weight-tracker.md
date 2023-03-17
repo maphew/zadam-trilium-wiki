@@ -21,12 +21,12 @@ To get an idea of the script, here's the "JS code" note content:
 ```javascript
 async function getChartData() {
     const days = await api.runOnBackend(async () => {
-        const notes = await api.getNotesWithLabel('weight');
+        const notes = api.getNotesWithLabel('weight');
         const days = [];
 
         for (const note of notes) {
-            const date = await note.getLabelValue('dateNote');
-            const weight = parseFloat(await note.getLabelValue('weight'));
+            const date = note.getLabelValue('dateNote');
+            const weight = parseFloat(note.getLabelValue('weight'));
 
             if (date && weight) {
                 days.push({ date, weight });

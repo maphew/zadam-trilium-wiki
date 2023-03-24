@@ -31,9 +31,9 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection "upgrade";
-        proxy_pass http://IP:port; #change it to your IP and port
+        proxy_pass http://127.0.0.1:8080; # change it to a different port if non-default is used
         proxy_read_timeout 90;
-        proxy_redirect http://IP:port https://trilium.example.net; #change them based on your IP, port and domain
+        proxy_redirect http://127.0.0.1:8080 https://trilium.example.net; # change them based on your IP, port and domain
     }
 }
 # This part is for HTTPS forced

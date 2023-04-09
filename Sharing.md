@@ -64,6 +64,8 @@ You can add `#shareAlias` to individual notes to make the URLs nicer, e.g. `#sha
 
 Note that you are responsible for keeping the aliases unique.
 
+Using "subpaths", i. e. to declare an alias with `/` within, is not supported.
+
 ### Seeing all shared notes
 
 All shared notes are grouped under automatically managed "Share Notes" note. Besides seeing what's shared, you can also effectively share/unshare notes by cloning/moving them from/to this note.

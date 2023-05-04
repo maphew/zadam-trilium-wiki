@@ -6,7 +6,7 @@
 - Make sure to use Onenote headings where applicable (These will be carried over correctly into Trilium)
 - Remove extra whitespace in Onenote (Whitespace seems to be more noticible in Trilium, so removing it now will make it look nicer in trilium)
 - If possible, try to avoid very long Onenote pages. Trilium works best with shorter concise pages with any number of sub or (sub-sub...) pages.
-- Make sure numbered lists don't have unusual spaces between items in the list (Sometimes the numbered list will be start at 1 again in Trilum if there is an extra space in the list in OneNote.
+- Make sure numbered lists don't have unusual spaces between items in the list (Sometimes the numbered list will start at 1 again in Trilum if there is an extra space in the list in OneNote).
 
 ## Migration Procedure
 ### Import into Evernote from OneNote:

@@ -23,7 +23,7 @@
   * Import & Export
     * [[Markdown]]
     * [[Evernote|Evernote import]]
-    * [[Onenote Migration]]
+    * [[Onenote]]
 * Installation & setup
   * [[Server installation]]
     * [[Packaged server installation]]

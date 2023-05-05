@@ -68,7 +68,7 @@ Using "subpaths", i. e. to declare an alias with `/` within, is not supported.
 
 ### Seeing all shared notes
 
-All shared notes are grouped under automatically managed "Share Notes" note. Besides seeing what's shared, you can also effectively share/unshare notes by cloning/moving them from/to this note.
+All shared notes are grouped under automatically managed "Shared Notes" note. Besides seeing what's shared, you can also effectively share/unshare notes by cloning/moving them from/to this note.
 
 [[images/shared-list.png]]
 

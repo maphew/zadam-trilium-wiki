@@ -25,7 +25,7 @@ If exporting all sections at a time, they will not be grouped in folders - they 
 
 - If the Onenote header (that is at the top of each Onenote page) is not desired, you can use the following regex to remove them in a text editor like VsCode:
 
-    Find: `.<div.><h1`
+    Find: `.<div.*><h1`
     Replace with: `<h1`
 
 ### Import into Trilium

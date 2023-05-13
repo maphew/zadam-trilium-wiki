@@ -5,6 +5,7 @@ If you want to use Trilium on the desktop, download binary release for your plat
 There are also some other options to start Trilium:
 
 * `trilium-no-cert-check` - Trilium will not validate the certificates, useful e.g. when you're syncing against a sync server with self-signed certificate
+  * Alternatively you can set `NODE_TLS_REJECT_UNAUTHORIZED=0` environment variable to the Trilium process.
 * `trilium-portable` - Trilium will try to create [[data directory]] in the trilium's directory
 * `trilium-safe-mode` - start up in "safe mode" which disables any startup scripts which might e.g. crash the application
 

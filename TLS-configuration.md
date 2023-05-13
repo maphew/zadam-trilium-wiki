@@ -22,3 +22,18 @@ keyPath=/[username]/.acme.sh/[hostname]/example.com.key
 Above is only example of how this is set up on my environment when I generated the certificate using Let's encrypt acme utility. Your paths may be completely different. (Note that if you are using a Docker installation, these paths should be in a volume or other path understood by the docker container, e.g., /home/node/trilium-data/[DIR IN DATA DIRECTORY].)
 
 After you set this up, you may restart Trilium and now visit the hostname with "https".
+
+## Self-signed certificate
+
+If you need to use a self-signed certificate for your server instance, the desktop instance won't trust it.
+
+Currently the only way to make this work is by disabling certificate validation by setting this environment variable (for Linux):
+
+```
+export NODE_TLS_REJECT_UNAUTHORIZED=0
+trilium
+```
+
+Trilium comes with scripts to start Trilium in this mode, e.g. `trilium-no-cert-check.bat` for Windows.
+
+** Note that disabling TLS certificate validation is insecure, so do it only if you're sure you know what you're doing! **

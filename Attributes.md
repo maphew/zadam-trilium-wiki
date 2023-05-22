@@ -61,6 +61,11 @@ The following labels are used for advanced configuration:
 * `template` - this note will appear in the selection of available templates when creating new notes.
 * `toc` - `#toc` or `#toc=show` will force the table of contents to be shown, `#toc=hide` will force hiding it. 
 * `color` - defines the color of the note in links, tree etc. Use any valid CSS value like `red` or `#f0a349`
+* `hideChildrenOverview` - Hides child notes from being displayed in the editor of the parent note
+* `viewType` - Allows setting the view of the child notes inside the editor to a grid or list. Possible values:
+  * `grid` - displays child notes in a grid
+  * `list` - displays child notes in a list
+
 
 ## Relations
 Relation is a kind of link between two notes.

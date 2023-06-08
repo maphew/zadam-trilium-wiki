@@ -11,7 +11,7 @@
 ## Migration Procedure
 ### Import into Evernote from OneNote:
 
-- Install [Evernote Legacy](https://help.evernote.com/hc/en-us/articles/360052560314-Install-an-older-version-of-Evernote). Current versions of Evernote do not have this functionality. (Requires Evernote account, but import works without internet connection - be sure to NOT sync notes to Evernote!).
+- Install [Evernote Legacy](https://web.archive.org/web/20230327110646/https://help.evernote.com/hc/en-us/articles/360052560314). Current versions of Evernote do not have this functionality. (Requires Evernote account, but import works without internet connection - be sure to NOT sync notes to Evernote!).
 - In evernote navigate to File > Import > Onenote > Notebook > Section > OK
 
 If exporting all sections at a time, they will not be grouped in folders - they will all be added to a single folder, but the order will be kept, so you can re-group into folders after importing to Trilium

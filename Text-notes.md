@@ -20,7 +20,45 @@ Text notes are normally opened in edit mode, however there are two cases when th
 * or the note has `readOnly` [[label|attributes]]
 
 In both cases, it is possible to switch to editable mode again.
+
+## General Formatting
+
+Trilium uses the CKEditor, so any formatting that the CKEditor supports should be available in Trilium. For example:
+
+**Bold** – Type `**text**` or `__text__`
+
+*Italic* – Type `*text*` or `_text_`
+
+`Code` – Type \`text`
+
+~~Strikethrough~~ – Type `~~text~~`
+
+### Lists
+
+* Bulleted list – Start a line with `*` or `-` followed by a space
+
+1. Numbered list – Start a line with `1.` or `1)` followed by a space
+
+[ ] To-do list – Start a line with `[ ]` or `[x]` followed by a space to insert an unchecked or checked list item, respectively
+
+
+###  Blocks
+
+> Block quote – Start a line with `>` followed by a space
+
+```Multi-line Code block``` – Start a line with ```
+
+
+###  Other
+
+Headings – Start a line with `##` or `###` followed by a space to create a heading 1, heading 2, or heading 3 (up to heading 6 if options defines more headings)
+
+Note: Trilium only accepts headings with `##` and more because `#` is reserved for the title
+
+---
+Horizontal line – Start a line with `---`
  
+
 ## Markdown & Autoformat
 
 CKEditor supports markdown-like editing experience. It recognizes syntax and automatically converts it to rich text. See it in action:

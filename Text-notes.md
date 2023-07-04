@@ -55,9 +55,8 @@ Headings – Start a line with `##` or `###` followed by a space to create a hea
 
 Note: Trilium only accepts headings with `##` and more because `#` is reserved for the title
 
----
 Horizontal line – Start a line with `---`
- 
+--- 
 
 ## Markdown & Autoformat
 

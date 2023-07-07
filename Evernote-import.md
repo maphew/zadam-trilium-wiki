@@ -1,7 +1,7 @@
 Trilium can import ENEX files which are used by Evernote for backup/export. One ENEX file represents content (notes and resources) of one notebook.
 
 ## Export ENEX from Evernote
-To export ENEX file, you need to have a _**legacy **_ desktop version of Evernote (i.e. not web/mobile). Right click on notebook and select export and follow the wizard.
+To export ENEX file, you need to have a _legacy_ desktop version of Evernote (i.e. not web/mobile). Right click on notebook and select export and follow the wizard.
 
 ## Import ENEX in Trilium
 

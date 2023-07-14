@@ -1,9 +1,9 @@
 Trilium supports storing and displaying images. Supported formats are JPEG, PNG and GIF.
 
-Image is actually type of [[note|Tree concepts#note]] placed into the note tree. It's reference can be copied into text note, so it is displayed in the text itself.
+An image can be uploaded in the form of note's [[attachment|attachments]] or as a standalone [[note|Tree concepts#note]] placed into the note tree. Its reference can be copied into a text note, in order to display it in the text itself.
 
 ## Uploading images
-To add image to the note, simply drag it from file explorer onto the note editor inside Trilium and image will be uploaded.
+To add an image to the note, simply drag it from file explorer onto the note editor inside Trilium and the image will be uploaded.
 
 [[gifs/upload-image.gif]]
 
@@ -11,7 +11,7 @@ Alternatively you can click on block toolbar and then on "Insert image":
 
 [[images/block-toolbar-insert-image.png]]
 
-You can also copy and paste image from web - the image will be (asynchronously) downloaded and embedded.
+You can also copy and paste an image from web - the image will be (asynchronously) downloaded and embedded.
 
 ## Compression
 

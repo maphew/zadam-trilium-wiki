@@ -5,6 +5,7 @@
     * [[Text notes]]
     * [[Links]]
     * [[Images]]
+    * [[Attachments]]
     * [[Cloning notes]]
     * [[Protected notes]]
     * [[Archived notes]]

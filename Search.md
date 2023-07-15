@@ -178,3 +178,11 @@ note.dateCreated =* '2019-05'
 This will find notes created in May 2019 by simply doing string "starts with" operation on the date.
 
 This approach does not work well with numbers though, so whenever there is a numeric operator detected, the label values will be coerced from their normal string form into a numeric value for comparison. This then allows for e.g. `#publicationYear >= 1960` work correctly. 
+
+## Auto trigger search from URL
+
+Opening Trilium like in the example below will open the search pane and automatically trigger search for "abc":
+
+```
+http://localhost:8080/#?searchString=abc
+```

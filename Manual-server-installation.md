@@ -36,6 +36,9 @@ npm install
 
 # make sure the better-sqlite3 binary is there
 npm rebuild
+
+# bundles & minifies frontend JavaScript
+npm run webpack
 ~~~~
 
 ## Run

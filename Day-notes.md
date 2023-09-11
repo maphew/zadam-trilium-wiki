@@ -34,6 +34,13 @@ It's possible to customize the title of generated date notes by defining a `#dat
 * `{dayInMonthPadded}: {weekDay2}` day notes are named e.g. "24: Mo"
 * `{isoDate} - {weekDay}` day notes are named e.g. "2020-12-24 - Monday"
 
+## Month pattern
+It is also possible to customize the title of generated month notes through the `#monthPattern` attribute, much like `#datePattern`. The options are:
+- `{monthNumberPadded}` results in a number like `09` for September, and `11` for November
+- `{month}` results in the full month name (e.g. `September` or `October`)
+
+The default is `{monthNumberPadded} - {month}`
+
 ## Implementation
 
 Trilium has some special support for day notes in the form of [backend Script API](https://zadam.github.io/trilium/backend_api/BackendScriptApi.html) - see e.g. getDayNote() function.

@@ -33,11 +33,14 @@ It's possible to customize the title of generated date notes by defining a `#dat
 * `{dayInMonthPadded}: {weekDay3}` day notes are named e.g. "24: Mon"
 * `{dayInMonthPadded}: {weekDay2}` day notes are named e.g. "24: Mo"
 * `{isoDate} - {weekDay}` day notes are named e.g. "2020-12-24 - Monday"
+* `{ordinal}` is replaced with the ordinal date (e.g. 1st, 2nd, 3rd) etc.
 
 ## Month pattern
 It is also possible to customize the title of generated month notes through the `#monthPattern` attribute, much like `#datePattern`. The options are:
 - `{monthNumberPadded}` results in a number like `09` for September, and `11` for November
 - `{month}` results in the full month name (e.g. `September` or `October`)
+- `{shortMonth3}` is replaced with the first 3 letters of the month, e.g. Jan, Feb, etc.
+- `{shortMonth4}` is replaced with the first 4 letters of the month, e.g. Sept, Octo, etc.
 
 The default is `{monthNumberPadded} - {month}`
 

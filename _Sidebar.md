@@ -63,5 +63,8 @@
     * [[Task Manager]]
   * [[ETAPI]] (REST API)
   * [[Default note title]]
+* Developer guides
+  * [[Frontend Basics]]
+  * [[Widget Basics]]
 * [[FAQ]]
 * [[Troubleshooting]]

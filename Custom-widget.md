@@ -29,9 +29,9 @@ const TPL = `<div style="padding: 10px; border-top: 1px solid var(--main-border-
 </div>`;
 
 class WordCountWidget extends api.NoteContextAwareWidget {
-    get position() { return 100; } // higher value means position towards the bottom/right
+    static get parentWidget() { return 'center-pane'; }
 
-    get parentWidget() { return 'center-pane'; }
+    get position() { return 100; } // higher value means position towards the bottom/right
 
     isEnabled() {
         return super.isEnabled()
@@ -83,7 +83,7 @@ class WordCountWidget extends api.NoteContextAwareWidget {
     }
 }
 
-module.exports = new WordCountWidget();
+module.exports = WordCountWidget;
 ```
 
 After you make changes it is necessary to restart Trilium so that the layout can be rebuilt.

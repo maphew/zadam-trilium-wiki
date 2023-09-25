@@ -12,7 +12,7 @@ Child notes can be kept sorted by attaching [[labels|Attributes]] to the parent 
 
 Sorting works by comparing note property or a specific label on the child notes.
 
-There are 3 sorting levels, where the first one has the highest priority and the second (respectively the third) will be applied only if the 2 compared notes are equal based on higher priority comparison.
+There are 4 sorting levels, where the first one has the highest priority and the lower one will be applied only if the 2 compared notes are equal based on higher priority comparison.
 
 1. implicit sorting by `#top` label - child notes with this label will appear on the top of the folder.
 2. implicit sorting by `#bottom` label - child notes with this label will appear on the bottom of the folder.

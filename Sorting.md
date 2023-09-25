@@ -7,15 +7,15 @@ You can sort notes one time by right-clicking parent note in the note tree, Adva
 Child notes can be kept sorted by attaching [[labels|Attributes]] to the parent note:
 
 * `#sorted` - enables sorting, can optionally include name of the note's property/label (see details below)
-* `#sortDirection` (since Trilium 0.55) - by default ascending, set it to `desc` value to reverse the sort order
-* `#sortFoldersFirst` (since Trilium 0.55) - notes with children will be sorted on top
+* `#sortDirection` - by default ascending, set it to `desc` value to reverse the sort order
+* `#sortFoldersFirst` - notes with children will be sorted on top
 
 Sorting works by comparing note property or a specific label on the child notes.
 
 There are 4 sorting levels, where the first one has the highest priority and the lower one will be applied only if the 2 compared notes are equal based on higher priority comparison.
 
 1. implicit sorting by `#top` label - child notes with this label will appear on the top of the folder.
-2. implicit sorting by `#bottom` label - child notes with this label will appear on the bottom of the folder.
+2. implicit sorting by `#bottom` label (since Trilium 0.62) - child notes with this label will appear on the bottom of the folder.
 3. sorting by child's property or a specific label defined on the parent note's `#sorted` label
   a) parent note has `#sorted` with no value - by default sorting will be done alphabetically
   b) parent note has `#sorted=title` or `#sorted=dateModified` or `#sorted=dateCreated` - sorting will be done based on the defined note's property

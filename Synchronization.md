@@ -49,6 +49,12 @@ Two different setups are supported:
 * you can explicitly set proxy server to be used in Options / Sync. Only unauthenticated proxy servers are currently supported.
 * if no proxy server is explicitly configured, then Trilium will use system proxy settings 
 
+## Troubleshooting
+
+### Different date/time on client and server
+
+For a successful sync, both client and server need to have save date time, with a tolerance of maximum 5 minutes difference. 
+
 ## Certificate issues
 
 When TLS is in use, Trilium client will attempt to verify the server certificate. In some cases (self-signed certs, some corporate proxy servers), the verification will be unsuccessful and sync will fail. In those cases, you can run the Trilium client with environment variable `NODE_TLS_REJECT_UNAUTHORIZED` set to `0`:

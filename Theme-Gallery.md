@@ -113,9 +113,14 @@ These are user-created themes which were made publicly available:
 
 <tr>    
     <td width="428px">
-        <a href="https://github.com/SiriusXT/trilium-theme-blue">Blue</a><br/>
+        <a href="https://github.com/SiriusXT/trilium-theme-blue">Blue</a> (light)<br/>
         👤 <a href="https://github.com/SiriusXT">SiriusXT</a><br/>
-        <img src="https://github.com/SiriusXT/trilium-theme-blue/raw/main/screenshot.png" width="428px"/>
+        <img src="https://github.com/SiriusXT/trilium-theme-blue/blob/main/img/screenshot1.png" width="428px"/>
+    </td>
+    <td width="428px">
+        <a href="https://github.com/SiriusXT/trilium-theme-blue">Blue</a> (dark)<br/>
+        👤 <a href="https://github.com/SiriusXT">SiriusXT</a><br/>
+        <img src="https://github.com/SiriusXT/trilium-theme-blue/blob/main/img/screenshot2.png" width="428px"/>
     </td>
 </tr>
 

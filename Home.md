@@ -1,6 +1,11 @@
 # Overview
 Basic overview of the Trilium project is available at project homepage - https://github.com/zadam/trilium#trilium-notes
 
+Inspiration for the name: "Trilium"
+> Naming software is hard. I lived in Ontario when I first started the project and Trillium (the flower) is sort of a provincial logo, many institutions in Ontario are named "Trillium [something]". So I kept hearing/reading it almost everyday, I liked the sound of it and its nature motif, so I just reused it.
+
+> ~ Zadam (Trilium Developer)
+
 # Documentation
 This [wiki](https://github.com/zadam/trilium/wiki) contains additional and more in-depth information on some topics. See the sidebar for listing of all available pages.
 

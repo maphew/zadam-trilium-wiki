@@ -8,6 +8,46 @@ If there's a UI problem, it usually means that the Trilium frontend got into an 
 
 If this still doesn't help, or you suspect it's actually a backend issue, you can restart the whole application - in case of desktop (Electron) build, you just close the window and re-open it again.
 
+## Broken note crashes Trilium
+
+Sometimes a particular problem can cause issues for Trilium (e.g. render note with faulty script) and causes Trilium to crash. But since Trilium will normally try to load previously open notes, it will attempt to load again the note, causing the crash again.
+
+To break out of this vicious cycle, you can specify `TRILIUM_START_NOTE_ID` environment variable, which will reset the open tabs to only one with the specified note ID (just use `root`). In linux you could use it like this:
+
+```bash
+TRILIUM_START_NOTE_ID=root ./trilium
+```
+
+Alternatively, you can also start up Trilium in a "safe mode" which will reset the current note to root:
+
+```bash
+TRILIUM_SAFE_MODE=true ./trilium
+```
+
+## Broken script prevents application startup
+
+If you experiment with scripting, it might happen that you create a script which crashes the whole Trilium. That's even worse if you set it as a startup script or in an active [[custom widget]].
+
+In such cases you can start Trilium in "safe mode" which will not execute any custom scripts:
+
+```bash
+TRILIUM_SAFE_MODE=true ./trilium
+```
+
+Depending on the Trilium distribution, there are also ready made scripts for this: `trilium-safe-mode.bat` and `trilium-safe-mode.sh`.
+
+Once Trilium starts up, find the note which caused the crash and fix it/delete it.
+
+## Sync and consistency checks
+
+Trilium periodically checks logical consistency of the database (e.g. that every note should have a parent). If some inconsistency is detected, the user is notified on the UI about the inconsistency.
+
+In such case, it is recommended to file a bug report and attach anonymized database (see below).
+
+## Restoring backup
+
+Trilium makes regular automatic backup, so When things go really bad we might need the last option - [[restore backup|Backup#restoring-backup]].
+
 ## Forgotten username/password
 
 In case you forgot your password, this means that:
@@ -33,45 +73,6 @@ If you already had protected notes (which are not unrecoverable), I recommend de
 
 If you decide to continue using the existing document file, don't forget to change your password (Options -> Change password).
 
-## Broken note crashes Trilium
-
-Sometimes a particular problem can cause issues for Trilium (e.g. render note with faulty script) and causes Trilium to crash. But since Trilium will normally try to load previously open notes, it will attempt to load again the note, causing the crash again.
-
-To break out of this vicious cycle, you can specify `TRILIUM_START_NOTE_ID` environment variable, which will reset the open tabs to only one with the specified note ID (just use `root`). In linux you could use it like this:
-
-```bash
-TRILIUM_START_NOTE_ID=root ./trilium
-```
-
-Alternatively, you can also start up Trilium in a "safe mode" which will reset the current note to root:
-
-```bash
-TRILIUM_SAFE_MODE=true ./trilium
-```
-
-## Sync and consistency checks
-
-Trilium periodically checks logical consistency of the database (e.g. that every note should have a parent). If some inconsistency is detected, the user is notified on the UI about the inconsistency.
-
-In such case, it is recommended to file a bug report and attach anonymized database (see below).
-
-## Broken script prevents application startup
-
-If you experiment with scripting, it might happen that you create a script which crashes the whole Trilium. That's even worse if you set it as a startup script or in an active [[custom widget]].
-
-In such cases you can start Trilium in "safe mode" which will not execute any custom scripts:
-
-```bash
-TRILIUM_SAFE_MODE=true ./trilium
-```
-
-Depending on the Trilium distribution, there are also ready made scripts for this: `trilium-safe-mode.bat` and `trilium-safe-mode.sh`.
-
-Once Trilium starts up, find the note which caused the crash and fix it/delete it.
-
-## Restoring backup
-
-Trilium makes regular automatic backup, so When things go really bad we might need the last option - [[restore backup|Backup#restoring-backup]].
 
 ## Reporting bugs
 

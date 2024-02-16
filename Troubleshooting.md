@@ -43,6 +43,12 @@ To break out of this vicious cycle, you can specify `TRILIUM_START_NOTE_ID` envi
 TRILIUM_START_NOTE_ID=root ./trilium
 ```
 
+Alternatively, you can also start up Trilium in a "safe mode" which will reset the current note to root:
+
+```bash
+TRILIUM_SAFE_MODE=true ./trilium
+```
+
 ## Sync and consistency checks
 
 Trilium periodically checks logical consistency of the database (e.g. that every note should have a parent). If some inconsistency is detected, the user is notified on the UI about the inconsistency.

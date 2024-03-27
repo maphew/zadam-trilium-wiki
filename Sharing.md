@@ -24,6 +24,13 @@ If I share the whole "Formatting" subtree then the page looks like this:
 
 You can see a basic navigation on the right. With this you can create small websites.
 
+## Showing list of all shared notes
+
+You can click on the "Show Shared Notes Subtree" to see the list of all shared notes:
+
+![image](https://github.com/zadam/trilium/assets/617641/f0cbc7f0-9d5a-48ae-8304-13c9e5c6c760)
+
+
 ## Security
 
 The notes you share are published on the open internet and can be accessed by anybody. The fact that the URLs look randomly does not provide real security guarantees. Please don't put sensitive information into shared notes.
